@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" id="wixDesktopViewport" />
+		<title>Join us</title>
+		<link rel="shortcut icon" href="./favicon.ico">
+        <link rel="stylesheet" type="text/css" href="./css/common.css" />
+		<link rel="stylesheet" type="text/css" href="./css/joinus.css" />
+		<script src="./js/jquery-2.1.4.min.js"></script>
+	</head>
+	<body>
+		<header class="header-box flex">
+			<div class="logo-box flex">
+                <a href="https://www.westlake.edu.cn/">
+                    <img class="logo" src="./img/icon_headerLogo.png" title="西湖大学" width="100%" />
+                </a>
+                <img class="logo" src="./img/icon_headerLogo.png" width="100%" />
+            </div>
+			<div class="rightEvent-box flex">
+				<nav class="menu-box">
+					<ul class="flex">
+                        <li><a href="index.html">Home</a></li>
+						<li><a href="research.html">Research</a></li>
+						<li class="team"><a href="javascript:;">Team <img src="./img/icon_arrowDown.png" alt=""></a>
+							<ul class="teamList">
+								<li><a href="people.html">People</a></li>
+								<li><a href="gallery.html">Gallery</a></li>
+							</ul>
+						</li>
+						<li><a href="publications.html">Publications</a></li>
+						<li><a href="facilities.html">Facilities</a></li>
+						<li class="active"><a href="joinus.html">Join us</a></li>
+					</ul>
+				</nav>
+				<div class="language-box">
+					<img class="icon" src="./img/icon_language.png" alt="">
+					<span>CN</span>
+				</div>
+			</div>
+		</header>
+		<section class="banner-box">
+			<img src="./images/joinus/banner.png" alt="">
+		</section>
+		<main class="main-box">
+            <div class="item-box">
+                <div class="recruitInfo-box flex col-top">
+                    <div>
+                        <p>“Our group is recruiting 
+                            <span>postdoctoral scholars,</span>
+                            PhD students as well as 
+                            <span>research associates</span>. 
+                            We welcome highly motivated researchers with backgrounds of materials science, condensed matter physics, inorganic/physical/surface chemistry or related field (not essential for PhDs and RAs) to join us..”</p>
+                        <div class="sendCV-box">
+                            <p>Interested candidates are welcome to send CV to</p>
+                            <p class="email">lugiyang@westlake.edu.cn</p>
+                        </div>
+                    </div>
+                    <img src="./images/joinus/img_img1.png" alt="">
+                </div>
+                <div class="link-box">
+                    <p>Please see the link below for information on the PhD program of Westlake University (jointly with Zhejiang University):</p>
+                    <p class="link">https://www.westlake.edu.cn/admissions aid/graduate/</p>
+                </div>
+                <div class="link-box">
+                    <p>Please see the links below for information on Postdoc and RA openings in our group:</p>
+                    <a href="https://www.westlake.edu.cn/Careers/OpenPositions/PostD octoral/202007/20200724 6822.shtml" class="link">https://www.westlake.edu.cn/Careers/OpenPositions/PostD octoral/202007/20200724 6822.shtml</a>
+                    <a href="https://www.westlake.edu.cn/Careers/OpenPositions/resear ch/ 202008/t20200818 7003.shtml" class="link">https://www.westlake.edu.cn/Careers/OpenPositions/resear ch/ 202008/t20200818 7003.shtml</a>
+                </div>
+            </div>
+            <div class="contactUs-box">
+                <div class="title">Contact Us</div>
+				<div class="desc">Stay informed about our latest research news.</div>
+                <div class="content">
+                    <div class="flex col-top">
+                        <div class="input-box flex-1">
+                            <input type="text" placeholder="Name*">
+                            <input type="text" placeholder="Email*">
+                            <input type="text" placeholder="Subject*">
+                        </div>
+                        <div class="textarea-box flex-1">
+                            <textarea name="" id="" placeholder="Message*"></textarea>
+                        </div>
+                    </div>
+                    <div class="flex col-top m-t-22">
+                        <p class="flex-1">If you would like to learn more information or have any comments and suggestions about our products, please leave a message and we will get back to you as soon as possible.</p>
+                        <div class="btn-box flex-1">
+                            <button>Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</main>
+		<footer class="footer-box">
+			<div class="basicInfo-box flex col-top">
+				<div class="logo-box flex">
+					<img class="icon_logo_l" src="./img/icon_footerLogo.png" alt="">
+					<img class="icon_logo_r" src="./img/icon_footerLogo.png" alt="">
+				</div>
+				<div class="r-box">
+					<div class="label">Contact us</div>
+					<div class="flex col-top">
+						<div class="contactInfo">
+							<div>+1980 971-24-19</div>
+							<div>liqiucheng@westlake.edu.cn</div>
+						</div>
+						<div class="address">
+							<p>E3-311 No.600 Dunyu</p>
+							<p>Road, Hangzhou 310030,</p>
+							<p>Zhejiang Province, China</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="filings-box flex">
+				<div class="flex">
+					<span>浙ICP备18025489号</span>
+					<span>浙公安备33010602007514号</span>
+					<span>Copyright © Westlake University. All Rights Reserved</span>
+				</div>
+				<a href="joinus.html">Join us</a>
+			</div>
+		</footer>
+		<script>
+			$(function(){
+			   function setRem() {
+			     var html = document.documentElement;
+			     var width = html.clientWidth;
+			     html.style.fontSize = width / 14.4 + 'px'; // 设计稿宽度为1440px，那么1rem=100px，故除以14.4
+			   }
+			   setRem();
+			   window.onresize = function() {
+			     setRem();
+			   };
+			});
+		</script>
+	</body>
+</html>

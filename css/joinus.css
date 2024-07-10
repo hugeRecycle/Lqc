@@ -1,0 +1,122 @@
+/* publications */
+.main-box {
+    background-color: #fff;
+}
+.item-box {
+	padding: 1rem 1.8rem;
+}
+.item-box .recruitInfo-box {
+    margin-bottom: .22rem;
+}
+.item-box .recruitInfo-box p {
+    font-family: Avenir-Medium;
+    line-height: .33rem;
+    font-size: .24rem;
+    color: rgba(0,0,0,0.65);
+}
+.item-box .recruitInfo-box p span {
+    font-family: Avenir-Heavy;
+    color: rgba(0,0,0,0.85);
+}
+.item-box .recruitInfo-box .sendCV-box  {
+    margin-top: .3rem;
+}
+.item-box .recruitInfo-box .sendCV-box p {
+    font-family: Avenir-Roman;
+    line-height: .3rem;
+    font-size: .22rem;
+    color: rgba(0,0,0,0.45);
+}
+.item-box .recruitInfo-box .sendCV-box p.email {
+    color: #2157A8;
+}
+.item-box .recruitInfo-box img {
+    margin-left: .42rem;
+    width: 5.2rem;
+    display: block;
+}
+.item-box .link-box {
+    margin-top: .42rem;
+    font-family: Avenir-Roman;
+    line-height: .33rem;
+    font-size: .24rem;
+    color: rgba(0,0,0,0.45);
+}
+.item-box .link {
+    font-family: Avenir-Medium;
+    color: rgba(0,0,0,0.65);
+    text-decoration: underline;cursor: pointer;
+}
+.contactUs-box {
+    padding: 1rem 1.8rem;
+    background-color: #F6F9FE;
+}
+.contactUs-box .title {
+	font-family: Avenir-Black;
+	font-size: .34rem;
+	color: #0C3375;
+	line-height: .4rem;
+	letter-spacing: .01rem;
+	margin-bottom: .18rem;
+}
+.contactUs-box .desc{
+	font-family: Avenir-Heavy;
+	font-size: .22rem;
+	color: #F58300;
+	line-height: .32rem;
+}
+.contactUs-box .content {
+    margin-top: .42rem;
+}
+.contactUs-box .content .input-box {
+    margin-right: .2rem;
+    overflow: hidden;
+}
+.contactUs-box .input-box input {
+    width: 91%;
+    height: .42rem;
+    background-color: #fff;
+    margin-bottom: .22rem;
+    display: block;
+    padding: 0 .22rem;
+    border: .01rem solid #CED4DA;
+}
+.contactUs-box .input-box input:last-child {
+    margin-bottom: 0;
+}
+.contactUs-box .textarea-box {
+    margin-left: .2rem;
+    display: grid;
+    overflow: hidden;
+}
+.contactUs-box .textarea-box textarea {
+    border: .01rem solid #CED4DA;
+    width: 91%;
+    height: 1.62rem;
+    resize: none;
+    padding: .06rem .22rem;
+}
+.m-t-22 {
+    margin-top: .22rem;
+}
+.contactUs-box p {
+    font-size: .18rem;
+    color: rgba(0,0,0,0.65);
+    line-height: .25rem;
+}
+.contactUs-box .btn-box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+.contactUs-box .btn-box button {
+    width: 1.6rem;
+    height: .4rem;
+    color: #fff;
+    font-size: .18rem;
+    text-align: center;
+    line-height: .4rem;
+    border: .01rem solid #122C59;
+    background-color: #2157A8;
+    cursor: pointer;
+}

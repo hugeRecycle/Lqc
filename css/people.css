@@ -1,0 +1,86 @@
+/* people */
+.main-box {
+    background-color: #fff;
+	padding: 1rem 1.8rem;
+}
+.item-box {
+	background-color: #fff;
+	padding: .6rem 0 .8rem;
+    border-bottom: .01rem solid rgba(0, 0, 0, .15);
+}
+.item-box .title {
+	font-family: Avenir-Black;
+	font-weight: 900;
+	font-size: .34rem;
+	color: #0C3375;
+	line-height: .46rem;
+	letter-spacing: .01rem;
+}
+.item-box .content {
+    font-family: Avenir-Roman;
+    font-size: .2rem;
+    color: rgba(0,0,0,0.45);
+    line-height: .28rem;
+}
+.item-box .content img {
+    width: 2.8rem;
+    margin-right: .38rem;
+}
+.item-box .content .name {
+    font-family: Avenir-Heavy;
+    font-size: .26rem;
+    color: rgba(0,0,0,0.85);
+    line-height: .3rem;
+}
+.item-box .content .introduce {
+    margin-top: .12rem;
+}
+.item-box .content .email-box {
+    font-family: Avenir-Roman;
+    margin-top: .14rem;
+}
+.item-box .content .email-box img {
+    width: .23rem;
+    margin-right: .12rem;
+}
+.item-box .content .email-box .email {
+    font-family: Avenir-Medium;
+    font-size: .18rem;
+    color: #4B5768;
+    margin-left: .04rem;
+}
+.principalInvestigator-box {
+    align-items: flex-start;
+    padding-top: 0;
+}
+.principalInvestigator-box .content {
+    margin-top: .42rem;
+    line-height: .3rem;
+}
+.principalInvestigator-box .content img {
+    width: 4rem;
+}
+.principalInvestigator-box .content .position {
+    font-family: Avenir-Oblique;
+    margin-top: .12rem;
+    color: #009DAB;
+    line-height: .32rem;
+}
+.principalInvestigator-box .content .introduce {
+    line-height: .3rem;
+}
+.principalInvestigator-box .content .email-box {
+    margin-top: .2rem;
+    font-size: .2rem;
+}
+.principalInvestigator-box .content .email-box .email {
+    font-family: Avenir-Roman;
+    color: rgba(0,0,0,0.85);
+    text-decoration: underline;
+}
+.students-box .content .studentItem-box, .assistant-box .content .studentItem-box {
+    margin-top: .65rem;
+}
+.students-box .content .studentItem-box:first-child, .assistant-box .content .studentItem-box:first-child {
+    margin-top: .42rem;
+}

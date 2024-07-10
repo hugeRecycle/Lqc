@@ -1,0 +1,43 @@
+/* gallery */
+.main-box {
+    background-color: #fff;
+	padding: 1rem 1.8rem;
+}
+.list-box {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.item-box {
+    width: calc(50% - .2rem);
+    margin-right: .2rem;
+    margin-bottom: .4rem;
+}
+.item-box:nth-child(2n) {
+    margin-left: .2rem;
+    margin-right: 0;
+}
+.item-box:nth-last-child(1), .item-box:nth-last-child(2){
+    margin-bottom: 0;
+}
+.item-box img {
+    width: 5.2rem;
+    display: block;
+    margin-bottom: .32rem;
+}
+.item-box p {
+    font-family: Avenir-Roman;
+    font-size: .2rem;
+    color: rgba(0,0,0,0.45);
+    line-height: .28rem;
+}
+.item-box p.title {
+    font-family: Avenir-Heavy;
+    font-size: .24rem;
+    color: rgba(0,0,0,0.85);
+    margin-bottom: .12rem;
+}
+.item-box p.title span {
+    color: #009DAB;
+}

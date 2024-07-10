@@ -1,0 +1,109 @@
+/* home */
+.synopsis-box {
+	height: 100%;
+	background-color: #fff;
+	padding: 1rem 1.8rem;
+	align-items: flex-start;
+}
+.synopsis-box .swiper-box {
+	width: 4.2rem;
+	margin-right: .6rem;
+}
+.synopsis-box .swiper-box img {
+	width: 4.2rem;
+}
+.synopsis-box .content {
+	font-family: Avenir-Medium;
+	font-size: .2rem;
+	color: rgba(0,0,0,0.65);
+	line-height: .3rem;
+}
+.synopsis-box .content .title {
+	font-family: Avenir-Black;
+	font-weight: 900;
+	font-size: .34rem;
+	color: #0C3375;
+	line-height: .46rem;
+	letter-spacing: .01rem;
+	margin-bottom: .22rem;
+}
+.synopsis-box .content a {
+	display: block;
+	margin-top: .46rem;
+    width: 2.8rem;
+    height: .6rem;
+	line-height: .6rem;
+	border: .02rem solid #0C3375;
+	text-decoration: none;
+	text-align: center;
+	color: #0C3375;
+	background-color: #fff;
+}
+.synopsis-box .content a:hover {
+	font-family: Avenir-Heavy;
+	background-color: #0C3375;
+	color: #fff;
+}
+.team-box {
+	background-color: #F6F9FE;
+}
+.team-box .swiper-box {
+	margin-right: 0;
+	margin-left: 0.6rem;
+}
+.news-box .title {
+	font-family: Avenir-Black;
+	font-size: .34rem;
+	color: #0C3375;
+	line-height: .4rem;
+	letter-spacing: .01rem;
+	margin-bottom: .18rem;
+}
+.news-box .desc{
+	font-family: Avenir-Heavy;
+	font-size: .22rem;
+	color: #F58300;
+	line-height: .32rem;
+	margin-bottom: .02rem;
+}
+.news-box .list li {
+	padding: .46rem 0;
+	border-bottom: .01rem solid rgba(0, 0, 0, .15);
+}
+.news-box .list li .date {
+    width: 1rem;
+    height: 100%;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+	align-items: center;
+	font-family: Avenir-Heavy;
+	font-size: .24rem;
+	color: #2157A8;
+	line-height: .28rem;
+	margin-right: .32rem;
+}
+.news-box .list li .date .day {
+	font-size: .6rem;
+	line-height: .7rem;
+	text-align: center;
+}
+.news-box .list li a {
+	text-decoration: none;
+}
+.news-box .list li .cont {
+	flex: 1;
+}
+.news-box .list li .cont p:first-child {
+	font-family: Avenir-Heavy;
+	font-size: .24rem;
+	color: rgba(0,0,0,0.85);
+	line-height: .28rem;
+	margin-bottom: .12rem;
+}
+.news-box .list li .cont p {
+	font-family: Avenir-Medium;
+	font-size: .2rem;
+	color: rgba(0,0,0,0.65);
+	line-height: .34rem;
+}
