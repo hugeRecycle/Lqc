@@ -306,18 +306,14 @@ div {box-sizing: border-box}
 	margin-top: .42rem;
 	padding-top: .36rem;
 	border-top: .01rem solid rgba(255, 255, 255, .2);
+	display: flex;
+    justify-content: center;
 }
 .footer-box .filings-box p {
 	line-height: .19rem;
 	font-size: .14rem;
 	color: rgba(255, 255, 255, .65);
-	float: left;
-}
-.footer-box .filings-box p:first-child {
-	margin-right: 2.86rem;
-}
-.footer-box .filings-box p:nth-child(2) {
-	margin-right: 2.34rem;
+	margin-left: .1rem;
 }
 
 /* footer mobile css */
@@ -369,11 +365,13 @@ div {box-sizing: border-box}
 .mobile-class .footer-box .filings-box {
 	margin-top: .24rem;
 	padding-top: .16rem;
+	display: block;
 }
 .mobile-class .footer-box .filings-box p {
 	line-height: .14rem;
 	font-size: .1rem;
 	margin-bottom: .08rem;
+	float: left;
 }
 .mobile-class .footer-box .filings-box p:first-child {
 	margin-right: .77rem;
@@ -381,6 +379,9 @@ div {box-sizing: border-box}
 .mobile-class .footer-box .filings-box p:nth-child(2) {
 	float: right;
 	margin-right: 0;
+}
+.mobile-class .footer-box .filings-box p:nth-last-child(2) {
+	margin-bottom: 0;
 }
 
 /* banner */
