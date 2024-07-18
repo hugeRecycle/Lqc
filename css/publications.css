@@ -1,12 +1,44 @@
-/* publications */
-.main-box {
+.item-box {
     background-color: #fff;
 	padding: 1rem 1.8rem;
 }
-.nav-box {
-    margin-right: .64rem;
+.item-box ul:first-child {
+    width: calc(100% - 3.04rem);
+    margin-left: .64rem;
+    display: flex;
+    flex-direction: column-reverse;
+    box-sizing: border-box;
+    float: right;
 }
-.nav-box li {
+.item-box ul:first-child li {
+    font-family: Avenir-Roman;
+    font-size: .2rem;
+    line-height: .27rem;
+    margin-bottom: .32rem;
+    color: rgba(0, 0, 0, .45);
+    counter-increment: number;
+}
+.item-box ul:first-child li:first-child {
+    margin-bottom: 0;
+}
+.item-box ul:first-child li span {
+    font-family: Avenir-Medium;
+    text-decoration: underline;
+    color: rgba(0, 0, 0, .65);
+}
+.item-box ul:first-child li::before {
+    font-family: Avenir-Black;
+    content: counter(number)".";
+    font-size: .2rem;
+    color: rgba(0, 0, 0, .65);
+    margin-right: .04rem;
+}
+.item-box ul:nth-child(2) {
+    width: 2.4rem;
+    float: left;
+    box-sizing: border-box;
+}
+.item-box ul:nth-child(2) li {
     display: flex;
     align-items: center;
     padding: .16rem 0;
@@ -16,35 +48,43 @@
     border-bottom: .01rem solid rgba(0,0,0,0.15);
     cursor: pointer;
 }
-.nav-box li:last-child {
+.item-box ul:nth-child(2) li:last-child {
     border-color: transparent;
 }
-.nav-box li.active,
-.nav-box li:hover {
+.item-box ul:nth-child(2) li.active,
+.item-box ul:nth-child(2) li:hover {
     color: #2157A8;
 }
-.list-box {
+
+
+/* mobile css */
+.mobile-class .item-box {
+	padding: 0;
+}
+.mobile-class .item-box ul:first-child {
     width: 100%;
+    margin-left: 0;
+    float: none;
+    padding: .32rem 0;
 }
-.list-box ul li {
-    font-family: Avenir-Roman;
-    font-size: .2rem;
-    line-height: .27rem;
-    margin-bottom: .32rem;
-    color: rgba(0, 0, 0, .45);
-    counter-increment: number;
+.mobile-class .item-box ul:first-child li {
+    font-size: .14rem;
+    line-height: .2rem;
+    margin-bottom: .2rem;
+    padding: 0 .2rem;
 }
-.list-box ul li:last-child {
+.mobile-class .item-box ul:first-child li:first-child {
     margin-bottom: 0;
 }
-.list-box ul li span {
-    font-family: Avenir-Medium;
-    text-decoration: underline;
-    color: rgba(0, 0, 0, .65);
+.mobile-class .item-box ul:first-child li::before {
+    font-size: .14rem;
 }
-.list-box ul li::before {
-    font-family: Avenir-Black;
-    content: counter(number)".";
-    font-size: .2rem;
-    color: rgba(0, 0, 0, .65);
+.mobile-class .item-box ul:nth-child(2) {
+    width: 100%;
+    float: none;
+    background-color: #FAFBFC;
+    padding: .16rem .2rem;
+}
+.mobile-class .item-box ul:nth-child(2) li {
+    font-size: .16rem;
 }

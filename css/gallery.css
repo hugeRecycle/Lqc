@@ -1,43 +1,62 @@
-/* gallery */
-.main-box {
-    background-color: #fff;
-	padding: 1rem 1.8rem;
-}
-.list-box {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
 .item-box {
+    background-color: #fff;
+	padding: 1rem 1.8rem .36rem;
+}
+.item-box ul li {
     width: calc(50% - .2rem);
     margin-right: .2rem;
-    margin-bottom: .4rem;
+    margin-bottom: .64rem;
+    float: left;
 }
-.item-box:nth-child(2n) {
+.item-box ul li:nth-child(2n) {
+    float: right;
     margin-left: .2rem;
     margin-right: 0;
 }
-.item-box:nth-last-child(1), .item-box:nth-last-child(2){
-    margin-bottom: 0;
-}
-.item-box img {
-    width: 5.2rem;
+.item-box ul li img {
+    width: 100%;
     display: block;
-    margin-bottom: .32rem;
+    object-fit: cover;
+    object-position: 50% 50%;
 }
-.item-box p {
+.item-box ul li p {
     font-family: Avenir-Roman;
     font-size: .2rem;
     color: rgba(0,0,0,0.45);
     line-height: .28rem;
 }
-.item-box p.title {
+.item-box ul li p span {
+    color: #009DAB;
+}
+.item-box ul li p:nth-child(2) {
     font-family: Avenir-Heavy;
     font-size: .24rem;
     color: rgba(0,0,0,0.85);
+    margin-top: .32rem;
     margin-bottom: .12rem;
 }
-.item-box p.title span {
-    color: #009DAB;
+
+
+/* mobile css */
+.mobile-class .item-box {
+    background-color: #fff;
+	padding: .36rem .2rem .08rem;
+}
+.mobile-class .item-box ul li {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: .52rem;
+    float: none;
+}
+.mobile-class .item-box ul li:nth-child(2n) {
+    float: none;
+    margin-left: 0;
+}
+.mobile-class .item-box ul li p {
+    font-size: .14rem;
+    line-height: .22rem;
+}
+.mobile-class .item-box ul li p:nth-child(2) {
+    font-size: .16rem;
+    margin-top: .2rem;
 }

@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1" id="wixDesktopViewport" />
-		<title>People</title>
+		<title>Gallery</title>
 		<link rel="shortcut icon" href="./favicon.ico">
         <link rel="stylesheet" type="text/css" href="./css/common.css" />
 		<link rel="stylesheet" type="text/css" href="./css/gallery.css" />
@@ -11,16 +11,18 @@
 	</head>
 	<body>
 		<header class="header-box flex">
-			<div class="logo-box flex">
+			<div class="logo-box">
                 <a href="https://www.westlake.edu.cn/">
-                    <img class="logo" src="./img/icon_headerLogo.png" title="西湖大学" width="100%" />
+                    <img src="./img/icon_headerLogo_l.png" title="西湖大学" />
                 </a>
-                <img class="logo" src="./img/icon_headerLogo.png" width="100%" />
+				<a href="https://www.westlake.edu.cn/">
+                    <img class="logo" src="./img/icon_headerLogo_r.png" title="西湖大学" />
+                </a>
             </div>
-			<div class="rightEvent-box flex">
+			<div class="r-box">
 				<nav class="menu-box">
-					<ul class="flex">
-                        <li><a href="index.html">Home</a></li>
+					<ul>
+						<li><a href="index.html">Home</a></li>
 						<li><a href="research.html">Research</a></li>
 						<li class="team active"><a href="javascript:;">Team <img src="./img/icon_arrowDown.png" alt=""></a>
 							<ul class="teamList">
@@ -33,86 +35,120 @@
 						<li><a href="joinus.html">Join us</a></li>
 					</ul>
 				</nav>
+				<div class="icon-menu-box" onclick="handleMenuClick()">
+					<img src="./img/icon_menu.png" alt="">
+				</div>
 				<div class="language-box">
-					<img class="icon" src="./img/icon_language.png" alt="">
+					<img src="./img/icon_language.png" alt="">
 					<span>CN</span>
 				</div>
 			</div>
 		</header>
+		<nav id="mobile-menu-box" class="menu-hidden">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="research.html">Research</a></li>
+				<li class="team team-active"><a href="javascript:;" onclick="handleChildMenuClick()">Team <img src="./img/icon_arrowDown_active.png" alt=""></a>
+					<ul id="childMenu">
+						<li><a href="people.html">People</a></li>
+						<li class="active"><a href="gallery.html">Gallery</a></li>
+					</ul>
+				</li>
+				<li><a href="publications.html">Publications</a></li>
+				<li><a href="facilities.html">Facilities</a></li>
+				<li><a href="joinus.html">Join us</a></li>
+			</ul>
+		</nav>
 		<section class="banner-box">
 			<img src="./images/gallery/banner.png" alt="">
+			<div class="content">
+				<p>Gallery.</p>
+			</div>
 		</section>
 		<main class="main-box">
-			<div class="list-box">
-                <div class="item-box">
-                    <img src="./images/gallery/img_img1.png" alt="">
-                    <p class="title"><span>Jan. 2024.</span> Celebration of the New Year at  Kanpai BBQ & Shabu</p>
-                    <p>From left to right: Ziyi Wang, Weike Quan, Kangkai Liang, Yujing Sun, Zhiyuan Yin, Hao Zhou, Shaowei Li, Evan Huang, Liya Bi, Zihao Wang, Yueqing Shi</p>
-                </div>
-                <div class="item-box">
-                    <img src="./images/gallery/img_img1.png" alt="">
-                    <p class="title"><span>Jan. 2024.</span> Celebration of the New Year at  Kanpai BBQ & Shabu</p>
-                    <p>From left to right: Ziyi Wang, Weike Quan, Kangkai Liang, Yujing Sun, Zhiyuan Yin, Hao Zhou, Shaowei Li, Evan Huang, Liya Bi, Zihao Wang, Yueqing Shi</p>
-                </div>
-                <div class="item-box">
-                    <img src="./images/gallery/img_img1.png" alt="">
-                    <p class="title"><span>Jan. 2024.</span> Celebration of the New Year at  Kanpai BBQ & Shabu</p>
-                    <p>From left to right: Ziyi Wang, Weike Quan, Kangkai Liang, Yujing Sun, Zhiyuan Yin, Hao Zhou, Shaowei Li, Evan Huang, Liya Bi, Zihao Wang, Yueqing Shi</p>
-                </div>
-                <div class="item-box">
-                    <img src="./images/gallery/img_img1.png" alt="">
-                    <p class="title"><span>Jan. 2024.</span> Celebration of the New Year at  Kanpai BBQ & Shabu</p>
-                    <p>From left to right: Ziyi Wang, Weike Quan, Kangkai Liang, Yujing Sun, Zhiyuan Yin, Hao Zhou, Shaowei Li, Evan Huang, Liya Bi, Zihao Wang, Yueqing Shi</p>
-                </div>
-                <div class="item-box">
-                    <img src="./images/gallery/img_img1.png" alt="">
-                    <p class="title"><span>Jan. 2024.</span> Celebration of the New Year at  Kanpai BBQ & Shabu</p>
-                    <p>From left to right: Ziyi Wang, Weike Quan, Kangkai Liang, Yujing Sun, Zhiyuan Yin, Hao Zhou, Shaowei Li, Evan Huang, Liya Bi, Zihao Wang, Yueqing Shi</p>
-                </div>
-            </div>
+			<div class="item-box">
+				<ul>
+					<li>
+						<img src="./images/gallery/img_img1.png" alt="">
+						<p><span>Jan. 2024.</span> Celebration of the New Year at  Kanpai BBQ & Shabu</p>
+						<p>From left to right: Ziyi Wang, Weike Quan, Kangkai Liang, Yujing Sun, Zhiyuan Yin, Hao Zhou, Shaowei Li, Evan Huang, Liya Bi, Zihao Wang, Yueqing Shi</p>
+					</li>
+					<li>
+						<img src="./images/gallery/img_img1.png" alt="">
+						<p><span>Jan. 2024.</span> Celebration of the New Year at  Kanpai BBQ & Shabu</p>
+						<p>From left to right: Ziyi Wang, Weike Quan, Kangkai Liang, Yujing Sun, Zhiyuan Yin, Hao Zhou, Shaowei Li, Evan Huang, Liya Bi, Zihao Wang, Yueqing Shi</p>
+					</li>
+					<li>
+						<img src="./images/gallery/img_img1.png" alt="">
+						<p><span>Jan. 2024.</span> Celebration of the New Year at  Kanpai BBQ & Shabu</p>
+						<p>From left to right: Ziyi Wang, Weike Quan, Kangkai Liang, Yujing Sun, Zhiyuan Yin, Hao Zhou, Shaowei Li, Evan Huang, Liya Bi, Zihao Wang, Yueqing Shi</p>
+					</li>
+					<li>
+						<img src="./images/gallery/img_img1.png" alt="">
+						<p><span>Jan. 2024.</span> Celebration of the New Year at  Kanpai BBQ & Shabu</p>
+						<p>From left to right: Ziyi Wang, Weike Quan, Kangkai Liang, Yujing Sun, Zhiyuan Yin, Hao Zhou, Shaowei Li, Evan Huang, Liya Bi, Zihao Wang, Yueqing Shi</p>
+					</li>
+					<div class="clean"></div>
+				</ul>
+			</div>
 		</main>
 		<footer class="footer-box">
-			<div class="basicInfo-box flex col-top">
-				<div class="logo-box flex">
-					<img class="icon_logo_l" src="./img/icon_footerLogo.png" alt="">
-					<img class="icon_logo_r" src="./img/icon_footerLogo.png" alt="">
-				</div>
-				<div class="r-box">
-					<div class="label">Contact us</div>
-					<div class="flex col-top">
-						<div class="contactInfo">
-							<div>+1980 971-24-19</div>
-							<div>liqiucheng@westlake.edu.cn</div>
-						</div>
-						<div class="address">
-							<p>E3-311 No.600 Dunyu</p>
-							<p>Road, Hangzhou 310030,</p>
-							<p>Zhejiang Province, China</p>
-						</div>
-					</div>
-				</div>
+			<div class="logo-box">
+				<img src="./img/icon_footerLogo_l.png" alt="">
+				<img src="./img/icon_footerLogo_r.png" alt="">
 			</div>
-			<div class="filings-box flex">
-				<div class="flex">
-					<span>浙ICP备18025489号</span>
-					<span>浙公安备33010602007514号</span>
-					<span>Copyright © Westlake University. All Rights Reserved</span>
-				</div>
-				<a href="joinus.html">Join us</a>
+			<div class="contactus-box">
+				<h6>Contact us</h6>
+				<p>+1980 971-24-19</p>
+				<p>liqiucheng@westlake.edu.cn</p>
+				<p>E3-311 No.600 Dunyu Road, Hangzhou 310030, Zhejiang Province, China</p>
+				<a href="./joinus.html">Join us</a>
+			</div>
+			<div class="clean"></div>
+			<div class="filings-box">
+				<p>浙ICP备18025489号</p>
+				<p>浙公安备33010602007514号</p>
+				<p>Copyright © Westlake University. All Rights Reserved</p>
+				<div class="clean"></div>
 			</div>
 		</footer>
 		<script>
 			$(function(){
-			   function setRem() {
-			     var html = document.documentElement;
-			     var width = html.clientWidth;
-			     html.style.fontSize = width / 14.4 + 'px'; // 设计稿宽度为1440px，那么1rem=100px，故除以14.4
-			   }
-			   setRem();
-			   window.onresize = function() {
-			     setRem();
-			   };
+				const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+				if (isMobile) {
+					console.log('当前在手机端');
+					document.body.classList.add('mobile-class');
+					setRem(3.75);
+				} else {
+					console.log('当前在PC端');
+					document.body.classList.add('pc-class');
+					setRem(14.4);
+					window.onresize = function() {
+			     		setRem(14.4);
+			   		};
+				}
+				function setRem(designSize) {
+					let html = document.documentElement;
+					let width = html.clientWidth;
+			     	html.style.fontSize = width / designSize + 'px'; // 设计稿宽度为1440px，那么1rem=100px，故除以14.4
+				}
 			});
+			function handleMenuClick() {
+				var content = document.getElementById('mobile-menu-box');
+				if (content.classList.contains('menu-hidden')) {
+					content.classList.remove('menu-hidden');
+				} else {
+					content.classList.add('menu-hidden');
+				}
+			}
+			function handleChildMenuClick() {
+				var content = document.getElementById('childMenu');
+				if (content.classList.contains('menu-hidden')) {
+					content.classList.remove('menu-hidden');
+				} else {
+					content.classList.add('menu-hidden');
+				}
+			}
 		</script>
 	</body>
 </html>
