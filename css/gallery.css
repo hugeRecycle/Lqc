@@ -67,41 +67,105 @@ font-weight: 400;
 
 /* mobile css */
 .mobile-class .swiper-box {
-    padding: 36px 20px 26px;
-    max-width: 375px;
+	padding: 40px 20px 32px;
+	max-width: none;
+	width: 100%;
+	box-sizing: border-box;
+}
+.mobile-class .swiper-box .swiper-container {
+	position: relative;
 }
 .mobile-class .swiper-box .swiper-container img {
-    width: 100%;
+	width: 100%;
+	height: 240px;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 8px;
 }
 .mobile-class .swiper-box .label-box {
-    font-size: 20px;
-    line-height: 27px;
-    margin-top: 20px;
+	font-family: Avenir-Black;
+	font-size: 24px;
+	line-height: 32px;
+	color: #0C3375;
+	margin-top: 24px;
+	text-align: center;
+	font-weight: 600;
 }
 .mobile-class .list-box {
-    background-color: #fff;
-	padding: 36px 20px 8px;
-    max-width: 375px;
+	background-color: #fff;
+	padding: 40px 20px;
+	max-width: none;
+	width: 100%;
+	display: block;
+	box-sizing: border-box;
 }
 .mobile-class .list-box .item-box {
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 52px;
-    float: none;
+	width: 100%;
+	margin-right: 0;
+	margin-bottom: 40px;
+	float: none;
+}
+.mobile-class .list-box .item-box:last-child {
+	margin-bottom: 0;
 }
 .mobile-class .list-box .item-box:nth-child(2n) {
-    float: none;
-    margin-left: 0;
+	float: none;
+	margin-left: 0;
 }
 .mobile-class .list-box .item-box img {
-    width: 100%;
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 8px;
 }
 .mobile-class .list-box .item-box h5 {
-    font-size: 16px;
-    margin-top: 20px;
-    line-height: 22px;
+	font-family: Avenir-Heavy;
+	font-size: 18px;
+	color: rgba(0,0,0,0.85);
+	line-height: 24px;
+	margin-top: 16px;
+	font-weight: 500;
+}
+.mobile-class .list-box .item-box h5 span {
+	color: #009DAB;
 }
 .mobile-class .list-box .item-box p {
-    font-size: 14px;
-    line-height: 22px;
+	font-family: Avenir-Roman;
+	font-size: 14px;
+	color: rgba(0,0,0,0.65);
+	line-height: 22px;
+	margin-top: 8px;
+	font-weight: 400;
+}
+
+/* Swiper 移动端优化 */
+.mobile-class .swiper-button-next,
+.mobile-class .swiper-button-prev {
+	width: 32px;
+	height: 32px;
+	margin-top: -16px;
+	background-size: 16px 16px;
+}
+.mobile-class .swiper-button-next {
+	right: 10px;
+}
+.mobile-class .swiper-button-prev {
+	left: 10px;
+}
+.mobile-class .swiper-pagination {
+	bottom: 10px;
+}
+.mobile-class .swiper-pagination-bullet {
+	width: 8px;
+	height: 8px;
+	margin: 0 4px;
+}
+
+/* 移动端通用优化 */
+.mobile-class * {
+	box-sizing: border-box;
+}
+.mobile-class .clean {
+	clear: both;
 }

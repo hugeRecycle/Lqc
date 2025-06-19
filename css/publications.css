@@ -79,35 +79,76 @@ font-weight: 400;
 /* mobile css */
 .mobile-class .item-box {
 	padding: 0;
-    max-width: 375px;
+	max-width: none;
+	width: 100%;
 }
 .mobile-class .item-box .list-box {
-    width: 100%;
-    margin-left: 0;
-    float: none;
-    padding: 32px 0;
+	width: 100%;
+	margin-left: 0;
+	float: none;
+	padding: 40px 20px;
 }
 .mobile-class .item-box .list-box li {
-    font-size: 14px;
-    line-height: 20px;
-    margin-bottom: 20px;
-    padding: 0 20px;
+	font-family: Avenir-Roman;
+	font-size: 14px;
+	line-height: 22px;
+	margin-bottom: 24px;
+	padding: 0;
+	color: rgba(0, 0, 0, .45);
+	font-weight: 400;
+}
+.mobile-class .item-box .list-box li:first-child {
+	margin-bottom: 0;
 }
 .mobile-class .item-box .list-box li::before {
-    font-size: 14px;
+	font-family: Avenir-Black;
+	font-size: 14px;
+	color: rgba(0, 0, 0, .65);
+	margin-right: 6px;
+	font-weight: 900;
+}
+.mobile-class .item-box .list-box li a, 
+.mobile-class .item-box .list-box li span {
+	font-family: Avenir-Medium;
+	color: rgba(0, 0, 0, .65);
+	font-weight: 400;
 }
 .mobile-class .item-box .label-box {
-    width: 100%;
-    float: none;
-    background-color: #FAFBFC;
-    padding: 16px 20px;
+	width: 100%;
+	float: none;
+	background-color: #FAFBFC;
+	padding: 20px;
+	box-sizing: border-box;
 }
 .mobile-class .item-box .label-box li {
-    font-size: 16px;
+	font-family: Avenir-Heavy;
+	font-size: 16px;
+	line-height: 22px;
+	color: rgba(0,0,0,0.65);
+	padding: 16px 0;
+	border-bottom: 1px solid rgba(0,0,0,0.15);
+	cursor: pointer;
+	transition: color 0.3s ease;
+	font-weight: 500;
+}
+.mobile-class .item-box .label-box li:last-child {
+	border-color: transparent;
+}
+.mobile-class .item-box .label-box li.active,
+.mobile-class .item-box .label-box li:hover {
+	color: #2157A8;
 }
 .mobile-class .item-box .tips {
-    font-size: 14px;
-    line-height: 20px;
-    margin-top: 28px;
-padding: 0 20px;
+	font-family: Avenir-Roman;
+	font-size: 14px;
+	line-height: 22px;
+	margin-top: 32px;
+	padding: 0 20px;
+	color: rgba(0, 0, 0, .45);
+	font-weight: 400;
+}
+
+/* 移动端通用优化 */
+.mobile-class * {
+	box-sizing: border-box;
 }

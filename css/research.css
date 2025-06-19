@@ -111,86 +111,125 @@ font-weight: 500;
 
 /* mobile css */
 .mobile-class .item-box {
-	padding: 32px 20px;
-    max-width: 375px;
+	padding: 40px 20px;
+	max-width: none;
+	width: 100%;
+	box-sizing: border-box;
 }
 .mobile-class .item-box h5 {
-	font-size: 20px;
-	line-height: 27px;
+	font-family: Avenir-Black;
+	font-size: 24px;
+	line-height: 32px;
+	color: #0C3375;
+	margin-bottom: 20px;
+	text-align: center;
+	font-weight: 600;
 }
 .mobile-class .item-box h5 span {
-    position: relative;
+	position: relative;
 }
 .mobile-class .item-box h5 span::after {
-    content: "";
-    display: block;
-    width: 103%;
-    height: 10px;
-    position: absolute;
-    bottom: 0;
-    background: rgba(12,51,117,0.2)
+	content: "";
+	display: block;
+	width: 103%;
+	height: 12px;
+	position: absolute;
+	bottom: 2px;
+	background: rgba(12,51,117,0.2);
 }
 .mobile-class .item-box p {
 	font-family: Avenir-Medium;
 	font-size: 14px;
 	color: rgba(0,0,0,0.65);
 	line-height: 22px;
-    margin-top: 12px;
+	margin-top: 16px;
+	font-weight: 400;
 }
 .mobile-class .item-box img {
-    width: 100%;
-    display: block;
-    float: left;
-    object-fit: cover;
-    object-position: 50% 50%;
+	width: 100%;
+	display: block;
+	float: none;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 8px;
+	margin-top: 20px;
 }
 .mobile-class .first-item-box h5 {
-    text-align: center;
-    width: 100%;
+	text-align: center;
+	width: 100%;
+	margin-bottom: 24px;
 }
 .mobile-class .first-item-box img {
-    margin-top: 20px;
+	margin-top: 24px;
+}
+.mobile-class .first-item-box p {
+	margin-top: 20px;
+	font-size: 15px;
+	line-height: 24px;
+}
+.mobile-class .first-item-box p span {
+	color: rgba(0,0,0,0.85);
+	font-family: Avenir-Heavy;
+	text-decoration: underline;
+	font-weight: 500;
 }
 .mobile-class .material-box div {
-    margin-top: 32px;
-    line-height: 22px;
+	margin-top: 40px;
+	line-height: 22px;
 }
 .mobile-class .material-box div:nth-child(2) {
-    margin-top: 32px;
+	margin-top: 40px;
 }
 .mobile-class .material-box div img {
-    width: 100%;
-    float: none;
+	width: 100%;
+	float: none;
+	margin-bottom: 16px;
 }
 .mobile-class .material-box div h6 {
-    margin-top: 24px;
-    width: 100%;
-    margin-left: 0;
-    font-size: 16px;
-    float: none;
+	margin-top: 0;
+	width: 100%;
+	margin-left: 0;
+	font-family: Avenir-Heavy;
+	font-size: 18px;
+	line-height: 24px;
+	color: rgba(0,0,0,0.85);
+	float: none;
+	font-weight: 500;
+	margin-bottom: 8px;
 }
 .mobile-class .material-box div p {
-    width: 100%;
-    margin-left: 0;
-    font-size: 14px;
-    margin-top: 4px;
-    float: none;
+	width: 100%;
+	margin-left: 0;
+	font-size: 14px;
+	margin-top: 0;
+	float: none;
 }
 .mobile-class .item-box .title-box,
 .mobile-class .characterizations-box h5 {
-    width: 100%;
-    float: none;
+	width: 100%;
+	float: none;
+	margin-bottom: 20px;
 }
 .mobile-class .engineering-box img, 
 .mobile-class .characterizations-box img {
-    width: 280px;
-    margin: 32px auto 0;
-    float: none;
+	width: 100%;
+	max-width: 320px;
+	margin: 24px auto 0;
+	float: none;
+	display: block;
 }
 .mobile-class .engineering-box p,
 .mobile-class .characterizations-box p {
-    margin: 0;
-    margin-top: 24px;
-    width: 100%;
-    float: none;
+	margin: 0;
+	margin-top: 20px;
+	width: 100%;
+	float: none;
+}
+
+/* 移动端通用优化 */
+.mobile-class * {
+	box-sizing: border-box;
+}
+.mobile-class .clean {
+	clear: both;
 }

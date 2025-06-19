@@ -107,111 +107,152 @@ font-weight: 400;
 
 /* mobile css */
 .mobile-class .main-box {
-    padding: 32px 20px 36px;
-    max-width: 375px;
+	padding: 40px 20px;
+	max-width: none;
+	width: 100%;
+	box-sizing: border-box;
 }
 .mobile-class .list-box {
-	padding: 32px 0 36px;
-    max-width: 375px;
+	padding: 40px 0;
+	max-width: none;
+	width: 100%;
 }
 .mobile-class .list-box:first-child {
-    padding-top: 0;
+	padding-top: 0;
 }
 .mobile-class .list-box h4 {
-	font-size: 20px;
-	line-height: 27px;
+	font-family: Avenir-Black;
+	font-size: 24px;
+	line-height: 32px;
+	color: #0C3375;
+	margin-bottom: 24px;
+	font-weight: 600;
 }
 .mobile-class .list-box:first-child h4 {
-    text-align: center;
+	text-align: center;
 }
 .mobile-class .list-box .item-box:last-child {
-    padding: 32px 0 24px;
+	padding: 32px 0 0;
 }
 .mobile-class .list-box .item-box {
-    margin-top: 0;
-    padding: 26px 0 20px;
-    border-bottom: 1px dashed rgba(0, 0, 0, .15);
+	margin-top: 0;
+	padding: 32px 0 24px;
+	border-bottom: 1px solid rgba(0, 0, 0, .1);
 } 
 .mobile-class .list-box .item-box:last-child {
-    border-color: transparent;
-    padding-bottom: 0;
+	border-color: transparent;
+	padding-bottom: 0;
 }
 .mobile-class .list-box .item-box:first-child {
-    margin-top: 20px;
-    padding-top: 0;
+	margin-top: 20px;
+	padding-top: 0;
 }
 .mobile-class .list-box .item-box img {
-    width: 220px;
-    display: block;
-    float: none;
-    object-fit: cover;
-    object-position: 50% 50%;
+	width: 200px;
+	height: 200px;
+	display: block;
+	float: none;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 8px;
+	margin: 0 auto 16px;
 }
 .mobile-class .list-box .item-box h5 {
-    width: 100%;
-    margin-left: 0;
-    margin-top: 14px;
-    font-size: 18px;
-    line-height: 25px;
-    float: none;
+	width: 100%;
+	margin-left: 0;
+	margin-top: 0;
+	font-family: Avenir-Heavy;
+	font-size: 18px;
+	line-height: 24px;
+	color: rgba(0,0,0,0.85);
+	float: none;
+	font-weight: 500;
+	text-align: center;
+	margin-bottom: 8px;
 }
 .mobile-class .list-box:first-child .item-box:nth-of-type(1) h5 {
+	font-size: 20px;
+	line-height: 26px;
 	text-align: center;
 }
 .mobile-class .list-box .item-box h6 {
-    margin-top: 4px;
-    line-height: 22px;
-    font-size: 16px;
-    margin-left: 0;
-    width: 100%;
-    float: none;
+	margin-top: 0;
+	line-height: 22px;
+	font-size: 16px;
+	color: #009DAB;
+	margin-left: 0;
+	width: 100%;
+	float: none;
+	font-family: Avenir-Roman;
+	font-weight: 400;
+	text-align: center;
+	margin-bottom: 12px;
 }
 .mobile-class .list-box:first-child .item-box:nth-of-type(1) h6 {
-    line-height: 22px;
-    text-align: center;
+	line-height: 22px;
+	text-align: center;
 }
 .mobile-class .list-box .item-box p {
-    width: 100%;
-    margin-left: 0;
-    font-size: 14px;
-    line-height: 21px;
-    margin-top: 10px;
-    float: none;
+	width: 100%;
+	margin-left: 0;
+	font-family: Avenir-Roman;
+	font-size: 14px;
+	color: rgba(0,0,0,0.65);
+	line-height: 22px;
+	margin-top: 0;
+	float: none;
+	font-weight: 400;
+	text-align: center;
+	margin-bottom: 8px;
 }
 .mobile-class .list-box:first-child .item-box:nth-of-type(1) p {
-    margin-top: 12px;
-    line-height: 21px;
+	margin-top: 0;
+	line-height: 22px;
 }
 .mobile-class .list-box .item-box p:nth-last-child(2) {
-    font-size: 14px;
-    line-height: 22px;
-    margin-top: 6px;
+	font-size: 14px;
+	line-height: 22px;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 .mobile-class .list-box .item-box p img,
 .mobile-class .mail {
-    width: 20px !important;
-    display: block;
-    margin-right: 6px !important;
-    float: left !important;
+	width: 16px !important;
+	height: 16px !important;
+	display: inline-block !important;
+	margin-right: 6px !important;
+	float: none !important;
+	vertical-align: middle;
 }
 .mobile-class .list-box:first-child .item-box:nth-of-type(1) img {
-    width: 240px;
-    margin: 0 auto;
-    float: none;
+	width: 240px;
+	height: 240px;
+	margin: 0 auto 20px;
+	float: none;
 }
 .mobile-class .list-box:first-child .item-box:nth-of-type(1) h5,
 .mobile-class .list-box:first-child .item-box:nth-of-type(1) h6,
 .mobile-class .list-box:first-child .item-box:nth-of-type(1) p {
-    width: 100%;
+	width: 100%;
 }
 .mobile-class .list-box:first-child .item-box:first-child h5 {
-    margin-top: 20px;
-    text-align: center;
+	margin-top: 0;
+	font-size: 22px;
+	line-height: 28px;
+	text-align: center;
 }
 .mobile-class .list-box:first-child .item-box:first-child p {
-    line-height: 21px;
+	line-height: 22px;
 }
 .mobile-class .list-box:first-child .item-box:first-child p:nth-last-child(2) {
-    margin-top: 8px;
-    line-height: 22px;
+	margin-top: 0;
+	line-height: 22px;
+}
+
+/* 移动端通用优化 */
+.mobile-class * {
+	box-sizing: border-box;
+}
+.mobile-class .clean {
+	clear: both;
 }
