@@ -1,0 +1,452 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" id="wixDesktopViewport"/>
+    <title>Join us-Li Research Group</title>
+    <META Name="keywords" Content="Li Research Group"/>
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="css/joinus.css"/>
+    <script src="js/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+<header class="header-box">
+    <div class="logo-box"><a href="Joinus.htm">
+        <img src="img/icon_headerLogo_l.png" title="">
+    </a>
+        <a href="Joinus.htm">
+            <img class="laboratoryLogo" src="img/icon_headerLogo_r.png" title="">
+        </a>
+        <a href="Joinus.htm">
+            <img class="laboratoryLogo-mobile" src="img/icon_headerLogo_r_mobile.png" title="">
+        </a>
+    </div>
+    <div class="r-box">
+        <nav class="menu-box">
+            <ul id="pc-menu1">
+                <li>
+                    <a href="index.htm">Home </a>
+                </li>
+                <li>
+                    <a href="Research.htm">Research </a>
+                </li>
+                <li>
+                    <a href="javascript:;">Team <img src="img/icon_arrowDown.png" alt=""></a>
+                    <ul class="teamList">
+                        <li><a href="Team/People.htm">People</a></li>
+                        <li><a href="Team/Gallery.htm">Gallery</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="Publications.htm">Publications </a>
+                </li>
+                <li>
+                    <a href="Facilities.htm">Facilities </a>
+                </li>
+                <li class="active">
+                    <a href="Joinus.htm">Join us </a>
+                </li>
+            </ul>
+            <ul id="pc-menu2">
+                <li>
+                    <a href="zh/index.htm">首页 </a>
+                </li>
+                <li>
+                    <a href="zh/Research.htm">研究内容 </a>
+                </li>
+                <li>
+                    <a href="javascript:;">团队成员 <img src="img/icon_arrowDown.png" alt=""></a>
+                    <ul class="teamList">
+                        <li><a href="zh/Team/People.htm">成员信息</a></li>
+                        <li><a href="zh/Team/Gallery.htm">团队画廊</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="zh/Publications.htm">学术成果 </a>
+                </li>
+                <li>
+                    <a href="zh/Facilities.htm">实验仪器 </a>
+                </li>
+                <li>
+                    <a href="zh/Joinus.htm">团队招聘 </a>
+                </li>
+            </ul>
+            <script type="text/javascript">
+                var isZh = location.href.includes("zh");
+                if (isZh) {
+                    document.getElementById('pc-menu1').remove();
+                } else {
+                    document.getElementById('pc-menu2').remove();
+                }
+            </script>
+        </nav>
+        <div class="icon-menu-box" onclick="handleMenuClick()"><img src="img/icon_menu.png" alt=""></div>
+        <div class="language-box" id="languageBtn">
+            <img src="img/icon_language.png" alt="">
+            <span>CN</span>
+        </div>
+    </div>
+</header>
+<nav id="mobile-menu-box" class="menu-hidden">
+    <ul id="mobile-menu1">
+        <li>
+            <a href="index.htm">Home </a>
+        </li>
+        <li>
+            <a href="Research.htm">Research </a>
+        </li>
+        <li>
+            <a onclick="handleChildMenuClick()" href="javascript:;">Team <img src="img/icon_arrowDown.png" alt=""></a>
+            <ul id="childMenu" class="menu-hidden">
+                <li><a href="Team/People.htm">People</a></li>
+                <li><a href="Team/Gallery.htm">Gallery</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="Publications.htm">Publications </a>
+        </li>
+        <li>
+            <a href="Facilities.htm">Facilities </a>
+        </li>
+        <li class="active ">
+            <a href="Joinus.htm">Join us </a>
+        </li>
+    </ul>
+    <ul id="mobile-menu2">
+        <li>
+            <a href="zh/index.htm">首页 </a>
+        </li>
+        <li>
+            <a href="zh/Research.htm">研究内容 </a>
+        </li>
+        <li>
+            <a onclick="handleChildMenuClick()" href="javascript:;">团队成员 <img src="img/icon_arrowDown.png" alt=""></a>
+            <ul id="childMenu" class="menu-hidden">
+                <li><a href="zh/Team/People.htm">成员信息</a></li>
+                <li><a href="zh/Team/Gallery.htm">团队画廊</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="zh/Publications.htm">学术成果 </a>
+        </li>
+        <li>
+            <a href="zh/Facilities.htm">实验仪器 </a>
+        </li>
+        <li>
+            <a href="zh/Joinus.htm">团队招聘 </a>
+        </li>
+    </ul>
+    <script type="text/javascript">
+        var isZh = location.href.includes("zh");
+        if (isZh) {
+            document.getElementById('mobile-menu1').remove();
+        } else {
+            document.getElementById('mobile-menu2').remove();
+        }
+    </script>
+</nav>
+<section class="banner-box">
+
+    <img src="images/Joinus/banner.png" alt="">
+
+
+    <div>
+        <p> Join us </p>
+    </div>
+</section>
+<main class="main-box">
+    <div class="item-box">
+        <h4>实验室简介</h4>
+        <p>西湖大学李秋珵实验室<strong><span style="color: rgb(247, 150, 70);">致力于二维材料的精准合成与物性调控研究</span></strong>，发展新型二维材料及其异质结构的控制生长方法，探索二维材料表面功能化和缺陷工程等物性调控方法，并利用超高真空扫描隧道显微技术研究材料的构效关系。课题组负责人李秋珵博士是西湖大学工学院特聘研究员（独立PI,博士生导师），国家自然科学优秀青年基金（海外）获得者，2012年于山东大学化学与化工学院获得学士学位，2017年获得北京大学物理化学博士学位，师从中国科学院院士刘忠范教授。随后在美国西北大学材料科学与工程学院进行博士后研究，合作导师为美国工程院院士Mark
+            C. Hersam教授。相关研究成果发表在Science, Nature Materials, Nature Chemistry, Science Advances, Advanced Materials, ACS
+            Nano等国际高影响力期刊上，其中多篇被列为ESI高被引文章。</p>
+        <h4>招聘需求</h4>
+        <p>实验室经费充足，空间宽裕，现诚聘<strong><span style="color: rgb(247, 150, 70);">博士后研究员2-3名；助理研究员1名</span></strong><span
+                style="color: rgb(247, 150, 70);"><span style="color: rgb(0, 0, 0);">。</span></span></p>
+        <h4>研究方向和科研技能</h4>
+        <p>方向1：熟悉二维材料的合成技术，包括化学气相沉积（CVD）和/或分子束外延（MBE）；具备二维异质结构可控构筑相关研究经验。</p>
+        <p>方向2：具有多年超高真空扫描隧道显微镜（UHV-STM）表征经验。<strong><span
+                style="color: rgb(247, 150, 70);">对于相关研究经验突出者，可直接聘任为助理研究员</span></strong>。</p>
+        <p>方向3：熟悉微纳加工操作，具有二维材料器件的制备与输运特性测量相关研究经验。</p>
+        <p><strong><span style="color: rgb(0, 112, 192);">（若有意向申请，但不确定方向是否吻合，可直接邮件联系PI，由PI评估即可，欢迎投递）</span></strong></p>
+        <h4>实验室硬件设施与学术环境</h4>
+        <p>①实验室拥有 <strong><span style="color: rgb(247, 150, 70);">200 平方米的独立实验空间</span></strong>，配备超高真空低温扫描隧道显微镜（Omicron
+            Polar XT SPM），常规运行于液氦温度，且西湖大学具备液氦回收系统。此外，实验室配套完善的二维材料研发平台，包括多台 CVD/CVT 生长系统、显微气相沉积系统，以及二维晶体转移平台等先进设备。</p>
+        <p>②西湖大学的公共实验平台提供超高真空互联系统（STM-ARPES-MBE-XPS），可实现二维量子材料在微观结构、能带结构及元素分析上的全方位表征。</p>
+        <p>③实验室能提供让所有成员安心科研的生活与学术环境，科研氛围平等开放，PI与成员共同制定研究课题把握进展，实验室内团队氛围积极融洽。</p>
+        <p>④实验室配置专职行政助理，可处理报销、采购等日常事务，<strong><span style="color: rgb(247, 150, 70);">所有成员无需承担与科研无关的事务</span></strong>。
+        </p>
+        <p>⑤PI会毫无保留地传授知识、倾囊相助，<strong><span style="color: rgb(247, 150, 70);">全力支持每位成员制定前瞻性、创新性的研究课题，并有信心确保博士后站内发表至少1-2篇高水平文章</span></strong>。
+        </p>
+        <h4>任职条件</h4>
+        <p>①与PI积极合作，具有饱满的科研热情、严谨的学术态度；</p>
+        <p>②年龄不超过35周岁；已取得或即将取得国内外知名高校及科研院所的物理、化学、材料、纳米科技等博士学位，保证在站期间全职从事博士后研究。</p>
+        <p>③具备独立开展科研的能力，具备一定的科研项目申请书撰写能力和经验；</p>
+        <p>④良好的英文阅读和写作能力，在本领域主流国内国际学术刊物上发表过高水平研究论文；</p>
+        <p>⑤身心健康，品行端正，富有责任感，对创新研究有强烈的兴趣和追求，具有良好的团队协作能力和沟通交流能力。</p>
+        <h4>薪酬待遇与资助政策</h4>
+        <p>①<strong><span style="color: rgb(247, 150, 70);">我们会为您提供极具竞争力的薪资待遇，具体面议</span></strong>。</p>
+        <p>②博士后聘期两年，可享受住房补贴，也可选择入住校内博士后公寓，或可租住周边优质公寓，租金约1-3K/月；</p>
+        <p>③学校可协助办理落户，办理子女入学入托；除五险一金外，可享受学校补充医保+定期免费体检以及其他社会保险等福利待遇。</p>
+        <p>④在满足一定条件下，可协助认定<strong><span style="color: rgb(247, 150, 70);">杭州市D类人才</span></strong>（可享受杭州市最高100万元的购房补贴、2500元的租房补贴、优先购房摇号资格等）。
+        </p>
+        <p>⑤<strong><span
+                style="color: rgb(247, 150, 70);">应届博士毕业生可享受杭州市毕业生生活补贴10万元/人</span></strong>；博士后在站期间可享受<strong><span
+                style="color: rgb(247, 150, 70);">杭州市博士后生活补贴（24万元/两年）</span></strong>，于开题后一次性发放到本人账户；可享受<strong><span
+                style="color: rgb(247, 150, 70);">杭州市科研资助（10万元/人）</span></strong>，立项后即可使用。</p>
+        <p>⑥博士后出站留杭工作者（包括博后出站后，根据双方意愿，转聘为研究员系列岗位），杭州市将给予每人40万元补助。</p>
+        <p>
+            ⑦实验室将全力支持博士后申报国家及浙江省各类基金项目，如中国博士后科学基金特别资助（18万元/人）、面上项目（指给予博士后研究人员在站期间从事自主创新研究的科研启动或补充经费8万元/人）、浙江省博士后择优项目资助（5-15万元/人）。</p>
+        <p>⑧<strong><span
+                style="color: rgb(247, 150, 70);">对于获得中国博士后科学基金资助和浙江省博士后择优项目资助的博士后，杭州市给予1:1配套资助</span></strong><span
+                style="color: rgb(0, 0, 0);">。</span></p>
+        <p>⑨学校设有“西湖大学优秀博士后”、“西湖优秀女性博士后奖”等专属荣誉。</p>
+        <p>（以上所列待遇为最低标准，具体可洽谈，课题组将给予最大限度的支持。各类资助待遇政策按最新规定执行）</p>
+        <h4>应聘方式</h4>
+        <p>请将以下材料以PDF形式发送至<strong><span style="color: rgb(247, 150, 70);">liqiucheng@westlake.edu.cn</span></strong>邮箱，邮件标题请注明：“博士后申请+本人姓名+博士毕业院校”，对于符合要求并通过初审者，将会通知安排面试。招聘启事在岗位招满前有效。
+            ①个人简历；②2位同行专家的推荐信；③博士学历学位证明材料。</p>
+        <ul>
+            <li><p>Please see the link below for information on the 2025 PhD program of Westlake University (jointly
+                with Zhejiang University):</p>
+                <p>
+                    <a href="https://engineering.westlake.edu.cn/Admission/GraduateProgram/zszx_2623/202408/t20240826_42196.shtml"
+                       target="_blank">https://engineering.westlake.edu.cn/Admission/GraduateProgram/zszx_2623/202408/t20240826_42196.shtml</a>
+                </p></li>
+        </ul>
+        <div class="clean"></div>
+    </div>
+    <div class="bgColor-F6F9FE">
+        <div class="item-box bgColor-F6F9FE form-box">
+            <div>
+                <h5> Contact Us </h5>
+                <h6> Stay informed about our latest research news. </h6></div>
+            <div>
+                <style>.prog-border {
+                    height: 20px;
+                    width: 205px;
+                    background: #fff;
+                    border: 1px solid #000;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                .prog-bar {
+                    height: 20px;
+                    margin: 0px;
+                    padding: 0px;
+                    background: #4d91ed;
+                    font-size: 10pt;
+                    float: left;
+                }</style>
+                <iframe name="storagenode" src="about:blank"
+                        style="display: none; position: absolute; width: 0px; height: 0px"></iframe>
+                <FORM method="post" enctype="multipart/form-data"
+                      action="https://lqc.lab.westlake.edu.cn/system/_owners/qcm_lab/_webprj/Joinus.jsp?_scode_=1736304220493&amp;urltype=tree.TreeTempUrl&amp;wbtreeid=1146&amp;outFlag=false&amp;actionmethod=save"
+                      id="gbmsg_guestbook1110461" name="gbmsg_guestbook1110461"
+                      onsubmit="return _tpladdmsg_sendmessageu_u7_demo(this)" style="display: inline;">
+                    <div class="govitemcontent{uuid}" id="govitemcontent{uuid}">
+                        <div class="input-box">
+                            <input type="text" placeholder="Name*" name="wbname_temp" id="wbname_temp" maxlength="50"
+                                   value="">
+                            <input type="text" placeholder="Email*" name="wbemail_temp" id="wbemail_temp" value=""
+                                   maxlength="100">
+                            <input type="text" placeholder="Subject*" name="wbtitle_temp" id="wbtitle_temp" value=""
+                                   maxlength="200">
+                        </div>
+                        <input type="hidden" name="wbname" id="wbname" maxlength="50" value="" style="display: none;">
+                        <input type="hidden" name="wbemail" id="wbemail" value="" maxlength="100"
+                               style="display: none;">
+                        <input type="hidden" name="wbtitle" id="wbtitle" value="" maxlength="200"
+                               style="display: none;">
+                        <div class="textarea-box">
+                            <textarea name="wbcontent" id="wbcontent" style="display: none;"></textarea>
+                            <textarea id="wbcontent_temp" placeholder="Message*"></textarea>
+                            <button id="btnSubmit" type="submit">Submit</button>
+                        </div>
+                    </div>
+                </FORM>
+                <script type="text/javascript">
+                    var isZh = location.href.includes("zh");
+                    document.getElementById("wbname_temp").placeholder = isZh ? "姓名*" : "Name*";
+                    document.getElementById("wbemail_temp").placeholder = isZh ? "邮箱*" : "Email*";
+                    document.getElementById("wbtitle_temp").placeholder = isZh ? "主题*" : "Subject*";
+                    document.getElementById("wbcontent_temp").placeholder = isZh ? "内容*" : "Message*";
+                    document.getElementById("btnSubmit").innerHTML = isZh ? "提交" : "Submit";
+
+                    function _tpladdmsg_sendmessageu_u7_demo(obj) {
+                        var name = wbname_temp.value;
+                        name = trim(name);
+                        if (name == "" || name == null) {
+                            alert(isZh ? "姓名不能为空！" : "name cannot be empty!");
+                            return false;
+                        }
+
+                        var email = obj.wbemail_temp.value;
+                        if (email != "" && email != null) {
+                            if (!ValidateUtil.isEmail(email)) {
+                                alert(isZh ? "邮件格式错误！" : "Email format error!");
+                                return false;
+                            }
+                        }
+                        var wbtitle = obj.wbtitle_temp.value;
+                        wbtitle = trim(wbtitle);
+                        if (wbtitle == "" || wbtitle == null) {
+                            alert(isZh ? "主题不能为空！" : "Subject cannot be empty!");
+                            return false;
+                        }
+                        var content_temp_value = ValidateUtil.trim(document.getElementById("wbcontent_temp").value);
+                        if (content_temp_value == null || content_temp_value == undefined || content_temp_value == "") {
+                            alert(isZh ? "内容不能为空！" : "The content cannot be empty!");
+                            return false;
+                        }
+
+                        if (document.getElementById("wbname_temp")) {
+                            document.getElementById("wbname").value = new Base64().encode(document.getElementById("wbname_temp").value);
+                            document.getElementById("wbname_temp").disabled = true;
+                        }
+                        if (document.getElementById("wbemail_temp")) {
+                            document.getElementById("wbemail").value = new Base64().encode(document.getElementById("wbemail_temp").value);
+                            document.getElementById("wbemail_temp").disabled = true;
+                        }
+                        if (document.getElementById("wbtitle_temp")) {
+                            document.getElementById("wbtitle").value = new Base64().encode(document.getElementById("wbtitle_temp").value);
+                            document.getElementById("wbtitle_temp").disabled = true;
+                        }
+                        document.getElementById("wbcontent").value = new Base64().encode(document.getElementById("wbcontent_temp").value);
+                        document.getElementById("wbcontent_temp").disabled = true;
+                        return true;
+                    }
+
+                    //显示上传进度
+                    function handleshow() {
+                        document.getElementById("status").style.display = "";
+                        document.getElementById("govitemcontent{uuid}").style.display = "none";
+                    }
+
+                    //隐藏上传进度
+                    function handlehidden() {
+                        document.getElementById("status").style.display = "none";
+                        document.getElementById("govitemcontent{uuid}").style.display = "";
+                    }
+
+                    //云存储处理完成后回调的参数
+                    function handlesucceedfunction(json) {
+                        if (json.file.length > 0) {
+                            var fileinfo = "";
+                            for (var i = 0; i < json.file.length; i++) {
+                                var file = json.file[i];
+                                var showname = file.wbshowname;
+                                var fileext = file.wbfileext;
+                                var filelength = file.wblength;
+                                var shorturl = file.wbshorturl;
+                                fileinfo = fileinfo + shorturl + ";" + showname + ";" + fileext + ";" + filelength + "@";
+                            }
+                            document.getElementById("wbuploadpath").value = fileinfo;
+                        }
+                        storage.recoverForm();
+                        if (json.errorinfo == "") {
+                            document.getElementById('gbmsg_guestbook1110461').submit();
+                        }
+                    }
+
+                    storage = new storageServices();
+                    storage.formid = "gbmsg_guestbook1110461";
+                    storage.uploadurl = "/system/resource/storage/localupload.jsp?doaction=save&rid=12qph8kige&uptoken=BC6B66FA72C34D15826C8465C475CE13";
+                    storage.uploadResultAjaxUrl = "/system/resource/storage/uploadresult.jsp?token=BC6B66FA72C34D15826C8465C475CE13";
+                    storage.uploadStateAjaxUrl = "/system/resource/storage/uploadstate.jsp?islocal=0&url=%252Fsystem%252Fresource%252Fstorage%252Flocaluploadstate.jsp&rid=12qph8kige";
+                    storage.uploadStateEchoDivId = "status";
+                    storage.formtargetname = "storagenode";
+                    storage.handleerrfunction = "handlehidden";
+                    storage.handlesucceedfunction = "handlesucceedfunction";
+
+                </script>
+            </div>
+            <p>
+            <p> If you would like to learn more information or have any comments and suggestions about our products,
+                please leave a message and we will get back to you as soon as possible. </p></p>
+            <div class="clean"></div>
+        </div>
+    </div>
+</main>
+<footer class="footer-box">
+    <div class="logo-box"><img src="img/icon_footerLogo_l.png" alt="">
+
+        <img class="footerLaboratoryLogo" src="img/icon_footerLogo_r.png" alt="">
+
+        <img class="footerLaboratoryLogo-mobile" src="img/icon_footerLogo_r_mobile.png" alt="">
+
+    </div>
+    <div class="contactus-box">
+        <h6> Contact us </h6>
+        <p> liqiucheng@westlake.edu.cn </p>
+        <p> No. 600 Dunyu Road, XihuDistrict, Hangzhou, Zhejiang, 310030, P.R. China </p>
+        <div class="clean"></div>
+        <div>
+            <a href="Joinus.htm" target="_self">Join us</a>
+        </div>
+    </div>
+    <div class="clean"></div>
+    <div class="filings-box"><!-- 版权内容请在本组件"内容配置-版权"处填写 -->
+        <p>浙ICP备18025489号<br/></p>
+        <p>浙公安备33010602007514号<br/></p>
+        <p>Copyright © Westlake University. All Rights Reserved</p>
+        <div class="clean"></div>
+    </div>
+</footer>
+<script>
+    $(function () {
+        var isZh = location.href.includes("zh");
+        const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+        if (isMobile) {
+            document.body.classList.add('mobile-class');
+            setRem(3.75);
+        } else {
+            document.body.classList.add('pc-class');
+            setRem(14.4);
+            window.onresize = function () {
+                setRem(14.4);
+            };
+        }
+
+        function setRem(designSize) {
+            let html = document.documentElement;
+            let width = html.clientWidth;
+            if (designSize == 3.75) {
+                width = width >= 375 ? 375 : width
+            }
+            if (designSize == 14.4) {
+                width = width >= 1440 ? 1440 : width
+            }
+            html.style.fontSize = width / designSize + 'px'; // 设计稿宽度为1440px，那么1rem=100px，故除以14.4
+        }
+
+        var langBtn = document.getElementById("languageBtn");
+        langBtn.getElementsByTagName('span')[0].innerHTML = isZh ? "EN" : "CN";
+        langBtn.onclick = function () {
+            var path = location.pathname.split("zh").pop();
+            location.href = isZh ? path : "/zh" + path;
+        }
+    });
+
+    function handleMenuClick() {
+        var content = document.getElementById('mobile-menu-box');
+        if (content.classList.contains('menu-hidden')) {
+            content.classList.remove('menu-hidden');
+        } else {
+            content.classList.add('menu-hidden');
+        }
+    }
+
+    function handleChildMenuClick() {
+        var content = document.getElementById('childMenu');
+        if (content.classList.contains('menu-hidden')) {
+            content.classList.remove('menu-hidden');
+        } else {
+            content.classList.add('menu-hidden');
+        }
+    }
+</script>
+</body>
+</html>   

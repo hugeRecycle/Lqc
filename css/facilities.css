@@ -1,18 +1,20 @@
 .list-box {
     padding: 1rem 1.8rem;
     background-color: #fff;
+    max-width: 14.4rem;
+    margin: 0 auto;
 }
-.list-box li {
+.list-box .item-box {
     padding-top: .8rem;
 }
-.list-box li img {
+.list-box .item-box img {
     width: 5.2rem;
     float: left;
     display: block;
     object-fit: cover;
     object-position: 50% 50%;
 }
-.list-box li h5 {
+.list-box .item-box h5 {
     width: calc(100% - 5.62rem);
     margin-left: .42rem;
     font-family: Avenir-Heavy;
@@ -20,8 +22,9 @@
     line-height: .33rem;
     color: rgba(0,0,0,0.85);
     float: right;
+font-weight: 600;
 }
-.list-box li p {
+.list-box .item-box p {
     width: calc(100% - 5.62rem);
     margin-left: .42rem;
     margin-top: .12rem;
@@ -30,34 +33,37 @@
     color: rgba(0,0,0,0.45);
     line-height: .32rem;
     float: right;
+font-weight: 400;
 }
-.list-box li:first-child {
+.list-box .item-box:first-child {
     padding-top: 0;
 }
-.list-box li:nth-child(2n) img {
+.list-box .item-box:nth-child(2n) img {
     float: right;
 }
-.list-box li:nth-child(2n) h5,
-.list-box li:nth-child(2n) p {
+.list-box .item-box:nth-child(2n) h5,
+.list-box .item-box:nth-child(2n) p {
+     margin-left: 0;
     float: left;
 }
 
 /* mobile css */
 .mobile-class .list-box {
     padding: .36rem .2rem;
+    max-width: 3.75rem;
 }
-.mobile-class .list-box li {
+.mobile-class .list-box .item-box {
     padding-top: .28rem;
     padding-bottom: .24rem;
     border-bottom: .01rem solid rgba(0,0,0,0.15);
 }
-.mobile-class .list-box li img {
+.mobile-class .list-box .item-box img {
     width: 100%;
     float: none;
     object-fit: cover;
     object-position: 50% 50%; 
 }
-.mobile-class .list-box li h5 {
+.mobile-class .list-box .item-box h5 {
     width: 100%;
     margin-left: 0;
     margin-top: .2rem;
@@ -65,7 +71,7 @@
     line-height: .19rem;
     float: none;
 }
-.mobile-class .list-box li p {
+.mobile-class .list-box .item-box p {
     width: 100%;
     margin-left: 0;
     margin-top: .12rem;
@@ -73,11 +79,11 @@
     line-height: .22rem;
     float: none;
 }
-.mobile-class .list-box li:first-child {
+.mobile-class .list-box .item-box:first-child {
     padding-top: 0;
 }
-.mobile-class .list-box li:nth-child(2n) img,
-.mobile-class .list-box li:nth-child(2n) h5,
-.mobile-class .list-box li:nth-child(2n) p {
+.mobile-class .list-box .item-box:nth-child(2n) img,
+.mobile-class .list-box .item-box:nth-child(2n) h5,
+.mobile-class .list-box .item-box:nth-child(2n) p {
     float: none;
 }

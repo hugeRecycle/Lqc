@@ -1,0 +1,323 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" id="wixDesktopViewport"/>
+    <title>Gallery-Li Research Group</title>
+    <META Name="keywords" Content="Li Research Group"/>
+
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/gallery.css"/>
+    <link rel="stylesheet" href="../css/swiper-3.4.2.min.css">
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/swiper-3.4.2.min.js"></script>
+</head>
+<body>
+<header class="header-box">
+    <div class="logo-box"><a href="Gallery.htm">
+        <img src="../img/icon_headerLogo_l.png" title="">
+    </a>
+        <a href="Gallery.htm">
+            <img class="laboratoryLogo" src="../img/icon_headerLogo_r.png" title="">
+        </a>
+        <a href="Gallery.htm">
+            <img class="laboratoryLogo-mobile" src="../img/icon_headerLogo_r_mobile.png" title="">
+        </a>
+    </div>
+    <div class="r-box">
+        <nav class="menu-box">
+            <ul id="pc-menu1">
+                <li>
+                    <a href="../index.htm">Home </a>
+                </li>
+                <li>
+                    <a href="../Research.htm">Research </a>
+                </li>
+                <li class="active">
+                    <a href="javascript:;">Team <img src="../img/icon_arrowDown.png" alt=""></a>
+                    <ul class="teamList">
+                        <li><a href="People.htm">People</a></li>
+                        <li class="active"><a href="Gallery.htm">Gallery</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../Publications.htm">Publications </a>
+                </li>
+                <li>
+                    <a href="../Facilities.htm">Facilities </a>
+                </li>
+                <li>
+                    <a href="../Joinus.htm">Join us </a>
+                </li>
+            </ul>
+            <ul id="pc-menu2">
+                <li>
+                    <a href="../zh/index.htm">首页 </a>
+                </li>
+                <li>
+                    <a href="../zh/Research.htm">研究内容 </a>
+                </li>
+                <li>
+                    <a href="javascript:;">团队成员 <img src="../img/icon_arrowDown.png" alt=""></a>
+                    <ul class="teamList">
+                        <li><a href="../zh/Team/People.htm">成员信息</a></li>
+                        <li><a href="../zh/Team/Gallery.htm">团队画廊</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../zh/Publications.htm">学术成果 </a>
+                </li>
+                <li>
+                    <a href="../zh/Facilities.htm">实验仪器 </a>
+                </li>
+                <li>
+                    <a href="../zh/Joinus.htm">团队招聘 </a>
+                </li>
+            </ul>
+            <script type="text/javascript">
+                var isZh = location.href.includes("zh");
+                if (isZh) {
+                    document.getElementById('pc-menu1').remove();
+                } else {
+                    document.getElementById('pc-menu2').remove();
+                }
+            </script>
+        </nav>
+        <div class="icon-menu-box" onclick="handleMenuClick()"><img src="../img/icon_menu.png" alt=""></div>
+        <div class="language-box" id="languageBtn">
+            <img src="../img/icon_language.png" alt="">
+            <span>CN</span>
+        </div>
+    </div>
+</header>
+<nav id="mobile-menu-box" class="menu-hidden">
+    <ul id="mobile-menu1">
+        <li>
+            <a href="../index.htm">Home </a>
+        </li>
+        <li>
+            <a href="../Research.htm">Research </a>
+        </li>
+        <li class="active team-active">
+            <a onclick="handleChildMenuClick()" href="javascript:;">Team <img src="../img/icon_arrowDown_active.png"
+                                                                              alt=""></a>
+            <ul id="childMenu">
+                <li><a href="People.htm">People</a></li>
+                <li class="active"><a href="Gallery.htm">Gallery</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="../Publications.htm">Publications </a>
+        </li>
+        <li>
+            <a href="../Facilities.htm">Facilities </a>
+        </li>
+        <li>
+            <a href="../Joinus.htm">Join us </a>
+        </li>
+    </ul>
+    <ul id="mobile-menu2">
+        <li>
+            <a href="../zh/index.htm">首页 </a>
+        </li>
+        <li>
+            <a href="../zh/Research.htm">研究内容 </a>
+        </li>
+        <li>
+            <a onclick="handleChildMenuClick()" href="javascript:;">团队成员 <img src="../img/icon_arrowDown.png"
+                                                                              alt=""></a>
+            <ul id="childMenu" class="menu-hidden">
+                <li><a href="../zh/Team/People.htm">成员信息</a></li>
+                <li><a href="../zh/Team/Gallery.htm">团队画廊</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="../zh/Publications.htm">学术成果 </a>
+        </li>
+        <li>
+            <a href="../zh/Facilities.htm">实验仪器 </a>
+        </li>
+        <li>
+            <a href="../zh/Joinus.htm">团队招聘 </a>
+        </li>
+    </ul>
+    <script type="text/javascript">
+        var isZh = location.href.includes("zh");
+        if (isZh) {
+            document.getElementById('mobile-menu1').remove();
+        } else {
+            document.getElementById('mobile-menu2').remove();
+        }
+    </script>
+</nav>
+<section class="banner-box">
+
+    <img src="../images/people/banner1.png" alt="">
+
+
+    <div>
+        <p> Gallery </p>
+    </div>
+</section>
+<main class="main-box">
+    <div class="swiper-box">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="../images/weixintupian_20250218163421.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../images/46d57259d220ef8424b4b600aa06e1b.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../images/gallery/swiperImg_1.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../images/WechatIMG798.jpg" alt="">
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+
+        </div>
+        <div class="label-box">
+            <p> Group Social </p></div>
+    </div>
+    <div class="list-box">
+
+
+        <div class="item-box">
+            <img src="../__local/A/93/33/77A08DABE9EE3B5ED8A8E5CC31E_60782F37_161A06.png">
+            <h5><!-- <span>Aug.2024</span> --> Li Research Group in action at the Quantum Characterization Lab</h5>
+            <p></p>
+        </div>
+        <div class="item-box">
+            <img src="../__local/B/85/76/4A983591E157B8DFC2E81DF3E98_FC8C0111_13A3CC.png">
+            <h5><!-- <span>Aug.2024</span> --> Group photo in our newly renovated lab</h5>
+            <p></p>
+        </div>
+        <div class="item-box">
+            <img src="../__local/F/36/74/F84B07BD0AF36589700D1678BD8_C7C4DEAD_EC1BA.png">
+            <h5><!-- <span>Aug.2024</span> --> Changren and Jingxia showing the vacuum sealing system</h5>
+            <p></p>
+        </div>
+        <div class="item-box">
+            <img src="../__local/3/48/3A/EE62DBD24B5D2C954BD34E819D6_ABAEA962_100DB4.png">
+            <h5><!-- <span>Aug.2024</span> --> Lida working on the micro-CVD system</h5>
+            <p></p>
+        </div>
+        <div class="item-box">
+            <img src="../__local/8/23/C8/2D17198009003CBCBA97166CC05_F5C598F7_F9252.png">
+            <h5><!-- <span>Aug.2024</span> --> Xinchuan and Niandong using the optical microscope</h5>
+            <p></p>
+        </div>
+        <div class="item-box">
+            <img src="../__local/7/9A/07/FC4AEC354309998EE3FD8E8F023_4116448B_F6D38.png">
+            <h5><!-- <span>Aug.2024</span> --> Yuping in action at the glovebox</h5>
+            <p></p>
+        </div>
+        <div class="item-box">
+            <img src="../__local/9/2E/C3/0064533EACE759084C269130C7A_29C7A41D_1096D7.png">
+            <h5><!-- <span>Aug.2024</span> --> Lida conducting CVD experiments</h5>
+            <p></p>
+        </div>
+        <div class="item-box">
+            <img src="../__local/0/2E/C6/155CCF10C91C89765CDD79A9455_A4D8CE43_14C5BF.png">
+            <h5><!-- <span>Aug.2024</span> --> Hening cutting silicon wafers</h5>
+            <p></p>
+        </div>
+        <div class="clean"></div>
+        <script>_showDynClickBatch(['dynclicks_u7_1095', 'dynclicks_u7_1090', 'dynclicks_u7_1096', 'dynclicks_u7_1089', 'dynclicks_u7_1098', 'dynclicks_u7_1097', 'dynclicks_u7_1099', 'dynclicks_u7_1100'], [1095, 1090, 1096, 1089, 1098, 1097, 1099, 1100], "wbnews", 2013068255)</script>
+    </div>
+</main>
+<footer class="footer-box">
+    <div class="logo-box"><img src="../img/icon_footerLogo_l.png" alt="">
+
+        <img class="footerLaboratoryLogo" src="../img/icon_footerLogo_r.png" alt="">
+
+        <img class="footerLaboratoryLogo-mobile" src="../img/icon_footerLogo_r_mobile.png" alt="">
+
+    </div>
+    <div class="contactus-box">
+        <h6> Contact us </h6>
+        <p> liqiucheng@westlake.edu.cn </p>
+        <p> No. 600 Dunyu Road, XihuDistrict, Hangzhou, Zhejiang, 310030, P.R. China </p>
+        <div class="clean"></div>
+        <div>
+            <a href="../Joinus.htm" target="_self">Join us</a>
+        </div>
+    </div>
+    <div class="clean"></div>
+    <div class="filings-box"><!-- 版权内容请在本组件"内容配置-版权"处填写 -->
+        <p>浙ICP备18025489号<br/></p>
+        <p>浙公安备33010602007514号<br/></p>
+        <p>Copyright © Westlake University. All Rights Reserved</p>
+        <div class="clean"></div>
+    </div>
+</footer>
+<script>
+    $(function () {
+        var isZh = location.href.includes("zh");
+        const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+        if (isMobile) {
+            document.body.classList.add('mobile-class');
+            setRem(3.75);
+        } else {
+            document.body.classList.add('pc-class');
+            setRem(14.4);
+            window.onresize = function () {
+                setRem(14.4);
+            };
+        }
+
+        function setRem(designSize) {
+            let html = document.documentElement;
+            let width = html.clientWidth;
+            if (designSize == 3.75) {
+                width = width >= 375 ? 375 : width
+            }
+            if (designSize == 14.4) {
+                width = width >= 1440 ? 1440 : width
+            }
+            html.style.fontSize = width / designSize + 'px'; // 设计稿宽度为1440px，那么1rem=100px，故除以14.4
+        }
+
+        var mySwiper = new Swiper('.swiper-container', {
+            autoplay: 5000,//可选选项，自动滑动
+            loop: true,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            disableOnInteraction: false
+        })
+        var langBtn = document.getElementById("languageBtn");
+        langBtn.getElementsByTagName('span')[0].innerHTML = isZh ? "EN" : "CN";
+        langBtn.onclick = function () {
+            var path = location.pathname.split("zh").pop();
+            location.href = isZh ? path : "/zh" + path;
+        }
+    });
+
+    function handleMenuClick() {
+        var content = document.getElementById('mobile-menu-box');
+        if (content.classList.contains('menu-hidden')) {
+            content.classList.remove('menu-hidden');
+        } else {
+            content.classList.add('menu-hidden');
+        }
+    }
+
+    function handleChildMenuClick() {
+        var content = document.getElementById('childMenu');
+        if (content.classList.contains('menu-hidden')) {
+            content.classList.remove('menu-hidden');
+        } else {
+            content.classList.add('menu-hidden');
+        }
+    }
+</script>
+</body>
+</html>   

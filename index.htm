@@ -1,0 +1,390 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" id="wixDesktopViewport"/>
+    <title>Li Research Group</title>
+    <META Name="keywords" Content="Li Research Group"/>
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="css/home.css"/>
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/swiper-3.4.2.min.js"></script>
+</head>
+<body>
+<header class="header-box">
+    <div class="logo-box"><a href="index.htm">
+        <img src="img/icon_headerLogo_l.png" title="">
+    </a>
+        <a href="index.htm">
+            <img class="laboratoryLogo" src="img/icon_headerLogo_r.png" title="">
+        </a>
+        <a href="index.htm">
+            <img class="laboratoryLogo-mobile" src="img/icon_headerLogo_r_mobile.png" title="">
+        </a>
+    </div>
+    <div class="r-box">
+        <nav class="menu-box">
+            <ul id="pc-menu1">
+                <li class="active">
+                    <a href="index.htm">Home </a>
+                </li>
+                <li>
+                    <a href="Research.htm">Research </a>
+                </li>
+                <li>
+                    <a href="javascript:;">Team <img src="img/icon_arrowDown.png" alt=""></a>
+                    <ul class="teamList">
+                        <li><a href="Team/People.htm">People</a></li>
+                        <li><a href="Team/Gallery.htm">Gallery</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="Publications.htm">Publications </a>
+                </li>
+                <li>
+                    <a href="Facilities.htm">Facilities </a>
+                </li>
+                <li>
+                    <a href="Joinus.htm">Join us </a>
+                </li>
+            </ul>
+            <ul id="pc-menu2">
+                <li>
+                    <a href="zh/index.htm">首页 </a>
+                </li>
+                <li>
+                    <a href="zh/Research.htm">研究内容 </a>
+                </li>
+                <li>
+                    <a href="javascript:;">团队成员 <img src="img/icon_arrowDown.png" alt=""></a>
+                    <ul class="teamList">
+                        <li><a href="zh/Team/People.htm">成员信息</a></li>
+                        <li><a href="zh/Team/Gallery.htm">团队画廊</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="zh/Publications.htm">学术成果 </a>
+                </li>
+                <li>
+                    <a href="zh/Facilities.htm">实验仪器 </a>
+                </li>
+                <li>
+                    <a href="zh/Joinus.htm">团队招聘 </a>
+                </li>
+            </ul>
+            <script type="text/javascript">
+                var isZh = location.href.includes("zh");
+                if (isZh) {
+                    document.getElementById('pc-menu1').remove();
+                } else {
+                    document.getElementById('pc-menu2').remove();
+                }
+            </script>
+        </nav>
+        <div class="icon-menu-box" onclick="handleMenuClick()"><img src="img/icon_menu.png" alt=""></div>
+        <div class="language-box" id="languageBtn">
+            <img src="img/icon_language.png" alt="">
+            <span>CN</span>
+        </div>
+    </div>
+</header>
+<nav id="mobile-menu-box" class="menu-hidden">
+    <ul id="mobile-menu1">
+        <li class="active ">
+            <a href="index.htm">Home </a>
+        </li>
+        <li>
+            <a href="Research.htm">Research </a>
+        </li>
+        <li>
+            <a onclick="handleChildMenuClick()" href="javascript:;">Team <img src="img/icon_arrowDown.png" alt=""></a>
+            <ul id="childMenu" class="menu-hidden">
+                <li><a href="Team/People.htm">People</a></li>
+                <li><a href="Team/Gallery.htm">Gallery</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="Publications.htm">Publications </a>
+        </li>
+        <li>
+            <a href="Facilities.htm">Facilities </a>
+        </li>
+        <li>
+            <a href="Joinus.htm">Join us </a>
+        </li>
+    </ul>
+    <ul id="mobile-menu2">
+        <li>
+            <a href="zh/index.htm">首页 </a>
+        </li>
+        <li>
+            <a href="zh/Research.htm">研究内容 </a>
+        </li>
+        <li>
+            <a onclick="handleChildMenuClick()" href="javascript:;">团队成员 <img src="img/icon_arrowDown.png" alt=""></a>
+            <ul id="childMenu" class="menu-hidden">
+                <li><a href="zh/Team/People.htm">成员信息</a></li>
+                <li><a href="zh/Team/Gallery.htm">团队画廊</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="zh/Publications.htm">学术成果 </a>
+        </li>
+        <li>
+            <a href="zh/Facilities.htm">实验仪器 </a>
+        </li>
+        <li>
+            <a href="zh/Joinus.htm">团队招聘 </a>
+        </li>
+    </ul>
+    <script type="text/javascript">
+        var isZh = location.href.includes("zh");
+        if (isZh) {
+            document.getElementById('mobile-menu1').remove();
+        } else {
+            document.getElementById('mobile-menu2').remove();
+        }
+    </script>
+</nav>
+<section class="banner-box">
+
+    <img src="images/home/banner2.png" alt="">
+
+
+    <div>
+        <p> Quantum </p>
+        <p> Characterization </p>
+        <p> Laboratory </p>
+        <p><span>Li Research Group</span></p>
+        <a href="Research.htm" target="_self">Learn more about our research</a>
+    </div>
+</section>
+<main class="main-box">
+    <div class="item-box">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/home/Frame_172.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/home/Frame_173.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/home/Frame_174.png" alt="">
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="article-container">
+            <p> Research Overview </p>
+            <p> Our research focuses on probing the quantum properties of two-dimensional (2D) quantum materials via
+                cryogenic scanning probe microscopy. By employing atomically precise synthesis and characterization
+                techniques, we aim to elucidate the fundamental structure-property relationship inherent in 2D quantum
+                materials. Furthermore, we endeavor to engineer the surfaces and interfaces of these quantum materials
+                at the atomic level, targeting applications in nanotechnology, quantum information technology, and
+                alternative energy. </p>
+            <p><a href="Research.htm" target="_self">Learn more</a></p></div>
+        <div class="clean"></div>
+    </div>
+    <div class="bgColor-F6F9FE">
+        <div class="item-box team-box bgColor-F6F9FE">
+            <div class="swiper-container">
+                <img src="images/home/WechatIMG216.jpg" alt="">
+
+            </div>
+            <div class="article-container">
+                <p> Meet The Team </p>
+                <p> Our group is a vibrant community&nbsp;of passionate researchers united by a shared curiosity for the
+                    2D world and a drive to make a real impact. We foster an open and collaborative environment where
+                    every voice is valued,&nbsp;and every perspective is respected. We are currently seeking highly
+                    motivated Ph.D. students, postdoctoral researchers, and undergraduate students&nbsp;to contribute to
+                    our groundbreaking research. Interested candidates are welcome to contact Dr. Li
+                    (liqiucheng@westlake.edu.cn) to learn more&nbsp;about our research and potential opportunities. </p>
+                <p><a href="Team/People.htm" target="_self">Learn more</a></p></div>
+            <div class="clean"></div>
+        </div>
+    </div>
+    <div class="item-box news-box">
+        <div>
+            <h5> Latest News </h5>
+            <h6> Stay informed about our latest research news </h6></div>
+        <ul>
+
+
+            <li>
+                <div class="articleContent-box">
+                    <h6>Our new paper, "Progress and future directions in borophene research" is published in Nature
+                        Chemistry.</h6>
+                    <div>
+                        <img src="__local/B/F1/24/23B135AC7230E0111CCEFCDC1C7_E1C57DB9_7711A.png" alt="">
+                    </div>
+                    <p>
+                        <a href="https://www.nature.com/articles/s41557-025-01773-4?utm_source=rct_congratemailt&amp;utm_medium=email&amp;utm_campaign=nonoa_20250407&amp;utm_content=10.1038/s41557-025-01773-4"
+                           target="_blank">read more</a></p>
+                </div>
+                <div class="dateBox">
+                    <div>
+                        <span>07</span>
+                        <span>2025-04</span>
+                    </div>
+                </div>
+                <div class="clean"></div>
+            </li>
+            <li>
+                <div class="articleContent-box">
+                    <h6>Summer research interns present "Fabrication of Magic-Angle Twisted Graphene" research at Group
+                        Meeting</h6>
+                    <div>
+                        <img src="__local/8/E2/86/26056BE2E139AADD571B8528C50_25BC424C_509D0.jpg" alt="">
+                    </div>
+                    <p>Two summer research interns, Xinchuan Li from Shandong University and Niandong Chen from Sichuan
+                        University, presented their work at our group meeting on August 23rd. Xinchuan and Niandong
+                        spent a month this summer in our lab learning the exfoliation of graphene and the fabrication of
+                        2D van der Waals heterostructures </p>
+                </div>
+                <div class="dateBox">
+                    <div>
+                        <span>23</span>
+                        <span>2024-08</span>
+                    </div>
+                </div>
+                <div class="clean"></div>
+            </li>
+            <li>
+                <div class="articleContent-box">
+                    <h6>Lida Yu shares research at "Hello, Engineering" Open day</h6>
+                    <div>
+                        <img src="__local/1/79/5C/E7F875D8DB70B8160170F9D28CD_441BB407_83029.png" alt="">
+                    </div>
+                    <p>On August 8th, Lida Yu presented our research at the "Hello, Engineering" School Open Day,
+                        engaging with prospective 2024 undergraduates. This event provided a valuable platform for
+                        introducing our work and inspiring the next generation of scientists </p>
+                </div>
+                <div class="dateBox">
+                    <div>
+                        <span>08</span>
+                        <span>2024-08</span>
+                    </div>
+                </div>
+                <div class="clean"></div>
+            </li>
+            <li>
+                <div class="articleContent-box">
+                    <h6>Qiucheng Li gave a talk about "What I wish I knew before starting a Ph.D." at the 2024 Summer
+                        Camp</h6>
+                    <div>
+                        <img src="__local/C/3B/0B/2B481B92F773BB32F1A34BF95CB_0C8D816F_6B6DE.png" alt="">
+                    </div>
+                    <p>Driven by a desire to inspire young students, Dr. Qiucheng Li shared her personal experiences and
+                        insights with the prospective Ph.D. students attending the 2024 Summer Camp at Westlake
+                        University. Through her candid and engaging presentation, she provided the audience with a
+                        unique glimpse into the mindset and challenges of pursuing a doctoral degree. <a
+                                href="https://mp.weixin.qq.com/s/XBCleUHBDxdrVS3To9yZiw" target="_blank">read more</a>
+                    </p>
+                </div>
+                <div class="dateBox">
+                    <div>
+                        <span>28</span>
+                        <span>2024-06</span>
+                    </div>
+                </div>
+                <div class="clean"></div>
+            </li>
+            <script>_showDynClickBatch(['dynclicks_u10_1126', 'dynclicks_u10_1093', 'dynclicks_u10_1087', 'dynclicks_u10_1094'], [1126, 1093, 1087, 1094], "wbnews", 2013068255)</script>
+        </ul>
+    </div>
+</main>
+<footer class="footer-box">
+    <div class="logo-box"><img src="img/icon_footerLogo_l.png" alt="">
+
+        <img class="footerLaboratoryLogo" src="img/icon_footerLogo_r.png" alt="">
+
+        <img class="footerLaboratoryLogo-mobile" src="img/icon_footerLogo_r_mobile.png" alt="">
+
+    </div>
+    <div class="contactus-box">
+        <h6> Contact us </h6>
+        <p> liqiucheng@westlake.edu.cn </p>
+        <p> No. 600 Dunyu Road, XihuDistrict, Hangzhou, Zhejiang, 310030, P.R. China </p>
+        <div class="clean"></div>
+        <div>
+            <a href="Joinus.htm" target="_self">Join us</a>
+        </div>
+    </div>
+    <div class="clean"></div>
+    <div class="filings-box"><!-- 版权内容请在本组件"内容配置-版权"处填写 -->
+        <p>浙ICP备18025489号<br/></p>
+        <p>浙公安备33010602007514号<br/></p>
+        <p>Copyright © Westlake University. All Rights Reserved</p>
+        <div class="clean"></div>
+    </div>
+</footer>
+<script>
+    $(function () {
+        var isZh = location.href.includes("zh");
+        const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+        if (isMobile) {
+            document.body.classList.add('mobile-class');
+            setRem(3.75);
+        } else {
+            document.body.classList.add('pc-class');
+            setRem(14.4);
+            window.onresize = function () {
+                setRem(14.4);
+            };
+        }
+
+        function setRem(designSize) {
+            let html = document.documentElement;
+            let width = html.clientWidth;
+            if (designSize == 3.75) {
+                width = width >= 375 ? 375 : width
+            }
+            if (designSize == 14.4) {
+                width = width >= 1440 ? 1440 : width
+            }
+            html.style.fontSize = width / designSize + 'px'; // 设计稿宽度为1440px，那么1rem=100px，故除以14.4
+        }
+
+        var mySwiper = new Swiper('.swiper-container', {
+            autoplay: 5000,//可选选项，自动滑动
+            loop: true,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            disableOnInteraction: false
+        })
+        var langBtn = document.getElementById("languageBtn");
+        langBtn.getElementsByTagName('span')[0].innerHTML = isZh ? "EN" : "CN";
+        langBtn.onclick = function () {
+            var path = location.pathname.split("zh").pop();
+            location.href = isZh ? path : "/zh" + path;
+        }
+    });
+
+    function handleMenuClick() {
+        var content = document.getElementById('mobile-menu-box');
+        if (content.classList.contains('menu-hidden')) {
+            content.classList.remove('menu-hidden');
+        } else {
+            content.classList.add('menu-hidden');
+        }
+    }
+
+    function handleChildMenuClick() {
+        var content = document.getElementById('childMenu');
+        if (content.classList.contains('menu-hidden')) {
+            content.classList.remove('menu-hidden');
+        } else {
+            content.classList.add('menu-hidden');
+        }
+    }
+</script>
+</body>
+</html>

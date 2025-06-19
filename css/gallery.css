@@ -1,62 +1,107 @@
-.item-box {
+.swiper-box {
     background-color: #fff;
-	padding: 1rem 1.8rem .36rem;
+	padding: 1rem 1.8rem .4rem;
+    max-width: 14.4rem;
+    margin: 0 auto;
 }
-.item-box ul li {
+.swiper-box .swiper-container img {
+    width: 10.8rem;
+	display: block;
+	object-fit: cover;
+	object-position: 50% 50%;
+}
+.swiper-box .label-box {
+    font-family: Avenir-Black;
+    color: #0C3375;
+    text-align: center;
+    font-size: .34rem;
+    line-height: .46rem;
+    margin-top: .42rem;
+font-weight: 600;
+}
+.list-box {
+    background-color: #fff;
+    padding: 1rem 1.8rem .36rem;
+    max-width: 14.4rem;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.list-box .item-box {
     width: calc(50% - .2rem);
     margin-right: .2rem;
     margin-bottom: .64rem;
     float: left;
 }
-.item-box ul li:nth-child(2n) {
+.list-box .item-box:nth-child(2n) {
     float: right;
     margin-left: .2rem;
     margin-right: 0;
 }
-.item-box ul li img {
-    width: 100%;
+.list-box .item-box img {
+    width: 5.2rem;
     display: block;
     object-fit: cover;
     object-position: 50% 50%;
 }
-.item-box ul li p {
+.list-box .item-box h5 {
+    font-family: Avenir-Heavy;
+    font-size: .24rem;
+    color: rgba(0,0,0,0.85);
+    line-height: .33rem;
+    margin-top: .32rem;
+font-weight: 500;
+}
+.list-box .item-box h5 span {
+    color: #009DAB;
+}
+.list-box .item-box p {
     font-family: Avenir-Roman;
     font-size: .2rem;
     color: rgba(0,0,0,0.45);
     line-height: .28rem;
-}
-.item-box ul li p span {
-    color: #009DAB;
-}
-.item-box ul li p:nth-child(2) {
-    font-family: Avenir-Heavy;
-    font-size: .24rem;
-    color: rgba(0,0,0,0.85);
-    margin-top: .32rem;
-    margin-bottom: .12rem;
+    margin-top: .12rem;
+font-weight: 400;
 }
 
 
 /* mobile css */
-.mobile-class .item-box {
+.mobile-class .swiper-box {
+    padding: .36rem .2rem .26rem;
+    max-width: 3.75rem;
+}
+.mobile-class .swiper-box .swiper-container img {
+    width: 100%;
+}
+.mobile-class .swiper-box .label-box {
+    font-size: .2rem;
+    line-height: .27rem;
+    margin-top: .2rem;
+}
+.mobile-class .list-box {
     background-color: #fff;
 	padding: .36rem .2rem .08rem;
+    max-width: 3.75rem;
 }
-.mobile-class .item-box ul li {
+.mobile-class .list-box .item-box {
     width: 100%;
     margin-right: 0;
     margin-bottom: .52rem;
     float: none;
 }
-.mobile-class .item-box ul li:nth-child(2n) {
+.mobile-class .list-box .item-box:nth-child(2n) {
     float: none;
     margin-left: 0;
 }
-.mobile-class .item-box ul li p {
-    font-size: .14rem;
-    line-height: .22rem;
+.list-box .item-box img {
+    width: 100%;
 }
-.mobile-class .item-box ul li p:nth-child(2) {
+.mobile-class .list-box .item-box h5 {
     font-size: .16rem;
     margin-top: .2rem;
+    line-height: .22rem;
+}
+.mobile-class .list-box .item-box p {
+    font-size: .14rem;
+    line-height: .22rem;
 }

@@ -1,17 +1,19 @@
 .banner-box div {
-	position: absolute;
 	top: 1.3rem;
     left: 1.8rem;
-    z-index: 9;
+	width: fit-content;
+	height: auto;
+    display: block;
+	background: transparent;
 }
-.banner-box div h5 {
-	font-family: Avenir-Black;
+.banner-box div p {
 	font-size: .6rem;
-	color: #fff;
 	line-height: .82rem;
 	margin-bottom: -0.14rem;
+        font-weight: 600;
 }
-.banner-box div h6 {
+.banner-box div p>span {
+	display: block;
 	width: 45%;
 	margin-top: .16rem;
 	border-top: .01rem solid rgba(255, 255, 255, .85);
@@ -20,24 +22,29 @@
 	font-family: Avenir-Heavy;
 	font-size: .2rem;
 	line-height: .27rem;
+	margin-bottom: 0;
+        font-weight: 500;
 }
 .banner-box div a {
-	margin-top: .7rem;
-	width: 1.78rem;
+	margin-top: .58rem;
+	width: 3.46rem;
 	height: .45rem;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+        display: block;
+        line-height: .46rem;
+        text-align: center;
 	font-family: Avenir-Heavy;
 	font-size: .18rem;
 	color: #fff;
 	border: .015rem solid #fff;
 	border-radius: .5rem;
 	text-decoration: none;
+        font-weight: 500;
 }
 .item-box {
 	padding: 1rem 1.8rem;
 	background-color: #fff;
+	max-width: 14.4rem;
+	margin: 0 auto;
 }
 .item-box .swiper-container {
 	width: 4.2rem;
@@ -49,59 +56,56 @@
 	object-fit: cover;
 	object-position: 50% 50%;
 }
-.item-box h5 {
-	font-family: Avenir-Black;
-	font-size: .34rem;
-	color: #0C3375;
-	line-height: .46rem;
-	letter-spacing: .01rem;
+.item-box .article-container {
 	margin-left: .6rem;
-	float: left;
-}
-.item-box p {
 	width: calc(100% - 4.8rem);
+	float: right;
+}
+.item-box .article-container p {
 	font-family: Avenir-Medium;
 	font-size: .2rem;
 	color: rgba(0,0,0,0.65);
 	line-height: .3rem;
 	margin-top: .22rem;
-	margin-left: .6rem;
-	float: left;
+        font-weight: 400;
 }
-.item-box a {
+.item-box .article-container p:first-child, .item-box h5 {
+	font-family: Avenir-Black;
+	font-size: .34rem;
+	color: #0C3375;
+	line-height: .46rem;
+	letter-spacing: .01rem;
+	margin-top: 0;
+        font-weight: 600;
+}
+.item-box .article-container a {
 	width: 2.8rem;
     height: .6rem;
 	font-family: Avenir-Medium;
 	font-size: .22rem;
 	text-decoration: none;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	display: block;
+	line-height: .62rem;
+        text-align: center;
 	border: .02rem solid #0C3375;
 	color: #0C3375;
 	background-color: #fff;
 	margin-top: .46rem;
-	margin-left: .6rem;
 	cursor: pointer;
-	float: left;
+        font-weight: 500;
 }
-.item-box a:hover {
+.item-box .article-container a:hover {
 	font-family: Avenir-Heavy;
 	background-color: #0C3375;
 	color: #fff;
 }
 .team-box .swiper-container {
 	float: right;
-	margin-left: .6rem;
 }
-.team-box h5,
-.team-box p,
-.team-box a,
-.news-box h5 {
+.team-box .article-container {
+	float: left;
 	margin-left: 0;
-}
-.news-box h5 {
-	float: none;
+	margin-right: .6rem;
 }
 .news-box h6 {
 	font-family: Avenir-Heavy;
@@ -117,10 +121,9 @@
 .news-box ul li {
 	padding: .46rem 0;
 	border-bottom: .01rem solid rgba(0, 0, 0, .15);
-	display: flex;
-	align-items: center;
+	position: relative;
 }
-.news-box ul li div:first-child {
+.news-box ul li .dateBox {
     width: 1rem;
     height: 100%;
 	display: flex;
@@ -131,32 +134,64 @@
 	font-size: .24rem;
 	color: #2157A8;
 	line-height: .33rem;
+	margin-left: .23rem;
+	position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
-.news-box ul li div:first-child span:first-child {
+.news-box ul li .dateBox>div {
+        width: 100%;
+	text-align: center;
+}
+.news-box ul li .dateBox span {
+	display: block;
+        font-weight: 800;
+}
+.news-box ul li .dateBox span:first-child {
 	font-size: .6rem;
 	line-height: .82rem;
 	margin-bottom: -0.08rem;
 	text-align: center;
 }
-.news-box ul li div:nth-child(2) {
-	flex: 1;
-	margin-left: .32rem;
+.news-box ul li .articleContent-box {
+	width: calc(100% - 1.23rem);
 }
-.news-box ul li div:nth-child(2) p {
-	width: 100%;
+.news-box ul li .articleContent-box,
+.news-box ul li .articleContent-box>div {
+	float: left;
+}
+.news-box ul li .articleContent-box img {
+	width: 2.6rem;
+	display: block;
+    margin: 0 auto;
+	object-fit: cover;
+	object-position: 50% 50%;
+}
+.news-box ul li .articleContent-box h6 {
+	width: calc(100% - 2.92rem);
+	font-family: Avenir-Heavy;
+	font-size: .24rem;
+	color: rgba(0,0,0,0.85);
+	line-height: .38rem;
+	margin: 0;
+	margin-left: .32rem;
+	float: right;
+        font-weight: 500;
+}
+.news-box ul li .articleContent-box p {
+	width: calc(100% - 2.92rem);
 	font-family: Avenir-Medium;
 	font-size: .2rem;
 	color: rgba(0,0,0,0.65);
 	line-height: .34rem;
-	margin: 0;
-	float: none;
+	margin-top: .12rem;
+	margin-left: .32rem;
+	float: right;
+        font-weight: 400;
 }
-.news-box ul li div:nth-child(2) p:first-child {
-	font-family: Avenir-Heavy;
-	font-size: .24rem;
-	color: rgba(0,0,0,0.85);
-	line-height: .33rem;
-	margin-bottom: .12rem;
+.news-box ul li .articleContent-box a {
+	color: blue;
 }
 
 
@@ -167,12 +202,12 @@
     left: .2rem;
     z-index: 9;
 }
-.mobile-class .banner-box div h5 {
+.mobile-class .banner-box div p {
 	font-size: .24rem;
 	line-height: .33rem;
 	margin-bottom: -0.04rem;
 }
-.mobile-class .banner-box div h6 {
+.mobile-class .banner-box div p>span {
 	width: 60%;
 	margin-top: .08rem;
 	padding-top: .12rem;
@@ -181,46 +216,51 @@
 }
 .mobile-class .banner-box div a {
 	margin-top: .2rem;
-	width: .95rem;
+	width: 1.88rem;
 	height: .27rem;
+        line-height: .28rem;
 	font-size: .11rem;
 	border: .007rem solid #fff;
 	border-radius: .23rem;
 }
 .mobile-class .item-box {
 	padding: .36rem .2rem;
+max-width: 3.75rem;
 }
 .mobile-class .item-box .swiper-container {
 	width: calc(100% - 0.56rem);
 	float: none;
 	margin: 0 .28rem;
 }
-.mobile-class .item-box h5 {
-	font-size: .2rem;
-	line-height: .27rem;
+.mobile-class .item-box .article-container {
+	width: 100%;
 	margin-left: 0;
-	margin-top: .2rem;
-	text-align: center;
 	float: none;
 }
-.mobile-class .item-box p {
+.mobile-class .item-box .article-container p {
 	width: 100%;
 	font-size: .14rem;
 	line-height: .22rem;
 	margin-top: .12rem;
 	margin-left: 0;
-	float: none;
 }
-.mobile-class .item-box a {
+.mobile-class .item-box .article-container p:first-child, .mobile-class .news-box h5 {
+	font-size: .2rem;
+	line-height: .27rem;
+	margin-left: 0;
+	margin-top: .2rem;
+	text-align: center;
+}
+.mobile-class .item-box .article-container a {
 	width: 1.67rem;
     height: .42rem;
+	line-height: .44rem;
 	font-size: .16rem;
 	text-decoration: none;
 	background-color: #fff;
 	margin: .18rem auto 0;
-	float: none;
 }
-.mobile-class .item-box a:hover {
+.mobile-class .item-box .article-container a:hover {
 	font-family: Avenir-Heavy;
 	background-color: #0C3375;
 	color: #fff;
@@ -228,7 +268,13 @@
 .mobile-class .team-box .swiper-container {
 	float: none;
 }
+.mobile-class .team-box .article-container {
+	float: none;
+	margin-left: 0;
+	margin-right: 0;
+}
 .mobile-class .news-box h5 {
+	margin-top: 0;
 	text-align: left;
 }
 .mobile-class .news-box h6 {
@@ -241,34 +287,46 @@
 	padding: .24rem 0;
 	align-items: flex-start;
 }
-.mobile-class .news-box ul li div:first-child {
-    width: .65rem;
+.mobile-class .news-box ul li .dateBox {
+	width: .65rem;
     height: 100%;
-	font-size: .16rem;
+	font-size: .14rem;
 	line-height: .22rem;
+	margin-left: 0;
+	left: 0;
+	padding-top: .24rem;
+	justify-content: flex-start;
 }
-.mobile-class .news-box ul li div:first-child span:first-child {
-	font-size: .32rem;
+.mobile-class .news-box ul li .dateBox span:first-child {
+	font-size: .30rem;
 	line-height: .44rem;
 	margin-bottom: -0.04rem;
 }
-.mobile-class .news-box ul li div:nth-child(2) {
-	flex: 1;
+.mobile-class .news-box ul li .articleContent-box {
+	width: calc(100% - .87rem);
 	margin-left: .22rem;
+	float: right;
 }
-.mobile-class .news-box ul li div:nth-child(2) p {
+.mobile-class .news-box ul li .articleContent-box>div {
+	float: none;
+}
+.mobile-class .news-box ul li .articleContent-box img {
 	width: 100%;
-	font-family: Avenir-Medium;
-	font-size: .14rem;
-	color: rgba(0,0,0,0.65);
+	margin-top: .16rem;
+}
+.mobile-class .news-box ul li .articleContent-box h6 {
+	display: block;
+	width: 100%;
+	font-size: .16rem;
 	line-height: .22rem;
 	margin: 0;
 	float: none;
 }
-.mobile-class .news-box ul li div:nth-child(2) p:first-child {
-	font-family: Avenir-Heavy;
-	font-size: .16rem;
-	color: rgba(0,0,0,0.85);
+.mobile-class .news-box ul li .articleContent-box p {
+	width: 100%;
+	font-size: .14rem;
 	line-height: .22rem;
-	margin-bottom: .08rem;
+	margin-top: .16rem;
+	margin-left: 0;
+	float: none;
 }

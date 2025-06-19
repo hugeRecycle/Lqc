@@ -1,0 +1,463 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" id="wixDesktopViewport"/>
+    <title>People-Li Research Group</title>
+    <META Name="keywords" Content="Li Research Group"/>
+
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/people.css"/>
+    <script src="../js/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+<header class="header-box">
+    <div class="logo-box"><a href="People.htm">
+        <img src="../img/icon_headerLogo_l.png" title="">
+    </a>
+        <a href="People.htm">
+            <img class="laboratoryLogo" src="../img/icon_headerLogo_r.png" title="">
+        </a>
+        <a href="People.htm">
+            <img class="laboratoryLogo-mobile" src="../img/icon_headerLogo_r_mobile.png" title="">
+        </a>
+    </div>
+    <div class="r-box">
+        <nav class="menu-box">
+            <ul id="pc-menu1">
+                <li>
+                    <a href="../index.htm">Home </a>
+                </li>
+                <li>
+                    <a href="../Research.htm">Research </a>
+                </li>
+                <li class="active">
+                    <a href="javascript:;">Team <img src="../img/icon_arrowDown.png" alt=""></a>
+                    <ul class="teamList">
+                        <li class="active"><a href="People.htm">People</a></li>
+                        <li><a href="Gallery.htm">Gallery</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../Publications.htm">Publications </a>
+                </li>
+                <li>
+                    <a href="../Facilities.htm">Facilities </a>
+                </li>
+                <li>
+                    <a href="../Joinus.htm">Join us </a>
+                </li>
+            </ul>
+            <ul id="pc-menu2">
+                <li>
+                    <a href="../zh/index.htm">首页 </a>
+                </li>
+                <li>
+                    <a href="../zh/Research.htm">研究内容 </a>
+                </li>
+                <li>
+                    <a href="javascript:;">团队成员 <img src="../img/icon_arrowDown.png" alt=""></a>
+                    <ul class="teamList">
+                        <li><a href="../zh/Team/People.htm">成员信息</a></li>
+                        <li><a href="../zh/Team/Gallery.htm">团队画廊</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../zh/Publications.htm">学术成果 </a>
+                </li>
+                <li>
+                    <a href="../zh/Facilities.htm">实验仪器 </a>
+                </li>
+                <li>
+                    <a href="../zh/Joinus.htm">团队招聘 </a>
+                </li>
+            </ul>
+            <script type="text/javascript">
+                var isZh = location.href.includes("zh");
+                if (isZh) {
+                    document.getElementById('pc-menu1').remove();
+                } else {
+                    document.getElementById('pc-menu2').remove();
+                }
+            </script>
+        </nav>
+        <div class="icon-menu-box" onclick="handleMenuClick()"><img src="../img/icon_menu.png" alt=""></div>
+        <div class="language-box" id="languageBtn">
+            <img src="../img/icon_language.png" alt="">
+            <span>CN</span>
+        </div>
+    </div>
+</header>
+<nav id="mobile-menu-box" class="menu-hidden">
+    <ul id="mobile-menu1">
+        <li>
+            <a href="../index.htm">Home </a>
+        </li>
+        <li>
+            <a href="../Research.htm">Research </a>
+        </li>
+        <li class="active team-active">
+            <a onclick="handleChildMenuClick()" href="javascript:;">Team <img src="../img/icon_arrowDown_active.png"
+                                                                              alt=""></a>
+            <ul id="childMenu">
+                <li class="active"><a href="People.htm">People</a></li>
+                <li><a href="Gallery.htm">Gallery</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="../Publications.htm">Publications </a>
+        </li>
+        <li>
+            <a href="../Facilities.htm">Facilities </a>
+        </li>
+        <li>
+            <a href="../Joinus.htm">Join us </a>
+        </li>
+    </ul>
+    <ul id="mobile-menu2">
+        <li>
+            <a href="../zh/index.htm">首页 </a>
+        </li>
+        <li>
+            <a href="../zh/Research.htm">研究内容 </a>
+        </li>
+        <li>
+            <a onclick="handleChildMenuClick()" href="javascript:;">团队成员 <img src="../img/icon_arrowDown.png"
+                                                                              alt=""></a>
+            <ul id="childMenu" class="menu-hidden">
+                <li><a href="../zh/Team/People.htm">成员信息</a></li>
+                <li><a href="../zh/Team/Gallery.htm">团队画廊</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="../zh/Publications.htm">学术成果 </a>
+        </li>
+        <li>
+            <a href="../zh/Facilities.htm">实验仪器 </a>
+        </li>
+        <li>
+            <a href="../zh/Joinus.htm">团队招聘 </a>
+        </li>
+    </ul>
+    <script type="text/javascript">
+        var isZh = location.href.includes("zh");
+        if (isZh) {
+            document.getElementById('mobile-menu1').remove();
+        } else {
+            document.getElementById('mobile-menu2').remove();
+        }
+    </script>
+</nav>
+<section class="banner-box">
+
+    <img src="../images/people/banner1.png" alt="">
+
+
+    <div>
+        <p> People </p>
+    </div>
+</section>
+<main class="main-box">
+    <div class="list-box">
+        <h4> Principal Investigator </h4>
+        <ul>
+            <li class="item-box"><img src="../__local/E/70/D1/30A89B5A6B4564C4688FF6CAF91_EF283E9F_E1C75.png%3Fe=.png"
+                                      vsbhref="vurl" vurl="/_vsl/E70D130A89B5A6B4564C4688FF6CAF91/EF283E9F/E1C75?e=.png"
+                                      vheight="" vwidth=""
+                                      orisrc="/__local/E/70/D1/30A89B5A6B4564C4688FF6CAF91_EF283E9F_E1C75.png"
+                                      class="img_vsb_content"> <h5> Qiucheng Li, Ph.D. </h5> <h6> Assistant
+                Professor </h6>
+                <p> Qiucheng Li received her B.S. in Chemistry at Shandong University in 2012, and her Ph.D. in Physical
+                    Chemistry at Peking University in 2017. During her Ph.D., she developed a series of novel chemical
+                    vapor deposition (CVD) growth strategies for two-dimensional materials with high crystalline quality
+                    and practical scalability under the guidance of Prof. Zhongfan Liu. She was honored with the
+                    chancellor's scholarship, exceptional award for academic innovation at Peking University, and merit
+                    student award at Peking University, among others. After graduation, Dr. Li continued to pursue
+                    postdoctoral research at Northwestern University, where she investigated the electronic properties
+                    and surface chemistry of borophene using ultra-high vacuum scanning probe microscopy with Prof. Mark
+                    C. Hersam. She has joined the school of engineering as an assistant professor in 2024. Outside of
+                    her academic routine, Qiucheng is an avid cinephile and foodie, as well as devoted coffee
+                    enthusiast. She is actively engaged in a variety of physical activities, such as rock climbing,
+                    Pilates, and hiking. </p>
+                <p><img src="../__local/6/24/30/71F7D15A268246D924BD6A6BDA7_91AFAE64_332.png%3Fe=.png" vsbhref="vurl"
+                        vurl="/_vsl/6243071F7D15A268246D924BD6A6BDA7/91AFAE64/332?e=.png" vheight="" vwidth=""
+                        orisrc="/__local/6/24/30/71F7D15A268246D924BD6A6BDA7_91AFAE64_332.png" class="img_vsb_content">Email
+                    me:<span>liqiucheng@westlake.edu.cn</span></p>
+                <div class="clean"></div>
+            </li>
+        </ul>
+    </div>
+    <div class="list-box">
+        <h4> Ph.D. Students </h4>
+        <ul>
+            <li class="item-box"><img src="../__local/6/1F/9E/E3E90DCF41A6069EC9C26710C40_7241D164_6D357.png%3Fe=.png"
+                                      vsbhref="vurl" vurl="/_vsl/61F9EE3E90DCF41A6069EC9C26710C40/7241D164/6D357?e=.png"
+                                      vheight="" vwidth=""
+                                      orisrc="/__local/6/1F/9E/E3E90DCF41A6069EC9C26710C40_7241D164_6D357.png"
+                                      class="img_vsb_content"> <h5> Changren Tian </h5>
+                <p> Changren was born and raised in Heze City, Shandong Province, China. He joined the Li Qiucheng group
+                    in 2024 to pursue his Ph.D. in materials science at Westlake University. Before joining the lab, he
+                    received his undergraduate degree and master's degree in materials science and engineering (MSE)
+                    from Shandong University. Currently, his work focuses on the controlled synthesis of two-dimensional
+                    magnetic materials. Beyond his academic pursuits, he maintains an active lifestyle, enjoying a
+                    variety of sports such as badminton and fitness. Furthermore, Changren exhibits a proficient command
+                    of cooking, deriving great pleasure from the practice. </p>
+                <p><img src="../__local/6/24/30/71F7D15A268246D924BD6A6BDA7_91AFAE64_332.png%3Fe=.png" vsbhref="vurl"
+                        vurl="/_vsl/6243071F7D15A268246D924BD6A6BDA7/91AFAE64/332?e=.png" vheight="" vwidth=""
+                        orisrc="/__local/6/24/30/71F7D15A268246D924BD6A6BDA7_91AFAE64_332.png" class="img_vsb_content">Email:<span>tianchangren@westlake.edu.cn</span>
+                </p>
+                <div class="clean"></div>
+            </li>
+            <li class="item-box"><img src="../__local/2/12/18/8C855B963FCA92BCA067E9DE8B9_3206E351_A2E51.png%3Fe=.png"
+                                      vsbhref="vurl" vurl="/_vsl/212188C855B963FCA92BCA067E9DE8B9/3206E351/A2E51?e=.png"
+                                      vheight="" vwidth=""
+                                      orisrc="/__local/2/12/18/8C855B963FCA92BCA067E9DE8B9_3206E351_A2E51.png"
+                                      class="img_vsb_content"> <h5> Yuping Chen </h5>
+                <p> Yuping (also goes by the name Yulia) was born in Wuzhou, a city located in southern China. She
+                    attended China University of Mining and Technology (CUMT) for her undergraduate degree, majoring in
+                    MSE. Prior to commencing her Ph.D. studies in MSE at Westlake University in 2024, Yuping received
+                    her master's degree from SUStech. Her master's research focused on metal oxyhydroxides and their
+                    application in the oxygen evolution reaction of water electrolysis. Yuping is a passionate
+                    enthusiast of Chinese calligraphy, having practiced the art for over a decade. She is also known as
+                    an avid connoisseur of spicy cuisine. Additionally, Yuping harbors a deep appreciation for the
+                    natural world. In her spare time, Yuping enjoys a variety of activities, including traveling,
+                    reading, singing, watching films, and continuing to hone her calligraphic skills. </p>
+                <p><img src="../__local/6/24/30/71F7D15A268246D924BD6A6BDA7_91AFAE64_332.png%3Fe=.png" vsbhref="vurl"
+                        vurl="/_vsl/6243071F7D15A268246D924BD6A6BDA7/91AFAE64/332?e=.png" vheight="" vwidth=""
+                        orisrc="/__local/6/24/30/71F7D15A268246D924BD6A6BDA7_91AFAE64_332.png" class="img_vsb_content">Email:<span>chenyuping@westlake.edu.cn</span>
+                </p>
+                <div class="clean"></div>
+            </li>
+            <li class="item-box"><img src="../__local/D/D7/AD/F3028AA7EAC7A0A4021CC5C10A2_9618D504_9C647.png%3Fe=.png"
+                                      vsbhref="vurl" vurl="/_vsl/DD7ADF3028AA7EAC7A0A4021CC5C10A2/9618D504/9C647?e=.png"
+                                      vheight="" vwidth=""
+                                      orisrc="/__local/D/D7/AD/F3028AA7EAC7A0A4021CC5C10A2_9618D504_9C647.png"
+                                      class="img_vsb_content"> <h5> Yuanting Su </h5>
+                <p> Yuanting was born and raised in Inner Mongolia. She obtained her bachelor’s degree in MSE from East
+                    China Normal University and her Master’s degree in MSE from the National University of Singapore.
+                    She joined Dr. Qiucheng Li’s research group at Westlake University in 2024 to pursue her Ph.D.
+                    degree. Her research interests include synthesis and engineering of 2D magnetic materials and their
+                    heterostructures. Outside the lab, she also enjoys traveling and listening to KPOP music. </p>
+                <p><img src="../__local/6/24/30/71F7D15A268246D924BD6A6BDA7_91AFAE64_332.png%3Fe=.png" vsbhref="vurl"
+                        vurl="/_vsl/6243071F7D15A268246D924BD6A6BDA7/91AFAE64/332?e=.png" vheight="" vwidth=""
+                        orisrc="/__local/6/24/30/71F7D15A268246D924BD6A6BDA7_91AFAE64_332.png" class="img_vsb_content">Email:<span>suyuanting@westlake.edu.cn</span>
+                </p>
+                <div class="clean"></div>
+            </li>
+            <li class="item-box"><img src="../__local/3/44/ED/85ED735076C108A04DA4E374755_25AA30E7_849B2.png%3Fe=.png"
+                                      vsbhref="vurl" vurl="/_vsl/344ED85ED735076C108A04DA4E374755/25AA30E7/849B2?e=.png"
+                                      vheight="" vwidth=""
+                                      orisrc="/__local/3/44/ED/85ED735076C108A04DA4E374755_25AA30E7_849B2.png"
+                                      class="img_vsb_content"> <h5> Lida Yu </h5>
+                <p> Lida is from Nanchang City, Jiangxi Province. He received his bachelor's degree from Harbin
+                    University of Science and Technology. In 2023, he was admitted to Westlake University to pursue a
+                    doctorate and joined Qiucheng Li’s research group. Currently, his work focuses on the exploration of
+                    the synthesis of two-dimensional magnetic materials. In his spare time, Lida is passionate about
+                    hip-hop dancing and enjoys immersing himself in the rhythm of the music. In addition, he also likes
+                    to dance with his friends, unleashing his energy to the lively music. </p>
+                <p><img src="../__local/6/24/30/71F7D15A268246D924BD6A6BDA7_91AFAE64_332.png%3Fe=.png" vsbhref="vurl"
+                        vurl="/_vsl/6243071F7D15A268246D924BD6A6BDA7/91AFAE64/332?e=.png" vheight="" vwidth=""
+                        orisrc="/__local/6/24/30/71F7D15A268246D924BD6A6BDA7_91AFAE64_332.png" class="img_vsb_content">Email:<span>yulida@westlake.edu.cn</span>
+                </p>
+                <div class="clean"></div>
+            </li>
+        </ul>
+    </div>
+    <div class="list-box">
+        <h4> Undergraduate Student </h4>
+        <ul>
+            <li class="item-box"><img src="../__local/A/5C/6A/3E5936E19F8C9A5FADFB4867FDC_8998FA24_60527.png%3Fe=.png"
+                                      vsbhref="vurl" vurl="/_vsl/A5C6A3E5936E19F8C9A5FADFB4867FDC/8998FA24/60527?e=.png"
+                                      vheight="" vwidth=""
+                                      orisrc="/__local/A/5C/6A/3E5936E19F8C9A5FADFB4867FDC_8998FA24_60527.png"
+                                      class="img_vsb_content"> <h5> Xinchuan Li </h5>
+                <p> Xinchuan was born in Yantai, Shandong Province. He is currently pursuing his bachelor's degree at
+                    the School of Chemistry and Chemical Engineering of Shandong University and is expected to graduate
+                    in 2025. He will join Dr. Qiucheng Li's group at Westlake University to commence doctoral studies.
+                    In the summer of 2024, Xinchuan is undertaking a research internship at Qiucheng Li’s research group
+                    at Westlake University, focused on """"""""""""""""Fabrication of two-dimensional van der Waals
+                    Heterostructures and 'Magic Angle' graphene"""""""""""""""". In his spare time, he loves traveling,
+                    singing, and playing guitar and other activities. He also intends to cultivate a new passion for
+                    photography in the near future. </p>
+                <p><img src="../__local/6/24/30/71F7D15A268246D924BD6A6BDA7_91AFAE64_332.png%3Fe=.png" vsbhref="vurl"
+                        vurl="/_vsl/6243071F7D15A268246D924BD6A6BDA7/91AFAE64/332?e=.png" vheight="" vwidth=""
+                        orisrc="/__local/6/24/30/71F7D15A268246D924BD6A6BDA7_91AFAE64_332.png" class="img_vsb_content">Email:<span>857287859@qq.com</span>
+                </p>
+                <div class="clean"></div>
+            </li>
+        </ul>
+    </div>
+    <div class="list-box">
+        <h4> Administrative Assistant </h4>
+        <ul>
+            <li class="item-box"><img src="../__local/F/2A/05/17EBCBA4F418FB1B1A7222BE56A_D5C00385_638E9.png%3Fe=.png"
+                                      vsbhref="vurl" vurl="/_vsl/F2A0517EBCBA4F418FB1B1A7222BE56A/D5C00385/638E9?e=.png"
+                                      vheight="" vwidth=""
+                                      orisrc="/__local/F/2A/05/17EBCBA4F418FB1B1A7222BE56A_D5C00385_638E9.png"
+                                      class="img_vsb_content"> <h5> Yuxuan Zhang </h5>
+                <p> Yuxuan Zhang was born and raised in Hangzhou, Zhejiang Province. He joined the Qiucheng Li’s group
+                    in 2023 as administrative assistant at Westlake University. Before joining in the group, he
+                    graduated from Nanjing University of Science and Technology with a Bachelor's degree in Finance and
+                    a Master's degree in Social Work. In his leisure time, he enjoys activities such as traveling and
+                    watching movies. </p>
+                <p><img src="../__local/6/24/30/71F7D15A268246D924BD6A6BDA7_91AFAE64_332.png%3Fe=.png" vsbhref="vurl"
+                        vurl="/_vsl/6243071F7D15A268246D924BD6A6BDA7/91AFAE64/332?e=.png" vheight="" vwidth=""
+                        orisrc="/__local/6/24/30/71F7D15A268246D924BD6A6BDA7_91AFAE64_332.png" class="img_vsb_content">Email:<span>zhangyuxuan23@westlake.edu.cn</span>
+                </p>
+                <div class="clean"></div>
+            </li>
+        </ul>
+    </div>
+    <div class="list-box">
+        <h4> Research Assistant </h4>
+        <ul>
+            <li class="item-box"><img src="../__local/6/22/63/D7895EE40484818A66736E7B073_C529D00F_6EFAB.jpg%3Fe=.jpg"
+                                      vsbhref="vurl" vurl="/_vsl/62263D7895EE40484818A66736E7B073/C529D00F/6EFAB?e=.jpg"
+                                      vheight="" vwidth=""
+                                      orisrc="/__local/6/22/63/D7895EE40484818A66736E7B073_C529D00F_6EFAB.jpg"
+                                      class="img_vsb_content"> <h5> Jinming Zhou </h5>
+                <p> Ming comes from Zhuzhou, an industrial town in eastern Hunan Province. He received his bachelor's
+                    degree in Physics from Jiangxi Normal University and obtained his master degree in physics from
+                    Southern University of Science and Technology. Now his interest focus on kinds of novel uantum
+                    materials(like films and heterostructures) growth by MBE, and their characterization by TEM and STM.
+                    At his leisure time, he watches TV series, theater and movies for pleasure. Running and swimming are
+                    his favorite sports. </p>
+                <p><img src="../__local/6/24/30/71F7D15A268246D924BD6A6BDA7_91AFAE64_332.png%3Fe=.png" vsbhref="vurl"
+                        vurl="/_vsl/6243071F7D15A268246D924BD6A6BDA7/91AFAE64/332?e=.png" vheight="" vwidth=""
+                        orisrc="/__local/6/24/30/71F7D15A268246D924BD6A6BDA7_91AFAE64_332.png" class="img_vsb_content">Email:<span>zhoujinming@westlake.edu.cn</span>
+                </p>
+                <div class="clean"></div>
+            </li>
+        </ul>
+    </div>
+    <div class="list-box">
+        <h4> Alumni </h4>
+        <ul>
+            <li class="item-box"><img src="../__local/F/1F/FD/DDC75F4692EEDD699CB9B93578E_72C33B16_87F08.png%3Fe=.png"
+                                      vsbhref="vurl" vurl="/_vsl/F1FFDDDC75F4692EEDD699CB9B93578E/72C33B16/87F08?e=.png"
+                                      vheight="" vwidth=""
+                                      orisrc="/__local/F/1F/FD/DDC75F4692EEDD699CB9B93578E_72C33B16_87F08.png"
+                                      class="img_vsb_content"> <h5> Jingxia Qian </h5>
+                <p><span style="color: rgb(0, 0, 0);">(2024.07.01-2024.12.31 visiting scholar) ---- Postdoctoral Researcher&nbsp;(Nanjing University of Science and Technology)</span>
+                </p>
+                <p> Jingxia, born in Suzhou City, Anhui Province. She obtained her Ph.D. degree from Nanjing University
+                    of Science and Technology. In July 2024, she joined Dr. Qiucheng Li's group at Westlake University
+                    as a visiting scholar. Her current work focuses on the synthesis of two-dimensional magnetic
+                    materials using chemical vapor transport strategy. Beyond her academic pursuits, she takes pleasure
+                    in traveling and hiking. </p>
+                <div class="clean"></div>
+            </li>
+            <li class="item-box"><img src="../__local/1/BB/D1/7A343B3A89DC8D7DE683A7FF08A_D30F56F5_608A5.png%3Fe=.png"
+                                      vsbhref="vurl" vurl="/_vsl/1BBD17A343B3A89DC8D7DE683A7FF08A/D30F56F5/608A5?e=.png"
+                                      vheight="" vwidth=""
+                                      orisrc="/__local/1/BB/D1/7A343B3A89DC8D7DE683A7FF08A_D30F56F5_608A5.png"
+                                      class="img_vsb_content"> <h5> Hening Wang </h5>
+                <p><span style="color: rgb(0, 0, 0);">(2024.07.01-2024.08.31 visiting student)----Undergraduate Student(University of Oxford)</span>
+                </p>
+                <p> Hening, originally from Dongying, Shandong, will be pursuing a combined undergraduate and master’s
+                    program in Materials Science at the University of Oxford from 2024 to 2028. She is currently a
+                    visiting student at Westlake University. Her academic interests focus on the synthesis and
+                    characterization of novel 2D materials. Outside of her studies, Henning has a passion for jazz
+                    hiphop music, and she is also enthusiastic about photography and painting. </p>
+                <div class="clean"></div>
+            </li>
+            <li class="item-box"><img src="../__local/A/C6/ED/073944498F6330EFBB54C57FAD8_D2C1F40E_51CA4.png%3Fe=.png"
+                                      vsbhref="vurl" vurl="/_vsl/AC6ED073944498F6330EFBB54C57FAD8/D2C1F40E/51CA4?e=.png"
+                                      vheight="" vwidth=""
+                                      orisrc="/__local/A/C6/ED/073944498F6330EFBB54C57FAD8_D2C1F40E_51CA4.png"
+                                      class="img_vsb_content"> <h5> Zhifei Jiang </h5>
+                <p><span style="color: rgb(0, 0, 0);">(2024.10.21-2024.12.29 visiting student)----Ph.D. Students(National University of Singapore)</span>
+                </p>
+                <p> Zhifei Jiang (Jeffery) was born in Zhuji City, Zhejiang Province. He began studying Materials
+                    Science and Engineering in 2019 and obtained his Bachelor's and Master's degrees from the University
+                    of Manchester and Imperial College London, respectively. In 2025, he will begin his PhD studies at
+                    the National University of Singapore. Currently, he is working as a visiting student in Professor Li
+                    Qiucheng's lab, where his research focuses on the synthesis methods and performance regulation of 2D
+                    magnetic materials and their heterostructures. Outside of academics, he enjoys spending his time on
+                    basketball, Go, traveling, and movies. </p>
+                <div class="clean"></div>
+            </li>
+        </ul>
+    </div>
+</main>
+<footer class="footer-box">
+    <div class="logo-box"><img src="../img/icon_footerLogo_l.png" alt="">
+
+        <img class="footerLaboratoryLogo" src="../img/icon_footerLogo_r.png" alt="">
+
+        <img class="footerLaboratoryLogo-mobile" src="../img/icon_footerLogo_r_mobile.png" alt="">
+
+    </div>
+    <div class="contactus-box">
+        <h6> Contact us </h6>
+        <p> liqiucheng@westlake.edu.cn </p>
+        <p> No. 600 Dunyu Road, XihuDistrict, Hangzhou, Zhejiang, 310030, P.R. China </p>
+        <div class="clean"></div>
+        <div>
+            <a href="../Joinus.htm" target="_self">Join us</a>
+        </div>
+    </div>
+    <div class="clean"></div>
+    <div class="filings-box"><!-- 版权内容请在本组件"内容配置-版权"处填写 -->
+        <p>浙ICP备18025489号<br/></p>
+        <p>浙公安备33010602007514号<br/></p>
+        <p>Copyright © Westlake University. All Rights Reserved</p>
+        <div class="clean"></div>
+    </div>
+</footer>
+<script>
+    $(function () {
+        var isZh = location.href.includes("zh");
+        const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+        if (isMobile) {
+            document.body.classList.add('mobile-class');
+            setRem(3.75);
+        } else {
+            document.body.classList.add('pc-class');
+            setRem(14.4);
+            window.onresize = function () {
+                setRem(14.4);
+            };
+        }
+
+        function setRem(designSize) {
+            let html = document.documentElement;
+            let width = html.clientWidth;
+            if (designSize == 3.75) {
+                width = width >= 375 ? 375 : width
+            }
+            if (designSize == 14.4) {
+                width = width >= 1440 ? 1440 : width
+            }
+            html.style.fontSize = width / designSize + 'px'; // 设计稿宽度为1440px，那么1rem=100px，故除以14.4
+        }
+
+        var langBtn = document.getElementById("languageBtn");
+        langBtn.getElementsByTagName('span')[0].innerHTML = isZh ? "EN" : "CN";
+        langBtn.onclick = function () {
+            var path = location.pathname.split("zh").pop();
+            location.href = isZh ? path : "/zh" + path;
+        }
+    });
+
+    function handleMenuClick() {
+        var content = document.getElementById('mobile-menu-box');
+        if (content.classList.contains('menu-hidden')) {
+            content.classList.remove('menu-hidden');
+        } else {
+            content.classList.add('menu-hidden');
+        }
+    }
+
+    function handleChildMenuClick() {
+        var content = document.getElementById('childMenu');
+        if (content.classList.contains('menu-hidden')) {
+            content.classList.remove('menu-hidden');
+        } else {
+            content.classList.add('menu-hidden');
+        }
+    }
+</script>
+</body>
+</html>   

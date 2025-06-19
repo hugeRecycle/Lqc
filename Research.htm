@@ -1,0 +1,347 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" id="wixDesktopViewport"/>
+    <title>Research-Li Research Group</title>
+    <META Name="keywords" Content="Li Research Group"/>
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="css/research.css"/>
+    <script src="js/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+<header class="header-box">
+    <div class="logo-box"><a href="Research.htm">
+        <img src="img/icon_headerLogo_l.png" title="">
+    </a>
+        <a href="Research.htm">
+            <img class="laboratoryLogo" src="img/icon_headerLogo_r.png" title="">
+        </a>
+        <a href="Research.htm">
+            <img class="laboratoryLogo-mobile" src="img/icon_headerLogo_r_mobile.png" title="">
+        </a>
+    </div>
+    <div class="r-box">
+        <nav class="menu-box">
+            <ul id="pc-menu1">
+                <li>
+                    <a href="index.htm">Home </a>
+                </li>
+                <li class="active">
+                    <a href="Research.htm">Research </a>
+                </li>
+                <li>
+                    <a href="javascript:;">Team <img src="img/icon_arrowDown.png" alt=""></a>
+                    <ul class="teamList">
+                        <li><a href="Team/People.htm">People</a></li>
+                        <li><a href="Team/Gallery.htm">Gallery</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="Publications.htm">Publications </a>
+                </li>
+                <li>
+                    <a href="Facilities.htm">Facilities </a>
+                </li>
+                <li>
+                    <a href="Joinus.htm">Join us </a>
+                </li>
+            </ul>
+            <ul id="pc-menu2">
+                <li>
+                    <a href="zh/index.htm">首页 </a>
+                </li>
+                <li>
+                    <a href="zh/Research.htm">研究内容 </a>
+                </li>
+                <li>
+                    <a href="javascript:;">团队成员 <img src="img/icon_arrowDown.png" alt=""></a>
+                    <ul class="teamList">
+                        <li><a href="zh/Team/People.htm">成员信息</a></li>
+                        <li><a href="zh/Team/Gallery.htm">团队画廊</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="zh/Publications.htm">学术成果 </a>
+                </li>
+                <li>
+                    <a href="zh/Facilities.htm">实验仪器 </a>
+                </li>
+                <li>
+                    <a href="zh/Joinus.htm">团队招聘 </a>
+                </li>
+            </ul>
+            <script type="text/javascript">
+                var isZh = location.href.includes("zh");
+                if (isZh) {
+                    document.getElementById('pc-menu1').remove();
+                } else {
+                    document.getElementById('pc-menu2').remove();
+                }
+            </script>
+        </nav>
+        <div class="icon-menu-box" onclick="handleMenuClick()"><img src="img/icon_menu.png" alt=""></div>
+        <div class="language-box" id="languageBtn">
+            <img src="img/icon_language.png" alt="">
+            <span>CN</span>
+        </div>
+    </div>
+</header>
+<nav id="mobile-menu-box" class="menu-hidden">
+    <ul id="mobile-menu1">
+        <li>
+            <a href="index.htm">Home </a>
+        </li>
+        <li class="active ">
+            <a href="Research.htm">Research </a>
+        </li>
+        <li>
+            <a onclick="handleChildMenuClick()" href="javascript:;">Team <img src="img/icon_arrowDown.png" alt=""></a>
+            <ul id="childMenu" class="menu-hidden">
+                <li><a href="Team/People.htm">People</a></li>
+                <li><a href="Team/Gallery.htm">Gallery</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="Publications.htm">Publications </a>
+        </li>
+        <li>
+            <a href="Facilities.htm">Facilities </a>
+        </li>
+        <li>
+            <a href="Joinus.htm">Join us </a>
+        </li>
+    </ul>
+    <ul id="mobile-menu2">
+        <li>
+            <a href="zh/index.htm">首页 </a>
+        </li>
+        <li>
+            <a href="zh/Research.htm">研究内容 </a>
+        </li>
+        <li>
+            <a onclick="handleChildMenuClick()" href="javascript:;">团队成员 <img src="img/icon_arrowDown.png" alt=""></a>
+            <ul id="childMenu" class="menu-hidden">
+                <li><a href="zh/Team/People.htm">成员信息</a></li>
+                <li><a href="zh/Team/Gallery.htm">团队画廊</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="zh/Publications.htm">学术成果 </a>
+        </li>
+        <li>
+            <a href="zh/Facilities.htm">实验仪器 </a>
+        </li>
+        <li>
+            <a href="zh/Joinus.htm">团队招聘 </a>
+        </li>
+    </ul>
+    <script type="text/javascript">
+        var isZh = location.href.includes("zh");
+        if (isZh) {
+            document.getElementById('mobile-menu1').remove();
+        } else {
+            document.getElementById('mobile-menu2').remove();
+        }
+    </script>
+</nav>
+<section class="banner-box">
+
+    <img src="images/research/banner.png" alt="">
+
+
+    <div>
+        <p> Research </p>
+    </div>
+</section>
+<main class="main-box">
+    <div class="item-box first-item-box">
+        <h5> Overview </h5>
+        <p> The <span style="text-decoration: underline;">Q</span>uantum <span
+                style="text-decoration: underline;">C</span>haracterization <span
+                style="text-decoration: underline;">L</span>aboratory (<span
+                style="text-decoration: underline;">QCL</span>) at Westlake University is a research group led by Dr.
+            Qiucheng Li in the School of Engineering. Our research focuses on probing the quantum properties of
+            two-dimensional (2D) quantum materials using cryogenic scanning probe microscopy. Atomically thin 2D
+            materials and their van der Waals (vdW) heterostructures offer a promising platform for realizing tunable
+            quantum states and emergent quantum phenomena, such as long-range magnetic order and strong electronic
+            correlations. We aim to synthesize, engineer, and characterize novel 2D quantum materials with atomic
+            precision to unravel their structure-property relationships. Leveraging our unique in-house capabilities,
+            our interdisciplinary team of material scientists, chemists, and physicists is dedicated to creating
+            tailored 2D quantum systems for applications in nanotechnology, quantum information technology, and
+            alternative energy. If you share our passion for exploring the 2D quantum realm, we warmly invite you to
+            join us at the <span style="text-decoration: underline;">QCL</span> to push the boundaries of this exciting
+            field together. </p>
+        <div>
+            <img src="__local/F/9F/2D/B4872E13A0D6543326DAAA28778_0D7B1CBA_10AAFD.png%3Fe=.png" vsbhref="vurl"
+                 vurl="/_vsl/F9F2DB4872E13A0D6543326DAAA28778/0D7B1CBA/10AAFD?e=.png" vheight="" vwidth=""
+                 orisrc="/__local/F/9F/2D/B4872E13A0D6543326DAAA28778_0D7B1CBA_10AAFD.png" class="img_vsb_content">
+        </div>
+        <div class="clean"></div>
+    </div>
+    <div class="bgColor-F6F9FE">
+        <div class="item-box bgColor-F6F9FE material-box">
+            <h5><span>2D Material Synthesis</span></h5>
+            <p> The atomically precise synthesis of 2D nanomaterials is the foundation for all subsequent science and
+                engineering endeavors. We employ bottom-up synthesis strategies to create 2D materials from the atomic
+                building blocks through both physical deposition and chemical reactions. Our lab is equipped with
+                extensive materials growth capabilities, ensuring atomically precisely synthesis of high-quality 2D
+                materials. </p>
+            <div>
+                <img src="__local/E/FA/85/430CC3DC6DE590957204FAB7AA6_B5ABFD27_F364F.png%3Fe=.png" vsbhref="vurl"
+                     vurl="/_vsl/EFA85430CC3DC6DE590957204FAB7AA6/B5ABFD27/F364F?e=.png" vheight="" vwidth=""
+                     orisrc="/__local/E/FA/85/430CC3DC6DE590957204FAB7AA6_B5ABFD27_F364F.png" class="img_vsb_content">
+                <h6> Molecular Beam Epitaxy (MBE) </h6>
+                <p> MBE involves physical vapor deposition of atoms or molecules onto clean surfaces under ultrahigh
+                    vacuum (UHV, pressure < &nbsp;<span
+                            style="font-size: 14px; text-align: justify; font-family: 宋体;"><span
+                            style="font-family:Calibri">10</span></span><sup
+                            style="font-family: Calibri; text-align: justify;"><span
+                            style="font-family: 宋体;font-size: 14px;vertical-align: super"><span
+                            style="font-family:Calibri">-9</span></span></sup><span style="text-align: justify;">mbar) conditions with precisely controlled fluxes. Our lab is equipped with UHV-MBE system coupled with scanning tunneling microscopy (STM), enabling us to analyze the atomic structures and electronic properties of 2D materials without exiting the UHV environment.</span>
+                </p>
+                <div class="clean"></div>
+            </div>
+            <div>
+                <img src="__local/C/D8/FE/026E744A633C240DF3D32792D9E_66F44831_70490.png%3Fe=.png" vsbhref="vurl"
+                     vurl="/_vsl/CD8FE026E744A633C240DF3D32792D9E/66F44831/70490?e=.png" vheight="" vwidth=""
+                     orisrc="/__local/C/D8/FE/026E744A633C240DF3D32792D9E_66F44831_70490.png" class="img_vsb_content">
+                <h6> Chemical Vapor Deposition (CVD) and Chemical Vapor Transport (CVT) </h6>
+                <p> CVD involves decomposition and reaction of vapor-phase precursors (derived from solid, liquid, or
+                    gas sources) onto a growth substrate at elevated temperatures. Our lab is equipped with multiple CVD
+                    systems that provide access to diverse 2D materials and their vdW heterostructures. Additionally, we
+                    can conduct UHV-CVD directly within our STM and MBE preparation chambers. </p>
+                <div class="clean"></div>
+            </div>
+        </div>
+    </div>
+    <div class="item-box characterizations-box">
+        <h5><span>Atomic-Scale Characterizations</span></h5>
+        <div>
+            <img src="__local/A/5A/25/AD23565346E10D9F0173D7C3724_9465E71B_B131F.png%3Fe=.png" vsbhref="vurl"
+                 vurl="/_vsl/A5A25AD23565346E10D9F0173D7C3724/9465E71B/B131F?e=.png" vheight="" vwidth=""
+                 orisrc="/__local/A/5A/25/AD23565346E10D9F0173D7C3724_9465E71B_B131F.png" class="img_vsb_content">
+        </div>
+        <p> We leverage and develop atomic-scale characterization techniques to unvel the structure-property
+            relationships inherent in 2D materials, thereby refining our synthesis and engineering processes. We utilize
+            a cryogenic UHV-STM to probe the atomic structures, defects, and functional groups, allowing us to correlate
+            their presence with material properties. Additionally, our STM is equipped with a qPlus AFM to provide
+            complementary topographical characterization at the atomic level. Beyond our in-house instrumentation, the
+            facilities at Westlake University feature a powerful UHV cluster system that integrates STM with
+            angle-resolved photoemission spectroscopy (ARPES), X-ray photoelectron spectroscopy (XPS), and multiple
+            molecular beam epitaxy (MBE) chambers, significantly enhancing our analytical capabilities. </p>
+        <div class="clean"></div>
+    </div>
+    <div class="bgColor-F6F9FE">
+        <div class="item-box engineering-box bgColor-F6F9FE">
+            <div class="title-box">
+                <h5><span>Surface and Interface</span></h5>
+                <h5><span>Engineering</span></h5>
+            </div>
+            <div>
+                <img src="__local/3/8A/35/68DE0288ECEC9C2C26063CDC7BB_4A5ED6B4_292702.png%3Fe=.png" vsbhref="vurl"
+                     vurl="/_vsl/38A3568DE0288ECEC9C2C26063CDC7BB/4A5ED6B4/292702?e=.png" vheight="" vwidth=""
+                     orisrc="/__local/3/8A/35/68DE0288ECEC9C2C26063CDC7BB_4A5ED6B4_292702.png" class="img_vsb_content">
+            </div>
+            <p> The atomically thin nature of 2D materials implies that surface and interface effects are more important
+                and oftentimes dominant in determining their quantum properties. We aim to precisely engineer the
+                surfaces and interfaces of 2D materials, affording intricate control over their quantum states,
+                electronic configurations, and coherent behaviors. For example, many 2D materials are prone to
+                oxidization and irreversible degradation under ambient conditions, severely limiting their practical
+                applications. Our research has demonstrated that covalent modification of 2D materials with tunable
+                functional groups holds promise for tailoring the surface chemistry and significantly improving chemical
+                stability. Moreover, the advent of vdW heterostructures has opened an entirely new highly tunable
+                platform to directly engineer strongly correlated electronic states. The proximity effect at the vW
+                interfaces, involving charge transfer and additional spin-exchange paths, is expected to enhance
+                interlayer coupling and tailor their quantum properties. </p>
+            <div class="clean"></div>
+        </div>
+    </div>
+    <div class="item-box">
+        <h5> Summary </h5>
+        <p> Combing the three thrusts will correlate the atomic structure to the quantum properties, ultimately bridging
+            the gap between fundamental studies and potential applications of 2D quantum materials for applications in
+            nanoelectronic and spintronic devices. </p></div>
+</main>
+<footer class="footer-box">
+    <div class="logo-box"><img src="img/icon_footerLogo_l.png" alt="">
+
+        <img class="footerLaboratoryLogo" src="img/icon_footerLogo_r.png" alt="">
+
+        <img class="footerLaboratoryLogo-mobile" src="img/icon_footerLogo_r_mobile.png" alt="">
+
+    </div>
+    <div class="contactus-box">
+        <h6> Contact us </h6>
+        <p> liqiucheng@westlake.edu.cn </p>
+        <p> No. 600 Dunyu Road, XihuDistrict, Hangzhou, Zhejiang, 310030, P.R. China </p>
+        <div class="clean"></div>
+        <div>
+            <a href="Joinus.htm" target="_self">Join us</a>
+        </div>
+    </div>
+    <div class="clean"></div>
+    <div class="filings-box"><!-- 版权内容请在本组件"内容配置-版权"处填写 -->
+        <p>浙ICP备18025489号<br/></p>
+        <p>浙公安备33010602007514号<br/></p>
+        <p>Copyright © Westlake University. All Rights Reserved</p>
+        <div class="clean"></div>
+    </div>
+</footer>
+<script>
+    $(function () {
+        var isZh = location.href.includes("zh");
+        const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+        if (isMobile) {
+            document.body.classList.add('mobile-class');
+            setRem(3.75);
+        } else {
+            document.body.classList.add('pc-class');
+            setRem(14.4);
+            window.onresize = function () {
+                setRem(14.4);
+            };
+        }
+
+        function setRem(designSize) {
+            let html = document.documentElement;
+            let width = html.clientWidth;
+            if (designSize == 3.75) {
+                width = width >= 375 ? 375 : width
+            }
+            if (designSize == 14.4) {
+                width = width >= 1440 ? 1440 : width
+            }
+            html.style.fontSize = width / designSize + 'px'; // 设计稿宽度为1440px，那么1rem=100px，故除以14.4
+        }
+
+        var langBtn = document.getElementById("languageBtn");
+        langBtn.getElementsByTagName('span')[0].innerHTML = isZh ? "EN" : "CN";
+        langBtn.onclick = function () {
+            var path = location.pathname.split("zh").pop();
+            location.href = isZh ? path : "/zh" + path;
+        }
+    });
+
+    function handleMenuClick() {
+        var content = document.getElementById('mobile-menu-box');
+        if (content.classList.contains('menu-hidden')) {
+            content.classList.remove('menu-hidden');
+        } else {
+            content.classList.add('menu-hidden');
+        }
+    }
+
+    function handleChildMenuClick() {
+        var content = document.getElementById('childMenu');
+        if (content.classList.contains('menu-hidden')) {
+            content.classList.remove('menu-hidden');
+        } else {
+            content.classList.add('menu-hidden');
+        }
+    }
+</script>
+</body>
+</html>   

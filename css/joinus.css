@@ -1,73 +1,114 @@
 .item-box {
 	background-color: #fff;
 	padding: 1rem 1.8rem;
-}
-.item-box h5 {
-	font-family: Avenir-Black;
-	font-size: .34rem;
-	color: #0C3375;
-	line-height: .46rem;
-	letter-spacing: .01rem;
+    max-width: 14.4rem;
+    margin: 0 auto;
 }
 .item-box img {
-    width: 5.2rem;
+    /*width: 5.2rem;
     display: block;
     object-fit: cover;
     object-position: 50% 50%;
     margin-left: .42rem;
-    float: right;
+    float: right;*/
 }
-.item-box p,
-.item-box a {
+.item-box h4 {
+    width: calc(100% - 5.62rem);
+    font-family: Avenir-Heavy;
+    line-height: .36rem;
+    font-size: .26rem;
+    color: rgba(0,0,0,0.85);
+    margin: .2rem 0;
+    /*float: left;*/
+font-weight: 500;
+}
+.item-box h4:first-child {
+margin-top: 0
+}
+.item-box p {
+    /*width: calc(100% - 5.62rem);*/
     font-family: Avenir-Medium;
     line-height: .33rem;
     font-size: .24rem;
     color: rgba(0,0,0,0.65);
-    float: left;
+    /*float: left;*/
+font-weight: 400;
 }
 .item-box p span {
     font-family: Avenir-Heavy;
     color: rgba(0,0,0,0.85);
 }
-.item-box p:nth-child(2) {
-    width: calc(100% - 5.62rem);
-}
-.item-box:first-child h6 {
-    font-family: Avenir-Roman;
-    font-size: .24rem;
-    margin-top: .42rem;
-    color: rgba(0,0,0,0.45);
-    line-height: .33rem;
-    float: left;
-}
-.item-box:first-child h6:nth-child(3) {
+.item-box h6 {
     width: calc(100% - 5.62rem);
     margin-top: .3rem;
-}
-.item-box:first-child h6:nth-child(4) {
-    margin-top: .64rem;
-}
-.item-box:first-child h6 p {
     font-family: Avenir-Roman;
     font-size: .22rem;
+    margin-top: .42rem;
+    color: rgba(0,0,0,0.45);
+    line-height: .3rem;
+    float: left;
+font-weight: 400;
+}
+.item-box h6 span {
+    color: #2157A8;
+font-weight: 600;
+}
+.item-box ul {
+    margin-top: .22rem;
+    float: left;
+}
+.item-box ul li {
+    margin-top: .42rem;
+    font-family: Avenir-Medium;
+    line-height: .33rem;
+    font-size: .24rem;
+    color: rgba(0,0,0,0.65);
+}
+.item-box ul li p {
+    width: 100%;
+    font-family: Avenir-Roman;
+    font-size: .24rem;
     color: rgba(0,0,0,0.45);
     float: none;
+font-weight: 400;
 }
-.item-box:first-child h6 p:last-child {
-    color: #2157A8;
+.item-box ul li p a {
+    color: rgba(0,0,0,0.65);
 }
-.item-box:last-child h6 {
-	font-family: Avenir-Heavy;
+.form-box h5 {
+	font-family: Avenir-Black;
+	font-size: .34rem;
+	color: #0C3375;
+	line-height: .46rem;
+	letter-spacing: .01rem;
+font-weight: 600;
+}
+.form-box h6 {
+    width: 100%;
+    font-family: Avenir-Heavy;
 	font-size: .22rem;
 	color: #F58300;
 	line-height: .32rem;
 	margin-top: .18rem;
+    float: none;
+font-weight: 500;
 }
-.item-box:last-child div {
+.form-box>div {
     margin-top: .42rem;
 }
-.item-box:last-child div input {
-    width: 5.2rem;
+.form-box>div:first-child {
+    display: block;
+    margin-top: 0 !important;
+}
+.form-box>div form>div {
+    display: flex;
+}
+.form-box>div .input-box {
+    flex: 1;
+    margin-right: .2rem;
+}
+.form-box>div .input-box input {
+    width: 100%;
     height: .42rem;
     display: block;
     padding: 0 .22rem;
@@ -78,32 +119,37 @@
     font-family: Avenir-Roman;
     border: .01rem solid #CED4DA;
 }
-.item-box:last-child div textarea {
-    width: calc(100% - 5.6rem);
-    padding: .05rem .22rem;
-    margin-top: -1.7rem;
+.form-box>div .input-box input:first-child {
+    margin-top: 0 !important;
+}
+.form-box>div .textarea-box {
+    flex: 1;
+    margin-left: .2rem;
+}
+.form-box>div .textarea-box textarea {
+    width: 100%;
     height: 1.7rem;
-    margin-left: .4rem;
+    padding: .05rem .22rem;
     border: .01rem solid #CED4DA;
     font-size: .2rem;
     font-family: Avenir-Roman;
     box-sizing: border-box;
     resize: none;
     display: block;
-    float: right;
+font-weight: 400;
 }
 input::placeholder,
 textarea::placeholder {
     color: rgba(0,0,0,0.25)
 }
-.item-box:last-child div button {
+.form-box>div form>div .textarea-box button {
     width: 1.6rem;
     height: .4rem;
     line-height: .4rem;
+    margin-top: .22rem;
     text-align: center;
     background-color: #2157A8;
     color: #fff;
-    margin-top: .22rem;
     font-size: .18rem;
     font-family: Avenir-Medium;
     border: none;
@@ -111,23 +157,23 @@ textarea::placeholder {
     padding: 0;
     display: block;
     float: right;
+font-weight: 400;
 }
-.item-box:last-child p {
+.form-box p {
+    font-family: Avenir-Roman;
     width: calc(100% - 5.6rem);
     line-height: .25rem;
     font-size: .18rem;
-    margin-top: -0.4rem;
+    margin-top: -0.38rem;
     float: left;
+font-weight: 400;
 }
 
 
 /* mobile css */
 .mobile-class .item-box {
 	padding: .36rem .2rem;
-}
-.mobile-class .item-box h5 {
-	font-size: .2rem;
-	line-height: .27rem;
+    max-width: 3.75rem;
 }
 .mobile-class .item-box img {
     width: 100%;
@@ -136,74 +182,84 @@ textarea::placeholder {
     margin-left: 0;
     float: none;
 }
-.mobile-class .item-box p,
-.mobile-class .item-box a {
-    line-height: .22rem;
-    font-size: .15rem;
-    float: none;
-}
-.mobile-class .item-box a {
-    word-break: break-all;
-}
-.mobile-class .item-box p:nth-child(2) {
-    margin-top: .2rem;
+.mobile-class .item-box h4 {
     width: 100%;
-}
-.mobile-class .item-box:first-child h6 {
-    font-size: .15rem;
     margin-top: .2rem;
     line-height: .22rem;
+    font-size: .16rem;
+    margin-bottom: 0;
     float: none;
 }
-.mobile-class .item-box:first-child h6:nth-child(3) {
+.mobile-class .item-box p {
+    margin-top: .12rem;
+    width: 100%;
+    line-height: .22rem;
+    font-size: .15rem;
+    float: none;
+}
+.mobile-class .item-box h6 {
     width: 100%;
     margin-top: .16rem;
-    line-height: .2rem;
-}
-.mobile-class .item-box:first-child h6:nth-child(4) {
-    margin-top: .36rem;
-}
-.mobile-class .item-box:first-child h6 p {
     font-size: .14rem;
+    line-height: .2rem;
     float: none;
+}
+.mobile-class .item-box ul {
+    margin-top: .16rem;
+}
+.mobile-class .item-box ul li {
+    margin-top: .2rem;
+    line-height: .22rem;
+    font-size: .15rem;
+}
+.mobile-class .item-box ul li p {
+    font-size: .15rem;
     margin-top: 0;
+    word-break: break-all;
 }
-.mobile-class .item-box:last-child h6 {
-	display: none;
+.mobile-class .form-box h5 {
+	font-size: .2rem;
+	line-height: .27rem;
 }
-.mobile-class .item-box:last-child div {
+.mobile-class .form-box h6 {
+    display: none;
+}
+.mobile-class .form-box>div {
     margin-top: .24rem;
 }
-.mobile-class .item-box:last-child div input {
-    width: 100%;
+.mobile-class .form-box>div form>div {
+    flex-direction: column;
+}
+.mobile-class .form-box>div .input-box {
+    flex: 1;
+    margin: 0;
+}
+.mobile-class .form-box>div .input-box input {
     height: .36rem;
-    display: block;
     padding: 0 .12rem;
     margin-top: .18rem;
     font-size: .15rem;
 }
-.mobile-class .item-box:last-child div input:first-child {
-    margin-top: 0;
-}
-.mobile-class .item-box:last-child div textarea {
-    width: 100%;
-    padding: .08rem .12rem;
-    margin-top: .18rem;
-    height: 1.48rem;
+.mobile-class .form-box>div .textarea-box {
+    flex: 1;
     margin-left: 0;
-    font-size: .15rem;
-    float: none;
+    margin-top: .18rem;
 }
-.mobile-class .item-box:last-child div button {
+.mobile-class .form-box>div .textarea-box textarea {
+    width: 100%;
+    height: 1.48rem;
+    padding: .08rem .12rem;
+    font-size: .15rem;
+}
+.mobile-class .form-box>div .textarea-box button {
     width: 1.52rem;
     height: .36rem;
     line-height: .36rem;
-    margin: .2rem auto 0;
-    text-align: center;
     font-size: .15rem;
     float: none;
+    margin: .2rem auto 0;
 }
-.mobile-class .item-box:last-child p {
+.mobile-class .form-box p {
     width: 100%;
     line-height: .2rem;
     font-size: .14rem;

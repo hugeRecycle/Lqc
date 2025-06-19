@@ -1,6 +1,8 @@
 .item-box {
 	background-color: #fff;
 	padding: 1rem 1.8rem;
+max-width: 14.4rem;
+	margin: 0 auto;
 }
 .item-box h5 {
 	font-family: Avenir-Black;
@@ -8,6 +10,7 @@
 	color: #0C3375;
 	line-height: .46rem;
 	letter-spacing: .01rem;
+font-weight: 600;
 }
 .item-box h5 span {
     position: relative;
@@ -27,44 +30,46 @@
 	color: rgba(0,0,0,0.65);
 	line-height: .29rem;
     margin-top: .34rem;
+font-weight: 400;
 }
 .item-box img {
     width: 100%;
     display: block;
 }
-.item-box:first-child p {
+.first-item-box p {
     margin-top: .4rem;
     line-height: .32rem;
     font-size: .22rem;
 }
-.item-box:first-child p span {
+.first-item-box p span {
     text-decoration: underline;
     font-family: Avenir-Heavy;
     color: rgba(0,0,0,0.85);
 }
-.item-box:first-child img {
+.first-item-box img {
     margin-top: .28rem;
 }
-.item-box div {
+.material-box div {
     margin-top: .64rem;
     line-height: .29rem;
 }
-.item-box div:nth-child(2) {
+.material-box div:nth-child(2) {
     margin-top: .8rem;
 }
-.item-box div img {
+.material-box div img {
     width: 5rem;
     float: left;
 }
-.item-box div h6 {
+.material-box div h6 {
     width: calc(100% - 5.42rem);
     margin-left: .42rem;
     font-family: Avenir-Medium;
     font-size: .22rem;
     color: rgba(0,0,0,0.85);
     float: right;
+font-weight: 500;
 }
-.item-box div p {
+.material-box div p {
     width: calc(100% - 5.42rem);
     margin-left: .42rem;
     font-family: Avenir-Roman;
@@ -73,17 +78,16 @@
     margin-top: .34rem;
     float: right;
 }
-.engineering-box h5 {
+.item-box .title-box {
     width: calc(100% - 5.42rem);
     float: left;
 }
-.engineering-box h5:nth-child(2) {
-    float: none;
+.item-box .title-box h5 {
+   width: 100%;
 }
 .engineering-box img{
     width: 5rem;
     float: right;
-    margin-top: -0.92rem;
 }
 .engineering-box p {
     width: calc(100% - 5.42rem);
@@ -108,6 +112,7 @@
 /* mobile css */
 .mobile-class .item-box {
 	padding: .32rem .2rem;
+    max-width: 3.75rem;
 }
 .mobile-class .item-box h5 {
 	font-size: .2rem;
@@ -139,39 +144,39 @@
     object-fit: cover;
     object-position: 50% 50%;
 }
-.mobile-class .item-box:first-child h5 {
+.mobile-class .first-item-box h5 {
     text-align: center;
     width: 100%;
 }
-.mobile-class .item-box:first-child img {
+.mobile-class .first-item-box img {
     margin-top: .2rem;
 }
-.mobile-class .item-box div {
+.mobile-class .material-box div {
     margin-top: .32rem;
     line-height: .22rem;
 }
-.mobile-class .item-box div:nth-child(2) {
+.mobile-class .material-box div:nth-child(2) {
     margin-top: .32rem;
 }
-.mobile-class .item-box div img {
+.mobile-class .material-box div img {
     width: 100%;
     float: none;
 }
-.mobile-class .item-box div h6 {
+.mobile-class .material-box div h6 {
     margin-top: .24rem;
     width: 100%;
     margin-left: 0;
     font-size: .16rem;
     float: none;
 }
-.mobile-class .item-box div p {
+.mobile-class .material-box div p {
     width: 100%;
     margin-left: 0;
     font-size: .14rem;
     margin-top: .04rem;
     float: none;
 }
-.mobile-class .engineering-box h5,
+.mobile-class .item-box .title-box,
 .mobile-class .characterizations-box h5 {
     width: 100%;
     float: none;
