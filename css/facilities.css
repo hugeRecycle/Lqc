@@ -1,37 +1,37 @@
 .list-box {
-    padding: 1rem 1.8rem;
+    padding: 100px 180px;
     background-color: #fff;
-    max-width: 14.4rem;
+    max-width: 1440px;
     margin: 0 auto;
 }
 .list-box .item-box {
-    padding-top: .8rem;
+    padding-top: 80px;
 }
 .list-box .item-box img {
-    width: 5.2rem;
+    width: 520px;
     float: left;
     display: block;
     object-fit: cover;
     object-position: 50% 50%;
 }
 .list-box .item-box h5 {
-    width: calc(100% - 5.62rem);
-    margin-left: .42rem;
+    width: calc(100% - 562px);
+    margin-left: 42px;
     font-family: Avenir-Heavy;
-    font-size: .28rem;
-    line-height: .33rem;
+    font-size: 28px;
+    line-height: 33px;
     color: rgba(0,0,0,0.85);
     float: right;
 font-weight: 600;
 }
 .list-box .item-box p {
-    width: calc(100% - 5.62rem);
-    margin-left: .42rem;
-    margin-top: .12rem;
+    width: calc(100% - 562px);
+    margin-left: 42px;
+    margin-top: 12px;
     font-family: Avenir-Roman;
-    font-size: .22rem;
+    font-size: 22px;
     color: rgba(0,0,0,0.45);
-    line-height: .32rem;
+    line-height: 32px;
     float: right;
 font-weight: 400;
 }
@@ -49,13 +49,13 @@ font-weight: 400;
 
 /* mobile css */
 .mobile-class .list-box {
-    padding: .36rem .2rem;
-    max-width: 3.75rem;
+    padding: 36px 20px;
+    max-width: 375px;
 }
 .mobile-class .list-box .item-box {
-    padding-top: .28rem;
-    padding-bottom: .24rem;
-    border-bottom: .01rem solid rgba(0,0,0,0.15);
+    padding-top: 28px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgba(0,0,0,0.15);
 }
 .mobile-class .list-box .item-box img {
     width: 100%;
@@ -66,17 +66,17 @@ font-weight: 400;
 .mobile-class .list-box .item-box h5 {
     width: 100%;
     margin-left: 0;
-    margin-top: .2rem;
-    font-size: .16rem;
-    line-height: .19rem;
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 19px;
     float: none;
 }
 .mobile-class .list-box .item-box p {
     width: 100%;
     margin-left: 0;
-    margin-top: .12rem;
-    font-size: .14rem;
-    line-height: .22rem;
+    margin-top: 12px;
+    font-size: 14px;
+    line-height: 22px;
     float: none;
 }
 .mobile-class .list-box .item-box:first-child {

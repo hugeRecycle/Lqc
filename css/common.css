@@ -38,8 +38,8 @@ div {box-sizing: border-box}
 /* header */
 .header-box {
 	width: 100%;
-	height: .98rem;
-	padding: 0 .8rem;
+	height: 98px;
+	padding: 0 80px;
 	box-sizing: border-box;
 	display: flex;
 	align-items: center;
@@ -49,12 +49,12 @@ div {box-sizing: border-box}
 	display: flex;
 }
 .header-box .logo-box img {
-	height: .48rem;
-	margin-right: .26rem;
+	height: 48px;
+	margin-right: 26px;
 	display: block;
 }
 .header-box .logo-box .laboratoryLogo {
-	width: 2.51rem;
+	width: 251px;
 	margin-right: 0;
 }
 .header-box .logo-box .laboratoryLogo-mobile {
@@ -76,19 +76,19 @@ div {box-sizing: border-box}
 	display: flex;
 	align-items: center;
 	justify-content: center;
-  	margin-right: .36rem;
-	border-top: .025rem solid transparent;
+  	margin-right: 36px;
+	border-top: 2.5px solid transparent;
 	cursor: pointer;
 }
 .header-box .r-box .menu-box ul li:last-child {
-	margin-right: .26rem;
+	margin-right: 26px;
 }
 .header-box .r-box .menu-box li a {
   	color: rgba(0, 0, 0, .85);
   	text-decoration: none;
   	font-family: Avenir-Heavy;
-  	font-size: .2rem;
-  	line-height: .27rem;
+  	font-size: 20px;
+  	line-height: 27px;
     font-weight: 500;
 }
 .header-box .r-box .menu-box li.active,
@@ -100,8 +100,8 @@ div {box-sizing: border-box}
 	color: #2157A8;
 }
 .header-box .r-box .menu-box li a img {
-	width: .13rem;
-	height: .13rem;
+	width: 13px;
+	height: 13px;
 }
 .header-box .r-box .menu-box li {
 	position: relative;
@@ -111,14 +111,14 @@ div {box-sizing: border-box}
 }
 .header-box .r-box .menu-box li .teamList {
 	position: absolute;
-	top: .83rem;
+	top: 83px;
     left: 0;
 	z-index: 99;
 	height: auto;
-	padding: .28rem .2rem;
+	padding: 28px 20px;
 	background-color: #fff;
-	border-radius: .04rem;
-	box-shadow: 0 .07rem .25rem 0 rgba(0,0,0,0.15);
+	border-radius: 4px;
+	box-shadow: 0 7px 25px 0 rgba(0,0,0,0.15);
 	display: none;
 }
 .header-box .r-box .menu-box li .teamList li {
@@ -127,11 +127,11 @@ div {box-sizing: border-box}
 	justify-content: flex-start;
   	margin-right: 0;
 	border: none;
-	width: 1.88rem;
-	height: .51rem;
-	padding-left: .2rem;
+	width: 188px;
+	height: 51px;
+	padding-left: 20px;
 	font-family: Avenir-Heavy;
-	font-size: .2rem;
+	font-size: 20px;
 	color: rgba(0, 0, 0, .85);
 }
 .header-box .r-box .menu-box li .teamList li a {
@@ -151,22 +151,22 @@ div {box-sizing: border-box}
 .header-box .r-box .language-box {
 	display: flex;
 	align-items: center;
-	height: .54rem;
-	border-left: .01rem solid rgba(0,0,0,0.25);
-	padding-left: .26rem;
+	height: 54px;
+	border-left: 1px solid rgba(0,0,0,0.25);
+	padding-left: 26px;
 }
 
 .header-box .r-box .language-box img {
-	width: .26rem;
-	height: .26rem;
+	width: 26px;
+	height: 26px;
 	display: block;
 }
 .header-box .r-box .language-box span {
-	margin-left: .08rem;
+	margin-left: 8px;
 	font-family: Avenir-Medium;
-	font-size: .17rem;
+	font-size: 17px;
 	color: rgba(0,0,0,0.45);
-	line-height: .21rem;
+	line-height: 21px;
 	cursor: pointer;
 }
 .header-box .r-box .icon-menu-box img{
@@ -179,31 +179,31 @@ div {box-sizing: border-box}
 }
 .mobile-class .header-box {
 	width: 100%;
-	height: .48rem;
-	padding: 0 .2rem;
+	height: 48px;
+	padding: 0 20px;
 	box-sizing: border-box;
 	justify-content: space-between;
 }
 .mobile-class .header-box .logo-box img {
-	width: .9rem;
-	height: .28rem;
-	margin-right: .2rem;
+	width: 90px;
+	height: 28px;
+	margin-right: 20px;
 }
 .mobile-class .header-box .logo-box .laboratoryLogo {
 	display: none;
 }
 .mobile-class .header-box .logo-box .laboratoryLogo-mobile {
-	width: .74rem !important;
+	width: 74px !important;
 	margin-right: 0 !important;
 	display: block;
 }
 .mobile-class #mobile-menu-box ul {
-	padding: .2rem 0;
+	padding: 20px 0;
 }
 .mobile-class #mobile-menu-box li {
 	display: grid;
-	margin-top: .1rem;
-	padding: 0 .2rem;
+	margin-top: 10px;
+	padding: 0 20px;
 }
 .mobile-class #mobile-menu-box li:first-child {
 	margin-top: 0;
@@ -212,8 +212,8 @@ div {box-sizing: border-box}
   	color: rgba(0, 0, 0, .65);
   	text-decoration: none;
   	font-family: Avenir-Heavy;
-  	font-size: .16rem;
-  	line-height: .22rem;
+  	font-size: 16px;
+  	line-height: 22px;
 	white-space: nowrap;
 font-weight: 500;
 }
@@ -221,12 +221,12 @@ font-weight: 500;
 	color: #2157A8;
 }
 .mobile-class #mobile-menu-box li a img {
-	width: .1rem;
-	height: .1rem;
+	width: 10px;
+	height: 10px;
 }
 .team-active {
 	background-color: #F5F7FA;
-	padding: .1rem .2rem !important;
+	padding: 10px 20px !important;
 }
 .team-active a,
 .mobile-class #mobile-menu-box #childMenu li.active a {
@@ -239,9 +239,9 @@ font-weight: 500;
 	display: flex;
 	align-items: center;
 	font-family: Avenir-Heavy;
-	font-size: .16rem;
+	font-size: 16px;
 	color: rgba(0, 0, 0, .65);
-	margin-top: .1rem;
+	margin-top: 10px;
 }
 .mobile-class #mobile-menu-box #childMenu li a {
 	color: rgba(0, 0, 0, .65) !important;
@@ -249,19 +249,19 @@ font-weight: 500;
 .mobile-class .header-box .icon-menu-box, .mobile-class .header-box .language-box {
 	display: flex;
 	align-items: center;
-	height: .32rem;
+	height: 32px;
 }
 .mobile-class .header-box .icon-menu-box {
-	margin-right: .2rem;
+	margin-right: 20px;
 }
 .mobile-class .header-box .language-box {
-	padding-left: .2rem;
-	border-left: .01rem solid rgba(0,0,0,0.15);
+	padding-left: 20px;
+	border-left: 1px solid rgba(0,0,0,0.15);
 }
 .mobile-class .header-box .icon-menu-box img, 
 .mobile-class .header-box .language-box img {
-	width: .22rem;
-	height: .22rem;
+	width: 22px;
+	height: 22px;
 	display: block;
 }
 .mobile-class .header-box .language-box span {
@@ -272,7 +272,7 @@ font-weight: 500;
 .footer-box {
 	box-sizing: border-box;
 	width: 100%;
-	padding: .8rem 1rem .68rem;
+	padding: 80px 100px 68px;
 	background-color: #0A142F;
 	font-family: Avenir-Medium;
 }
@@ -281,12 +281,12 @@ font-weight: 500;
 	float: left;
 }
 .footer-box .logo-box img {
-	height: .62rem;
-	margin-right: .32rem;
+	height: 62px;
+	margin-right: 32px;
 	display: block;
 }
 .footer-box .logo-box .footerLaboratoryLogo {
-	width: 3.25rem;
+	width: 325px;
 	margin-right: 0;
 }
 .footer-box .logo-box .footerLaboratoryLogo-mobile {
@@ -298,123 +298,123 @@ font-weight: 500;
 }
 .footer-box .contactus-box h6 {
 	font-family: Avenir-Black;
-	font-size: .14rem;
+	font-size: 14px;
 	color: rgba(255, 255, 255, .4);
 	width: fit-content;
-	line-height: .2rem;
-	margin-bottom: .2rem;
+	line-height: 20px;
+	margin-bottom: 20px;
         font-weight: 600;
 }
 .footer-box .contactus-box p {
-	font-size: .18rem;
+	font-size: 18px;
 	color: #fff;
-	width: 2.3rem;
-	line-height: .25rem;
+	width: 230px;
+	line-height: 25px;
 	float: left;
 }
 .footer-box .contactus-box p:nth-child(2) {
 	float: right;
 }
 .footer-box .contactus-box a {
-	width: 1.13rem;
-	height: .34rem;
+	width: 113px;
+	height: 34px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border-radius: .4rem;
+	border-radius: 40px;
 	background-color: #fff;
-	font-size: .16rem;
+	font-size: 16px;
 	font-family: Avenir-Heavy;
 	text-decoration: none;
 	color: #2157A8;
-	margin-top: -0.4rem;
-	border: .01rem solid #fff;
+	margin-top: -4px;
+	border: 1px solid #fff;
 	float: right;
         font-weight: 500;
 }
 .footer-box .filings-box {
-	margin-top: .42rem;
-	padding-top: .36rem;
-	border-top: .01rem solid rgba(255, 255, 255, .2);
+	margin-top: 42px;
+	padding-top: 36px;
+	border-top: 1px solid rgba(255, 255, 255, .2);
 	display: flex;
     justify-content: center;
 }
 .footer-box .filings-box p {
-	line-height: .19rem;
-	font-size: .14rem;
+	line-height: 19px;
+	font-size: 14px;
 	color: rgba(255, 255, 255, .65);
-	margin-left: .1rem;
+	margin-left: 10px;
 }
 
 /* footer mobile css */
 .mobile-class .footer-box {
-	padding: .32rem .2rem;
+	padding: 32px 20px;
 }
 .mobile-class .footer-box .logo-box {
 	float: none;
     flex-direction: column;
-       margin-left: 1.08rem;
+       margin-left: 108px;
 }
 .mobile-class .footer-box .logo-box img {
-	width: 1.6rem;
-	height: .5rem;
+	width: 160px;
+	height: 50px;
 	margin-right: 0;
-	margin-bottom: .24rem;
+	margin-bottom: 24px;
 }
 .mobile-class .footer-box .logo-box .footerLaboratoryLogo {
 	display: none;
 }
 .mobile-class .footer-box .logo-box .footerLaboratoryLogo-mobile {
 	display: block;
-	width: 1.3rem;
+	width: 130px;
 }
 .mobile-class .footer-box .contactus-box {
 	float: none;
 	width: 100%;
-	margin-top: .08rem;
+	margin-top: 8px;
 }
 .mobile-class .footer-box .contactus-box h6 {
-	margin-bottom: .16rem;
+	margin-bottom: 16px;
 }
 .mobile-class .footer-box .contactus-box p {
-	font-size: .14rem;
+	font-size: 14px;
 	color: #fff;
 	width: fit-content;
-	line-height: .2rem;
-	margin-bottom: .04rem;
+	line-height: 20px;
+	margin-bottom: 4px;
 	float: none;
 }
 .mobile-class .footer-box .contactus-box p:nth-child(3) {
 	width: fit-content;
-	margin-top: .16rem;
+	margin-top: 16px;
 }
 .mobile-class .footer-box .contactus-box a {
-	width: .88rem;
-	height: .27rem;
-	border-radius: .23rem;
+	width: 88px;
+	height: 27px;
+	border-radius: 23px;
 	background-color: transparent;
-	font-size: .11rem;
+	font-size: 11px;
 	text-decoration: none;
 	color: #fff;
 	border-color: #fff;
-	margin-top: .16rem !important;
+	margin-top: 16px !important;
 	float: none;
 
 }
 .mobile-class .footer-box .filings-box {
-	margin-top: .24rem;
-	padding-top: .16rem;
+	margin-top: 24px;
+	padding-top: 16px;
 	display: block;
 }
 .mobile-class .footer-box .filings-box p {
-	line-height: .14rem;
-	font-size: .1rem;
-	margin-bottom: .08rem;
+	line-height: 14px;
+	font-size: 10px;
+	margin-bottom: 8px;
         margin-left: 0;
 	float: left;
 }
 .mobile-class .footer-box .filings-box p:first-child {
-	margin-right: .77rem;
+	margin-right: 77px;
 }
 .mobile-class .footer-box .filings-box p:nth-child(2) {
 	float: right;
@@ -446,52 +446,52 @@ font-weight: 500;
 	background: rgba(3,11,26, .6);
 }
 .banner-box div p {
-	line-height: .79rem;
+	line-height: 79px;
 	color: #fff;
-	font-size: .58rem;
+	font-size: 58px;
 	font-family: Avenir-Black;
         font-weight: 600;
 }
 
 /* banner mobile css */
 .mobile-class .banner-box img {
-	height: 2.6rem;
+	height: 260px;
 	object-fit: cover;
 	object-position: 50% 50%;
 }
 .mobile-class .banner-box div p {
-	line-height: .36rem;
-	font-size: .26rem;
+	line-height: 36px;
+	font-size: 26px;
 }
 
 /* swiper */
 .swiper-button-next,
 .swiper-button-prev {
-	width: .22rem !important;
-	height: .22rem !important;
-	margin-top: -0.11rem !important;
+	width: 22px !important;
+	height: 22px !important;
+	margin-top: -11px !important;
 	background-image: url('../img/icon_swiperBtn_r.png') !important;
 	background-size: 100% 100% !important;
 }
 .swiper-button-next {
-	right: .15rem !important;
+	right: 15px !important;
 }
 .swiper-button-prev {
-	left: .15rem !important;
+	left: 15px !important;
 	background-image: url('../img/icon_swiperBtn_l.png') !important;
 }
 .swiper-container-horizontal>.swiper-pagination-bullets {
-	bottom: -0.22rem !important;
+	bottom: -22px !important;
 }
 .swiper-pagination-bullet {
-	width: .05rem !important;
-	height: .05rem !important;
+	width: 5px !important;
+	height: 5px !important;
 	opacity: 1 !important;
 	background: rgba(255, 255, 255, .45) !important;
 }
 .swiper-pagination-bullet-active {
 	background: #FFFFFF !important;
-	width: .18rem !important;
-	height: .05rem !important;
-	border-radius: .13rem !important;
+	width: 18px !important;
+	height: 5px !important;
+	border-radius: 13px !important;
 }

@@ -1,24 +1,24 @@
 .item-box {
 	background-color: #fff;
-	padding: 1rem 1.8rem;
-    max-width: 14.4rem;
+	padding: 100px 180px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 .item-box img {
-    /*width: 5.2rem;
+    /*width: 520px;
     display: block;
     object-fit: cover;
     object-position: 50% 50%;
-    margin-left: .42rem;
+    margin-left: 42px;
     float: right;*/
 }
 .item-box h4 {
-    width: calc(100% - 5.62rem);
+    width: calc(100% - 562px);
     font-family: Avenir-Heavy;
-    line-height: .36rem;
-    font-size: .26rem;
+    line-height: 36px;
+    font-size: 26px;
     color: rgba(0,0,0,0.85);
-    margin: .2rem 0;
+    margin: 20px 0;
     /*float: left;*/
 font-weight: 500;
 }
@@ -26,10 +26,10 @@ font-weight: 500;
 margin-top: 0
 }
 .item-box p {
-    /*width: calc(100% - 5.62rem);*/
+    /*width: calc(100% - 562px);*/
     font-family: Avenir-Medium;
-    line-height: .33rem;
-    font-size: .24rem;
+    line-height: 33px;
+    font-size: 24px;
     color: rgba(0,0,0,0.65);
     /*float: left;*/
 font-weight: 400;
@@ -39,13 +39,13 @@ font-weight: 400;
     color: rgba(0,0,0,0.85);
 }
 .item-box h6 {
-    width: calc(100% - 5.62rem);
-    margin-top: .3rem;
+    width: calc(100% - 562px);
+    margin-top: 30px;
     font-family: Avenir-Roman;
-    font-size: .22rem;
-    margin-top: .42rem;
+    font-size: 22px;
+    margin-top: 42px;
     color: rgba(0,0,0,0.45);
-    line-height: .3rem;
+    line-height: 30px;
     float: left;
 font-weight: 400;
 }
@@ -54,20 +54,20 @@ font-weight: 400;
 font-weight: 600;
 }
 .item-box ul {
-    margin-top: .22rem;
+    margin-top: 22px;
     float: left;
 }
 .item-box ul li {
-    margin-top: .42rem;
+    margin-top: 42px;
     font-family: Avenir-Medium;
-    line-height: .33rem;
-    font-size: .24rem;
+    line-height: 33px;
+    font-size: 24px;
     color: rgba(0,0,0,0.65);
 }
 .item-box ul li p {
     width: 100%;
     font-family: Avenir-Roman;
-    font-size: .24rem;
+    font-size: 24px;
     color: rgba(0,0,0,0.45);
     float: none;
 font-weight: 400;
@@ -77,24 +77,24 @@ font-weight: 400;
 }
 .form-box h5 {
 	font-family: Avenir-Black;
-	font-size: .34rem;
+	font-size: 34px;
 	color: #0C3375;
-	line-height: .46rem;
-	letter-spacing: .01rem;
+	line-height: 46px;
+	letter-spacing: 1px;
 font-weight: 600;
 }
 .form-box h6 {
     width: 100%;
     font-family: Avenir-Heavy;
-	font-size: .22rem;
+	font-size: 22px;
 	color: #F58300;
-	line-height: .32rem;
-	margin-top: .18rem;
+	line-height: 32px;
+	margin-top: 18px;
     float: none;
 font-weight: 500;
 }
 .form-box>div {
-    margin-top: .42rem;
+    margin-top: 42px;
 }
 .form-box>div:first-child {
     display: block;
@@ -105,33 +105,33 @@ font-weight: 500;
 }
 .form-box>div .input-box {
     flex: 1;
-    margin-right: .2rem;
+    margin-right: 20px;
 }
 .form-box>div .input-box input {
     width: 100%;
-    height: .42rem;
+    height: 42px;
     display: block;
-    padding: 0 .22rem;
+    padding: 0 22px;
     box-sizing: border-box;
     border-color: #CED4DA;
-    margin-top: .22rem;
-    font-size: .2rem;
+    margin-top: 22px;
+    font-size: 20px;
     font-family: Avenir-Roman;
-    border: .01rem solid #CED4DA;
+    border: 1px solid #CED4DA;
 }
 .form-box>div .input-box input:first-child {
     margin-top: 0 !important;
 }
 .form-box>div .textarea-box {
     flex: 1;
-    margin-left: .2rem;
+    margin-left: 20px;
 }
 .form-box>div .textarea-box textarea {
     width: 100%;
-    height: 1.7rem;
-    padding: .05rem .22rem;
-    border: .01rem solid #CED4DA;
-    font-size: .2rem;
+    height: 170px;
+    padding: 5px 22px;
+    border: 1px solid #CED4DA;
+    font-size: 20px;
     font-family: Avenir-Roman;
     box-sizing: border-box;
     resize: none;
@@ -143,14 +143,14 @@ textarea::placeholder {
     color: rgba(0,0,0,0.25)
 }
 .form-box>div form>div .textarea-box button {
-    width: 1.6rem;
-    height: .4rem;
-    line-height: .4rem;
-    margin-top: .22rem;
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 22px;
     text-align: center;
     background-color: #2157A8;
     color: #fff;
-    font-size: .18rem;
+    font-size: 18px;
     font-family: Avenir-Medium;
     border: none;
     cursor: pointer;
@@ -161,10 +161,10 @@ font-weight: 400;
 }
 .form-box p {
     font-family: Avenir-Roman;
-    width: calc(100% - 5.6rem);
-    line-height: .25rem;
-    font-size: .18rem;
-    margin-top: -0.38rem;
+    width: calc(100% - 560px);
+    line-height: 25px;
+    font-size: 18px;
+    margin-top: -38px;
     float: left;
 font-weight: 400;
 }
@@ -172,8 +172,8 @@ font-weight: 400;
 
 /* mobile css */
 .mobile-class .item-box {
-	padding: .36rem .2rem;
-    max-width: 3.75rem;
+	padding: 36px 20px;
+    max-width: 375px;
 }
 .mobile-class .item-box img {
     width: 100%;
@@ -184,48 +184,48 @@ font-weight: 400;
 }
 .mobile-class .item-box h4 {
     width: 100%;
-    margin-top: .2rem;
-    line-height: .22rem;
-    font-size: .16rem;
+    margin-top: 20px;
+    line-height: 22px;
+    font-size: 16px;
     margin-bottom: 0;
     float: none;
 }
 .mobile-class .item-box p {
-    margin-top: .12rem;
+    margin-top: 12px;
     width: 100%;
-    line-height: .22rem;
-    font-size: .15rem;
+    line-height: 22px;
+    font-size: 15px;
     float: none;
 }
 .mobile-class .item-box h6 {
     width: 100%;
-    margin-top: .16rem;
-    font-size: .14rem;
-    line-height: .2rem;
+    margin-top: 16px;
+    font-size: 14px;
+    line-height: 20px;
     float: none;
 }
 .mobile-class .item-box ul {
-    margin-top: .16rem;
+    margin-top: 16px;
 }
 .mobile-class .item-box ul li {
-    margin-top: .2rem;
-    line-height: .22rem;
-    font-size: .15rem;
+    margin-top: 20px;
+    line-height: 22px;
+    font-size: 15px;
 }
 .mobile-class .item-box ul li p {
-    font-size: .15rem;
+    font-size: 15px;
     margin-top: 0;
     word-break: break-all;
 }
 .mobile-class .form-box h5 {
-	font-size: .2rem;
-	line-height: .27rem;
+	font-size: 20px;
+	line-height: 27px;
 }
 .mobile-class .form-box h6 {
     display: none;
 }
 .mobile-class .form-box>div {
-    margin-top: .24rem;
+    margin-top: 24px;
 }
 .mobile-class .form-box>div form>div {
     flex-direction: column;
@@ -235,34 +235,34 @@ font-weight: 400;
     margin: 0;
 }
 .mobile-class .form-box>div .input-box input {
-    height: .36rem;
-    padding: 0 .12rem;
-    margin-top: .18rem;
-    font-size: .15rem;
+    height: 36px;
+    padding: 0 12px;
+    margin-top: 18px;
+    font-size: 15px;
 }
 .mobile-class .form-box>div .textarea-box {
     flex: 1;
     margin-left: 0;
-    margin-top: .18rem;
+    margin-top: 18px;
 }
 .mobile-class .form-box>div .textarea-box textarea {
     width: 100%;
-    height: 1.48rem;
-    padding: .08rem .12rem;
-    font-size: .15rem;
+    height: 148px;
+    padding: 5px 12px;
+    font-size: 15px;
 }
 .mobile-class .form-box>div .textarea-box button {
-    width: 1.52rem;
-    height: .36rem;
-    line-height: .36rem;
-    font-size: .15rem;
+    width: 120px;
+    height: 32px;
+    line-height: 32px;
+    margin-top: 16px;
+    font-size: 14px;
     float: none;
-    margin: .2rem auto 0;
 }
 .mobile-class .form-box p {
     width: 100%;
-    line-height: .2rem;
-    font-size: .14rem;
-    margin-top: .22rem;
+    line-height: 20px;
+    font-size: 14px;
+    margin-top: 12px;
     float: none;
 }

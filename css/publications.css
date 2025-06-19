@@ -1,12 +1,12 @@
 .item-box {
     background-color: #fff;
-	padding: 1rem 1.8rem;
-    max-width: 14.4rem;
+	padding: 100px 180px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 .item-box .list-box {
-   /* width: calc(100% - 3.04rem);
-    margin-left: .64rem;
+   /* width: calc(100% - 304px);
+    margin-left: 64px;
     float: right; */
     width: 100%;
 }
@@ -20,9 +20,9 @@
 }
 .item-box .list-box ul li {
     font-family: Avenir-Roman;
-    font-size: .2rem;
-    line-height: .27rem;
-    margin-bottom: .32rem;
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 32px;
     color: rgba(0, 0, 0, .45);
     counter-increment: number;
 font-weight: 400;
@@ -40,24 +40,24 @@ font-weight: 400;
 .item-box .list-box ul li::before {
     font-family: Avenir-Black;
     content: counter(number)".";
-    font-size: .2rem;
+    font-size: 20px;
     color: rgba(0, 0, 0, .65);
-    margin-right: .04rem;
+    margin-right: 4px;
 font-weight: 900;
 }
 .item-box .label-box {
-    width: 2.4rem;
+    width: 240px;
     float: left;
     box-sizing: border-box;
 }
 .item-box .label-box li {
     display: flex;
     align-items: center;
-    padding: .16rem 0;
-    font-size: .22rem;
+    padding: 16px 0;
+    font-size: 22px;
     font-family: Avenir-Heavy;
     color: rgba(0,0,0,0.65);
-    border-bottom: .01rem solid rgba(0,0,0,0.15);
+    border-bottom: 1px solid rgba(0,0,0,0.15);
     cursor: pointer;
 }
 .item-box .label-box li:last-child {
@@ -69,9 +69,9 @@ font-weight: 900;
 }
 .item-box .tips {
     font-family: Avenir-Roman;
-    font-size: .2rem;
-    line-height: .27rem;
-    margin-top: .58rem;
+    font-size: 20px;
+    line-height: 27px;
+    margin-top: 58px;
     color: rgba(0, 0, 0, .45);
 font-weight: 400;
 }
@@ -79,35 +79,35 @@ font-weight: 400;
 /* mobile css */
 .mobile-class .item-box {
 	padding: 0;
-    max-width: 3.75rem;
+    max-width: 375px;
 }
 .mobile-class .item-box .list-box {
     width: 100%;
     margin-left: 0;
     float: none;
-    padding: .32rem 0;
+    padding: 32px 0;
 }
 .mobile-class .item-box .list-box li {
-    font-size: .14rem;
-    line-height: .2rem;
-    margin-bottom: .2rem;
-    padding: 0 .2rem;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    padding: 0 20px;
 }
 .mobile-class .item-box .list-box li::before {
-    font-size: .14rem;
+    font-size: 14px;
 }
 .mobile-class .item-box .label-box {
     width: 100%;
     float: none;
     background-color: #FAFBFC;
-    padding: .16rem .2rem;
+    padding: 16px 20px;
 }
 .mobile-class .item-box .label-box li {
-    font-size: .16rem;
+    font-size: 16px;
 }
 .mobile-class .item-box .tips {
-    font-size: .14rem;
-    line-height: .2rem;
-    margin-top: .28rem;
-padding: 0 .2rem;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 28px;
+padding: 0 20px;
 }

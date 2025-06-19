@@ -1,53 +1,53 @@
 .banner-box div {
-	top: 1.3rem;
-    left: 1.8rem;
+	top: 130px;
+	left: 180px;
 	width: fit-content;
 	height: auto;
-    display: block;
+	display: block;
 	background: transparent;
 }
 .banner-box div p {
-	font-size: .6rem;
-	line-height: .82rem;
-	margin-bottom: -0.14rem;
-        font-weight: 600;
+	font-size: 20px;
+	line-height: 27px;
+	margin-bottom: -14px;
+	font-weight: 600;
 }
 .banner-box div p>span {
 	display: block;
 	width: 45%;
-	margin-top: .16rem;
-	border-top: .01rem solid rgba(255, 255, 255, .85);
-	padding-top: .27rem;
+	margin-top: 16px;
+	border-top: 1px solid rgba(255, 255, 255, .85);
+	padding-top: 27px;
 	color: rgba(255, 255, 255, .85);
 	font-family: Avenir-Heavy;
-	font-size: .2rem;
-	line-height: .27rem;
+	font-size: 60px;
+	line-height: 82px;
 	margin-bottom: 0;
-        font-weight: 500;
+	font-weight: 500;
 }
 .banner-box div a {
-	margin-top: .58rem;
-	width: 3.46rem;
-	height: .45rem;
-        display: block;
-        line-height: .46rem;
-        text-align: center;
+	margin-top: 58px;
+	width: 346px;
+	height: 45px;
+	display: block;
+	line-height: 46px;
+	text-align: center;
 	font-family: Avenir-Heavy;
-	font-size: .18rem;
+	font-size: 18px;
 	color: #fff;
-	border: .015rem solid #fff;
-	border-radius: .5rem;
+	border: 1.5px solid #fff;
+	border-radius: 50px;
 	text-decoration: none;
-        font-weight: 500;
+	font-weight: 500;
 }
 .item-box {
-	padding: 1rem 1.8rem;
+	padding: 100px 180px;
 	background-color: #fff;
-	max-width: 14.4rem;
+	max-width: 1440px;
 	margin: 0 auto;
 }
 .item-box .swiper-container {
-	width: 4.2rem;
+	width: 420px;
 	float: left;
 }
 .item-box .swiper-container img {
@@ -57,42 +57,42 @@
 	object-position: 50% 50%;
 }
 .item-box .article-container {
-	margin-left: .6rem;
-	width: calc(100% - 4.8rem);
+	margin-left: 60px;
+	width: calc(100% - 480px);
 	float: right;
 }
 .item-box .article-container p {
 	font-family: Avenir-Medium;
-	font-size: .2rem;
+	font-size: 20px;
 	color: rgba(0,0,0,0.65);
-	line-height: .3rem;
-	margin-top: .22rem;
-        font-weight: 400;
+	line-height: 30px;
+	margin-top: 22px;
+	font-weight: 400;
 }
 .item-box .article-container p:first-child, .item-box h5 {
 	font-family: Avenir-Black;
-	font-size: .34rem;
+	font-size: 34px;
 	color: #0C3375;
-	line-height: .46rem;
-	letter-spacing: .01rem;
+	line-height: 46px;
+	letter-spacing: 1px;
 	margin-top: 0;
-        font-weight: 600;
+	font-weight: 600;
 }
 .item-box .article-container a {
-	width: 2.8rem;
-    height: .6rem;
+	width: 280px;
+	height: 60px;
 	font-family: Avenir-Medium;
-	font-size: .22rem;
+	font-size: 22px;
 	text-decoration: none;
 	display: block;
-	line-height: .62rem;
-        text-align: center;
-	border: .02rem solid #0C3375;
+	line-height: 62px;
+	text-align: center;
+	border: 2px solid #0C3375;
 	color: #0C3375;
 	background-color: #fff;
-	margin-top: .46rem;
+	margin-top: 46px;
 	cursor: pointer;
-        font-weight: 500;
+	font-weight: 400;
 }
 .item-box .article-container a:hover {
 	font-family: Avenir-Heavy;
@@ -105,132 +105,132 @@
 .team-box .article-container {
 	float: left;
 	margin-left: 0;
-	margin-right: .6rem;
+	margin-right: 60px;
 }
 .news-box h6 {
 	font-family: Avenir-Heavy;
-	font-size: .22rem;
+	font-size: 22px;
 	color: #F58300;
-	line-height: .32rem;
-	margin-top: .18rem;
-	margin-bottom: .02rem;
+	line-height: 32px;
+	margin-top: 18px;
+	margin-bottom: 2px;
 }
 .news-box ul {
-	margin-top: .02rem;
+	margin-top: 2px;
 }
 .news-box ul li {
-	padding: .46rem 0;
-	border-bottom: .01rem solid rgba(0, 0, 0, .15);
+	padding: 46px 0;
+	border-bottom: 1px solid rgba(0, 0, 0, .15);
 	position: relative;
 }
 .news-box ul li .dateBox {
-    width: 1rem;
-    height: 100%;
+	width: 100px;
+	height: 100%;
 	display: flex;
-    flex-direction: column;
-    justify-content: center;
+	flex-direction: column;
+	justify-content: center;
 	align-items: center;
 	font-family: Avenir-Heavy;
-	font-size: .24rem;
+	font-size: 24px;
 	color: #2157A8;
-	line-height: .33rem;
-	margin-left: .23rem;
+	line-height: 33px;
+	margin-left: 23px;
 	position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
 }
 .news-box ul li .dateBox>div {
-        width: 100%;
+	width: 100%;
 	text-align: center;
 }
 .news-box ul li .dateBox span {
 	display: block;
-        font-weight: 800;
+	font-weight: 800;
 }
 .news-box ul li .dateBox span:first-child {
-	font-size: .6rem;
-	line-height: .82rem;
-	margin-bottom: -0.08rem;
+	font-size: 60px;
+	line-height: 82px;
+	margin-bottom: -8px;
 	text-align: center;
 }
 .news-box ul li .articleContent-box {
-	width: calc(100% - 1.23rem);
+	width: calc(100% - 123px);
 }
 .news-box ul li .articleContent-box,
 .news-box ul li .articleContent-box>div {
 	float: left;
 }
 .news-box ul li .articleContent-box img {
-	width: 2.6rem;
+	width: 100px;
 	display: block;
-    margin: 0 auto;
+	margin: 0 auto;
 	object-fit: cover;
 	object-position: 50% 50%;
 }
 .news-box ul li .articleContent-box h6 {
-	width: calc(100% - 2.92rem);
+	width: calc(100% - 123px);
 	font-family: Avenir-Heavy;
-	font-size: .24rem;
+	font-size: 24px;
 	color: rgba(0,0,0,0.85);
-	line-height: .38rem;
+	line-height: 33px;
 	margin: 0;
-	margin-left: .32rem;
+	margin-left: 23px;
 	float: right;
-        font-weight: 500;
+	font-weight: 500;
 }
 .news-box ul li .articleContent-box p {
-	width: calc(100% - 2.92rem);
+	width: calc(100% - 123px);
 	font-family: Avenir-Medium;
-	font-size: .2rem;
+	font-size: 20px;
 	color: rgba(0,0,0,0.65);
-	line-height: .34rem;
-	margin-top: .12rem;
-	margin-left: .32rem;
+	line-height: 34px;
+	margin-top: 12px;
+	margin-left: 23px;
 	float: right;
-        font-weight: 400;
+	font-weight: 400;
 }
 .news-box ul li .articleContent-box a {
 	color: blue;
 }
 
-
 /* mobile css */
 .mobile-class .banner-box div {
 	position: absolute;
-	top: .36rem;
-    left: .2rem;
-    z-index: 9;
+	top: 60px;
+	left: 20px;
+	z-index: 9;
 }
 .mobile-class .banner-box div p {
-	font-size: .24rem;
-	line-height: .33rem;
-	margin-bottom: -0.04rem;
+	font-size: 14px;
+	line-height: 22px;
+	margin-bottom: -4px;
 }
 .mobile-class .banner-box div p>span {
 	width: 60%;
-	margin-top: .08rem;
-	padding-top: .12rem;
-	font-size: .12rem;
-	line-height: .16rem;
+	margin-top: 8px;
+	padding-top: 12px;
+	font-size: 12px;
+	line-height: 16px;
 }
 .mobile-class .banner-box div a {
-	margin-top: .2rem;
-	width: 1.88rem;
-	height: .27rem;
-        line-height: .28rem;
-	font-size: .11rem;
-	border: .007rem solid #fff;
-	border-radius: .23rem;
+	margin-top: 20px;
+	width: 188px;
+	height: 27px;
+	line-height: 28px;
+	font-size: 11px;
+	border: 0.7px solid #fff;
+	border-radius: 23px;
+	font-weight: 400;
 }
 .mobile-class .item-box {
-	padding: .36rem .2rem;
-max-width: 3.75rem;
+	padding: 36px 20px;
+	max-width: 375px;
 }
 .mobile-class .item-box .swiper-container {
-	width: calc(100% - 0.56rem);
+	width: calc(100% - 56px);
 	float: none;
-	margin: 0 .28rem;
+	margin: 0 28px;
 }
 .mobile-class .item-box .article-container {
 	width: 100%;
@@ -239,26 +239,27 @@ max-width: 3.75rem;
 }
 .mobile-class .item-box .article-container p {
 	width: 100%;
-	font-size: .14rem;
-	line-height: .22rem;
-	margin-top: .12rem;
+	font-size: 14px;
+	line-height: 22px;
+	margin-top: 12px;
 	margin-left: 0;
 }
 .mobile-class .item-box .article-container p:first-child, .mobile-class .news-box h5 {
-	font-size: .2rem;
-	line-height: .27rem;
+	font-size: 20px;
+	line-height: 27px;
 	margin-left: 0;
-	margin-top: .2rem;
+	margin-top: 20px;
 	text-align: center;
 }
 .mobile-class .item-box .article-container a {
-	width: 1.67rem;
-    height: .42rem;
-	line-height: .44rem;
-	font-size: .16rem;
+	width: 167px;
+	height: 42px;
+	line-height: 44px;
+	font-size: 16px;
 	text-decoration: none;
 	background-color: #fff;
-	margin: .18rem auto 0;
+	margin: 18px auto 0;
+	font-weight: 400;
 }
 .mobile-class .item-box .article-container a:hover {
 	font-family: Avenir-Heavy;
@@ -284,27 +285,27 @@ max-width: 3.75rem;
 	margin-top: 0;
 }
 .mobile-class .news-box ul li {
-	padding: .24rem 0;
+	padding: 24px 0;
 	align-items: flex-start;
 }
 .mobile-class .news-box ul li .dateBox {
-	width: .65rem;
-    height: 100%;
-	font-size: .14rem;
-	line-height: .22rem;
+	width: 65px;
+	height: 100%;
+	font-size: 14px;
+	line-height: 22px;
 	margin-left: 0;
 	left: 0;
-	padding-top: .24rem;
+	padding-top: 24px;
 	justify-content: flex-start;
 }
 .mobile-class .news-box ul li .dateBox span:first-child {
-	font-size: .30rem;
-	line-height: .44rem;
-	margin-bottom: -0.04rem;
+	font-size: 30px;
+	line-height: 44px;
+	margin-bottom: -4px;
 }
 .mobile-class .news-box ul li .articleContent-box {
-	width: calc(100% - .87rem);
-	margin-left: .22rem;
+	width: calc(100% - 87px);
+	margin-left: 22px;
 	float: right;
 }
 .mobile-class .news-box ul li .articleContent-box>div {
@@ -312,21 +313,21 @@ max-width: 3.75rem;
 }
 .mobile-class .news-box ul li .articleContent-box img {
 	width: 100%;
-	margin-top: .16rem;
+	margin-top: 16px;
 }
 .mobile-class .news-box ul li .articleContent-box h6 {
 	display: block;
 	width: 100%;
-	font-size: .16rem;
-	line-height: .22rem;
+	font-size: 16px;
+	line-height: 22px;
 	margin: 0;
 	float: none;
 }
 .mobile-class .news-box ul li .articleContent-box p {
 	width: 100%;
-	font-size: .14rem;
-	line-height: .22rem;
-	margin-top: .16rem;
+	font-size: 14px;
+	line-height: 22px;
+	margin-top: 16px;
 	margin-left: 0;
 	float: none;
 }

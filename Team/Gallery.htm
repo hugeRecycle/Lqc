@@ -263,25 +263,8 @@
         const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
         if (isMobile) {
             document.body.classList.add('mobile-class');
-            setRem(3.75);
         } else {
             document.body.classList.add('pc-class');
-            setRem(14.4);
-            window.onresize = function () {
-                setRem(14.4);
-            };
-        }
-
-        function setRem(designSize) {
-            let html = document.documentElement;
-            let width = html.clientWidth;
-            if (designSize == 3.75) {
-                width = width >= 375 ? 375 : width
-            }
-            if (designSize == 14.4) {
-                width = width >= 1440 ? 1440 : width
-            }
-            html.style.fontSize = width / designSize + 'px'; // 设计稿宽度为1440px，那么1rem=100px，故除以14.4
         }
 
         var mySwiper = new Swiper('.swiper-container', {

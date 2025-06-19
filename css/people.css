@@ -1,11 +1,13 @@
 .main-box {
-    padding: 1rem 1.8rem;
+    padding: 100px 180px;
     background-color: #fff;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 .list-box {
-	padding: .6rem 0 .8rem;
-    border-bottom: .01rem solid rgba(0, 0, 0, .15);
-    max-width: 14.4rem;
+	padding: 60px 0 80px;
+    border-bottom: 1px solid rgba(0, 0, 0, .15);
+    max-width: 1440px;
     margin: 0 auto;
 }
 .list-box:first-child {
@@ -13,88 +15,88 @@
 }
 .list-box h4 {
     font-family: Avenir-Black;
-	font-size: .34rem;
+	font-size: 34px;
 	color: #0C3375;
-	line-height: .46rem;
-	letter-spacing: .01rem;
+	line-height: 46px;
+	letter-spacing: 1px;
 font-weight: 600;
 }
 .list-box .item-box {
-    margin-top: .65rem;
+    margin-top: 65px;
 }
 .list-box .item-box:nth-of-type(1) {
-    margin-top: .42rem;
+    margin-top: 42px;
 }
 .list-box .item-box img {
-    width: 2.8rem;
+    width: 280px;
     display: block;
     float: left;
     object-fit: cover;
     object-position: 50% 50%;
 }
 .list-box .item-box h5 {
-    width: calc(100% - 3.18rem);
-    margin-left: .38rem;
+    width: calc(100% - 318px);
+    margin-left: 38px;
     font-family: Avenir-Heavy;
-    font-size: .26rem;
+    font-size: 26px;
     color: rgba(0,0,0,0.85);
-    line-height: .3rem;
+    line-height: 30px;
     float: right;
 font-weight: 500;
 }
 .list-box .item-box h6 {
-    width: calc(100% - 3.18rem);
-    margin-left: .38rem;
-    margin-top: .12rem;
+    width: calc(100% - 318px);
+    margin-left: 38px;
+    margin-top: 12px;
     color: #009DAB;
-    line-height: .32rem;
+    line-height: 32px;
     font-family: Avenir-Roman;
-    font-size: .2rem;
+    font-size: 20px;
     float: right;
 font-weight: 400;
 }
 .list-box .item-box p {
-    width: calc(100% - 3.18rem);
-    margin-left: .38rem;
+    width: calc(100% - 318px);
+    margin-left: 38px;
     font-family: Avenir-Roman;
-    font-size: .2rem;
+    font-size: 20px;
     color: rgba(0,0,0,0.45);
-    line-height: .28rem;
-    margin-top: .12rem;
+    line-height: 28px;
+    margin-top: 12px;
     float: right;
 font-weight: 400;
 }
 .list-box .item-box p:nth-last-child(2) {
-    font-size: .18rem;
-    line-height: .25rem;
+    font-size: 18px;
+    line-height: 25px;
 }
 .list-box .item-box p img,
 .mail {
-    width: .23rem !important;
+    width: 23px !important;
     display: block;
-    margin-right: .1rem;
+    margin-right: 10px;
 }
 .list-box .item-box p span {
-    padding-left: .04rem;
+    padding-left: 4px;
     color: #4B5768;
 }
 .list-box:first-child .item-box:nth-of-type(1) img {
-    width: 4rem;
+    width: 400px;
 }
 .list-box:first-child .item-box:nth-of-type(1) h5,
 .list-box:first-child .item-box:nth-of-type(1) h6,
 .list-box:first-child .item-box:nth-of-type(1) p {
-    width: calc(100% - 4.38rem);
+    width: calc(100% - 438px);
 }
 .list-box:first-child .item-box:nth-of-type(1) h6 {
-    line-height: .26rem;
+    line-height: 26px;
 }
 .list-box:first-child .item-box:nth-of-type(1) p {
-    line-height: .3rem;
+    line-height: 30px;
 }
 .list-box:first-child .item-box:nth-of-type(1) p:nth-last-child(2) {
-    margin-top: .2rem;
-    line-height: .27rem;
+    margin-top: 20px;
+    line-height: 27px;
 }
 .list-box:first-child .item-box:nth-of-type(1) p:nth-last-child(2) span {
     color: rgba(0,0,0,0.85);
@@ -105,90 +107,95 @@ font-weight: 400;
 
 /* mobile css */
 .mobile-class .main-box {
-    padding: .32rem .2rem .36rem;
+    padding: 32px 20px 36px;
+    max-width: 375px;
 }
 .mobile-class .list-box {
-	padding: .32rem 0 .36rem;
-    max-width: 3.75rem;
+	padding: 32px 0 36px;
+    max-width: 375px;
 }
 .mobile-class .list-box:first-child {
     padding-top: 0;
 }
 .mobile-class .list-box h4 {
-	font-size: .2rem;
-	line-height: .27rem;
+	font-size: 20px;
+	line-height: 27px;
 }
 .mobile-class .list-box:first-child h4 {
     text-align: center;
 }
 .mobile-class .list-box .item-box:last-child {
-    padding: .32rem 0 .24rem;
+    padding: 32px 0 24px;
 }
 .mobile-class .list-box .item-box {
     margin-top: 0;
-    padding: .26rem 0 .2rem;
-    border-bottom: .01rem dashed rgba(0, 0, 0, .15);
+    padding: 26px 0 20px;
+    border-bottom: 1px dashed rgba(0, 0, 0, .15);
 } 
 .mobile-class .list-box .item-box:last-child {
     border-color: transparent;
     padding-bottom: 0;
 }
 .mobile-class .list-box .item-box:first-child {
-    margin-top: .2rem;
+    margin-top: 20px;
     padding-top: 0;
 }
 .mobile-class .list-box .item-box img {
-    width: 2.2rem;
+    width: 220px;
     display: block;
     float: none;
+    object-fit: cover;
+    object-position: 50% 50%;
 }
 .mobile-class .list-box .item-box h5 {
     width: 100%;
     margin-left: 0;
-    margin-top: .14rem;
-    font-size: .18rem;
-    line-height: .25rem;
+    margin-top: 14px;
+    font-size: 18px;
+    line-height: 25px;
     float: none;
 }
 .mobile-class .list-box:first-child .item-box:nth-of-type(1) h5 {
 	text-align: center;
 }
 .mobile-class .list-box .item-box h6 {
-    margin-top: .04rem;
-    line-height: .22rem;
-    font-size: .16rem;
+    margin-top: 4px;
+    line-height: 22px;
+    font-size: 16px;
     margin-left: 0;
-    text-align: center;
+    width: 100%;
+    float: none;
 }
 .mobile-class .list-box:first-child .item-box:nth-of-type(1) h6 {
-    line-height: .22rem;
+    line-height: 22px;
+    text-align: center;
 }
 .mobile-class .list-box .item-box p {
     width: 100%;
     margin-left: 0;
-    font-size: .14rem;
-    line-height: .21rem;
-    margin-top: .1rem;
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 10px;
     float: none;
 }
 .mobile-class .list-box:first-child .item-box:nth-of-type(1) p {
-    margin-top: .12rem;
-    line-height: .21rem;
+    margin-top: 12px;
+    line-height: 21px;
 }
 .mobile-class .list-box .item-box p:nth-last-child(2) {
-    font-size: .14rem;
-    line-height: .22rem;
-    margin-top: .06rem;
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 6px;
 }
 .mobile-class .list-box .item-box p img,
 .mobile-class .mail {
-    width: .2rem !important;
+    width: 20px !important;
     display: block;
-    margin-right: .06rem !important;
+    margin-right: 6px !important;
     float: left !important;
 }
 .mobile-class .list-box:first-child .item-box:nth-of-type(1) img {
-    width: 2.4rem;
+    width: 240px;
     margin: 0 auto;
     float: none;
 }
@@ -198,13 +205,13 @@ font-weight: 400;
     width: 100%;
 }
 .mobile-class .list-box:first-child .item-box:first-child h5 {
-    margin-top: .2rem;
+    margin-top: 20px;
     text-align: center;
 }
 .mobile-class .list-box:first-child .item-box:first-child p {
-    line-height: .21rem;
+    line-height: 21px;
 }
 .mobile-class .list-box:first-child .item-box:first-child p:nth-last-child(2) {
-    margin-top: .08rem;
-    line-height: .22rem;
+    margin-top: 8px;
+    line-height: 22px;
 }

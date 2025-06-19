@@ -1,11 +1,11 @@
 .swiper-box {
     background-color: #fff;
-	padding: 1rem 1.8rem .4rem;
-    max-width: 14.4rem;
+	padding: 100px 180px 40px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 .swiper-box .swiper-container img {
-    width: 10.8rem;
+    width: 1080px;
 	display: block;
 	object-fit: cover;
 	object-position: 50% 50%;
@@ -14,42 +14,42 @@
     font-family: Avenir-Black;
     color: #0C3375;
     text-align: center;
-    font-size: .34rem;
-    line-height: .46rem;
-    margin-top: .42rem;
+    font-size: 34px;
+    line-height: 46px;
+    margin-top: 42px;
 font-weight: 600;
 }
 .list-box {
     background-color: #fff;
-    padding: 1rem 1.8rem .36rem;
-    max-width: 14.4rem;
+    padding: 100px 180px 36px;
+    max-width: 1440px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
 }
 .list-box .item-box {
-    width: calc(50% - .2rem);
-    margin-right: .2rem;
-    margin-bottom: .64rem;
+    width: calc(50% - 20px);
+    margin-right: 20px;
+    margin-bottom: 64px;
     float: left;
 }
 .list-box .item-box:nth-child(2n) {
     float: right;
-    margin-left: .2rem;
+    margin-left: 20px;
     margin-right: 0;
 }
 .list-box .item-box img {
-    width: 5.2rem;
+    width: 520px;
     display: block;
     object-fit: cover;
     object-position: 50% 50%;
 }
 .list-box .item-box h5 {
     font-family: Avenir-Heavy;
-    font-size: .24rem;
+    font-size: 24px;
     color: rgba(0,0,0,0.85);
-    line-height: .33rem;
-    margin-top: .32rem;
+    line-height: 33px;
+    margin-top: 32px;
 font-weight: 500;
 }
 .list-box .item-box h5 span {
@@ -57,51 +57,51 @@ font-weight: 500;
 }
 .list-box .item-box p {
     font-family: Avenir-Roman;
-    font-size: .2rem;
+    font-size: 20px;
     color: rgba(0,0,0,0.45);
-    line-height: .28rem;
-    margin-top: .12rem;
+    line-height: 28px;
+    margin-top: 12px;
 font-weight: 400;
 }
 
 
 /* mobile css */
 .mobile-class .swiper-box {
-    padding: .36rem .2rem .26rem;
-    max-width: 3.75rem;
+    padding: 36px 20px 26px;
+    max-width: 375px;
 }
 .mobile-class .swiper-box .swiper-container img {
     width: 100%;
 }
 .mobile-class .swiper-box .label-box {
-    font-size: .2rem;
-    line-height: .27rem;
-    margin-top: .2rem;
+    font-size: 20px;
+    line-height: 27px;
+    margin-top: 20px;
 }
 .mobile-class .list-box {
     background-color: #fff;
-	padding: .36rem .2rem .08rem;
-    max-width: 3.75rem;
+	padding: 36px 20px 8px;
+    max-width: 375px;
 }
 .mobile-class .list-box .item-box {
     width: 100%;
     margin-right: 0;
-    margin-bottom: .52rem;
+    margin-bottom: 52px;
     float: none;
 }
 .mobile-class .list-box .item-box:nth-child(2n) {
     float: none;
     margin-left: 0;
 }
-.list-box .item-box img {
+.mobile-class .list-box .item-box img {
     width: 100%;
 }
 .mobile-class .list-box .item-box h5 {
-    font-size: .16rem;
-    margin-top: .2rem;
-    line-height: .22rem;
+    font-size: 16px;
+    margin-top: 20px;
+    line-height: 22px;
 }
 .mobile-class .list-box .item-box p {
-    font-size: .14rem;
-    line-height: .22rem;
+    font-size: 14px;
+    line-height: 22px;
 }
