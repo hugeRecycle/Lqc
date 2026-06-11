@@ -1,3 +1,14 @@
+.banner-box {
+	overflow: hidden;
+}
+.banner-box>img {
+	width: 100%;
+	min-width: 1280px;
+	max-width: none;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
 .banner-box div {
 	top: 130px;
 	left: 180px;
@@ -201,6 +212,8 @@
 }
 .mobile-class .banner-box img {
 	width: 100%;
+	min-width: 1280px;
+	max-width: none;
 	height: 100vh;
 	object-fit: cover;
 	object-position: center;
