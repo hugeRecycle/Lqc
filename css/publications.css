@@ -15,7 +15,7 @@
 }
 .item-box .list-box ul {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     box-sizing: border-box;
 }
 .item-box .list-box ul li {
@@ -28,7 +28,7 @@
 font-weight: 400;
 }
 .item-box .list-box ul li:first-child {
-    margin-bottom: 0;
+    /* margin-bottom: 0; */
 }
 .item-box .list-box ul li a, 
 .item-box .list-box ul li span {
