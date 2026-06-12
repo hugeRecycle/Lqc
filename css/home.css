@@ -1,15 +1,44 @@
 .banner-box {
 	overflow: hidden;
 }
-.banner-box>img {
+.banner-box .banner-swiper {
+	position: relative;
+	top: auto;
+	left: auto;
+	z-index: auto;
+	width: 100%;
+	height: auto;
+	display: block;
+	background: transparent;
+}
+.banner-box .banner-swiper .swiper-wrapper,
+.banner-box .banner-swiper .swiper-slide {
+	position: relative;
+	top: auto;
+	left: auto;
+	z-index: auto;
+	width: 100%;
+	height: auto;
+	background: transparent;
+}
+.banner-box .banner-swiper .swiper-wrapper {
+	display: flex;
+}
+.banner-box .banner-swiper .swiper-slide {
+	display: block;
+}
+.banner-box .banner-swiper img {
 	width: 100%;
 	min-width: 1280px;
 	max-width: none;
 	position: relative;
 	left: 50%;
 	transform: translateX(-50%);
+	display: block;
 }
-.banner-box div {
+.banner-box .banner-content {
+	position: absolute;
+	z-index: 9;
 	top: 130px;
 	left: 180px;
 	width: fit-content;
@@ -17,13 +46,13 @@
 	display: block;
 	background: transparent;
 }
-.banner-box div p {
+.banner-box .banner-content p {
 	font-size: 60px;
 	line-height: 82px;
 	margin-bottom: -14px;
 	font-weight: 600;
 }
-.banner-box div p>span {
+.banner-box .banner-content p>span {
 	display: block;
 	width: 45%;
 	margin-top: 16px;
@@ -36,7 +65,7 @@
 	margin-bottom: 0;
 	font-weight: 500;
 }
-.banner-box div a {
+.banner-box .banner-content a {
 	margin-top: 58px;
 	width: 346px;
 	height: 45px;
@@ -210,7 +239,12 @@
 	position: relative;
 	overflow: hidden;
 }
-.mobile-class .banner-box img {
+.mobile-class .banner-box .banner-swiper,
+.mobile-class .banner-box .banner-swiper .swiper-wrapper,
+.mobile-class .banner-box .banner-swiper .swiper-slide {
+	height: 100vh;
+}
+.mobile-class .banner-box .banner-swiper img {
 	width: 100%;
 	min-width: 1280px;
 	max-width: none;
@@ -218,7 +252,7 @@
 	object-fit: cover;
 	object-position: center;
 }
-.mobile-class .banner-box div {
+.mobile-class .banner-box .banner-content {
 	position: absolute;
 	top: 90px;
 	left: 20px;
@@ -226,17 +260,17 @@
 	z-index: 9;
 	color: #fff;
 }
-.mobile-class .banner-box div p {
+.mobile-class .banner-box .banner-content p {
 	font-family: Avenir-Black;
 	font-size: 32px;
 	line-height: 38px;
 	margin-bottom: 0;
 	font-weight: 600;
 }
-.mobile-class .banner-box div p:nth-child(3) {
+.mobile-class .banner-box .banner-content p:nth-child(3) {
 	margin-bottom: 8px;
 }
-.mobile-class .banner-box div p>span {
+.mobile-class .banner-box .banner-content p>span {
 	display: block;
 	width: 100%;
 	margin-top: 12px;
@@ -247,7 +281,7 @@
 	line-height: 20px;
 	font-weight: 400;
 }
-.mobile-class .banner-box div a {
+.mobile-class .banner-box .banner-content a {
 	display: inline-block;
 	margin-top: 24px;
 	width: 200px;
@@ -262,7 +296,7 @@
 	font-family: Avenir-Medium;
 	font-weight: 400;
 }
-.mobile-class .banner-box div a:hover {
+.mobile-class .banner-box .banner-content a:hover {
 	background-color: rgba(255, 255, 255, 0.1);
 }
 

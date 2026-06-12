@@ -151,10 +151,28 @@
 </nav>
 <section class="banner-box">
 
-    <img src="images/home/banner2.png" alt="">
+    <div class="swiper-container banner-swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="images/home/banner2.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/home/banner1.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/home/banner2.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/home/banner3.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/home/banner4.jpg" alt="">
+            </div>
+        </div>
+    </div>
 
 
-    <div>
+    <div class="banner-content">
         <p> Quantum </p>
         <p> Characterization </p>
         <p> Laboratory </p>
@@ -194,8 +212,13 @@
     <div class="bgColor-F6F9FE">
         <div class="item-box team-box bgColor-F6F9FE">
             <div class="swiper-container">
-                <img src="images/home/WechatIMG216.jpg" alt="">
-
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/home/WechatIMG216.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
             <div class="article-container">
                 <p> Meet The Team </p>
@@ -334,14 +357,28 @@
             document.body.classList.add('pc-class');
         }
 
-        var mySwiper = new Swiper('.swiper-container', {
-            autoplay: 5000,//可选选项，自动滑动
+        var bannerSwiper = new Swiper('.banner-swiper', {
+            autoplay: 5000,
             loop: true,
-            nextButton: '.swiper-button-next',
-            prevButton: '.swiper-button-prev',
-            pagination: '.swiper-pagination',
-            paginationClickable: true,
+            speed: 800,
+            effect: 'fade',
+            autoplayDisableOnInteraction: false,
             disableOnInteraction: false
+        })
+
+        var mySwipers = [];
+        $('.main-box .swiper-container').each(function () {
+            var $container = $(this);
+            mySwipers.push(new Swiper(this, {
+                autoplay: 5000,//可选选项，自动滑动
+                loop: true,
+                nextButton: $container.find('.swiper-button-next')[0],
+                prevButton: $container.find('.swiper-button-prev')[0],
+                pagination: $container.find('.swiper-pagination')[0],
+                paginationClickable: true,
+                autoplayDisableOnInteraction: false,
+                disableOnInteraction: false
+            }))
         })
         var langBtn = document.getElementById("languageBtn");
         langBtn.getElementsByTagName('span')[0].innerHTML = isZh ? "EN" : "CN";
