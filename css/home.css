@@ -26,21 +26,29 @@
 }
 .banner-box .banner-swiper .swiper-wrapper {
 	display: flex;
+	align-items: stretch;
+	justify-content: flex-start;
 }
 .banner-box .banner-swiper .swiper-slide {
 	display: block;
 }
 .banner-box .banner-swiper img {
 	width: 100%;
-	min-width: 1280px;
 	height: 100%;
-	max-width: none;
-	position: relative;
-	left: 50%;
-	transform: translateX(-50%);
 	display: block;
 	object-fit: cover;
 	object-position: center;
+}
+.banner-box .banner-swiper .banner-pagination {
+	position: absolute;
+	top: auto;
+	left: 0;
+	bottom: 28px !important;
+	z-index: 12;
+	width: 100%;
+	height: auto;
+	display: block;
+	background: transparent;
 }
 .banner-box .banner-content {
 	position: absolute;
@@ -255,8 +263,6 @@
 }
 .mobile-class .banner-box .banner-swiper img {
 	width: 100%;
-	min-width: 1280px;
-	max-width: none;
 	height: 100vh;
 	object-fit: cover;
 	object-position: center;

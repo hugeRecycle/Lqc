@@ -457,7 +457,7 @@ font-weight: 500;
 	width: 100%;
 	display: block;
 }
-.banner-box div {
+.banner-box > :where(div:not(.swiper):not(.swiper-container)) {
     position: absolute;
     z-index: 9;
     top: 0;
@@ -469,7 +469,7 @@ font-weight: 500;
     justify-content: center;
 	background: rgba(3,11,26, .2);
 }
-.banner-box div p {
+.banner-box > :where(div:not(.swiper):not(.swiper-container)) p {
 	line-height: 79px;
 	color: #fff;
 	font-size: 58px;

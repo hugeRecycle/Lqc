@@ -9,9 +9,9 @@
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/common.css"/>
     <link rel="stylesheet" type="text/css" href="css/home.css"/>
-    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <script src="js/jquery-2.1.4.min.js"></script>
-    <script src="js/swiper-3.4.2.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
 </head>
 <body>
 <header class="header-box">
@@ -151,7 +151,7 @@
 </nav>
 <section class="banner-box">
 
-    <div class="swiper-container banner-swiper">
+    <div class="swiper swiper-container banner-swiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <img src="images/home/banner2.png" alt="">
@@ -169,6 +169,7 @@
                 <img src="images/home/banner4.jpg" alt="">
             </div>
         </div>
+        <div class="swiper-pagination banner-pagination"></div>
     </div>
 
 
@@ -182,7 +183,7 @@
 </section>
 <main class="main-box">
     <div class="item-box">
-        <div class="swiper-container">
+        <div class="swiper swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <img src="images/home/Frame_172.png" alt="">
@@ -211,7 +212,7 @@
     </div>
     <div class="bgColor-F6F9FE">
         <div class="item-box team-box bgColor-F6F9FE">
-            <div class="swiper-container">
+            <div class="swiper swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <img src="images/home/WechatIMG216.jpg" alt="">
@@ -318,7 +319,7 @@
                 </div>
                 <div class="clean"></div>
             </li>
-            <script>_showDynClickBatch(['dynclicks_u10_1126', 'dynclicks_u10_1093', 'dynclicks_u10_1087', 'dynclicks_u10_1094'], [1126, 1093, 1087, 1094], "wbnews", 2013068255)</script>
+           
         </ul>
     </div>
 </main>
@@ -358,26 +359,37 @@
         }
 
         var bannerSwiper = new Swiper('.banner-swiper', {
-            autoplay: 5000,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false
+            },
             loop: true,
             speed: 800,
             effect: 'fade',
-            autoplayDisableOnInteraction: false,
-            disableOnInteraction: false
+            pagination: {
+                el: '.banner-pagination',
+                clickable: true
+            }
         })
 
         var mySwipers = [];
         $('.main-box .swiper-container').each(function () {
             var $container = $(this);
+            var paginationEl = $container.find('.swiper-pagination')[0];
             mySwipers.push(new Swiper(this, {
-                autoplay: 5000,//可选选项，自动滑动
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false
+                },
                 loop: true,
-                nextButton: $container.find('.swiper-button-next')[0],
-                prevButton: $container.find('.swiper-button-prev')[0],
-                pagination: $container.find('.swiper-pagination')[0],
-                paginationClickable: true,
-                autoplayDisableOnInteraction: false,
-                disableOnInteraction: false
+                navigation: {
+                    nextEl: $container.find('.swiper-button-next')[0],
+                    prevEl: $container.find('.swiper-button-prev')[0]
+                },
+                pagination: paginationEl ? {
+                    el: paginationEl,
+                    clickable: true
+                } : false
             }))
         })
         var langBtn = document.getElementById("languageBtn");
