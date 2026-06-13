@@ -46,6 +46,9 @@
                     <a href="Facilities.htm">Facilities </a>
                 </li>
                 <li>
+                    <a href="Internal_Links.htm">Internal_Links </a>
+                </li>
+                <li>
                     <a href="Joinus.htm">Join us </a>
                 </li>
             </ul>
@@ -109,6 +112,9 @@
         </li>
         <li>
             <a href="Facilities.htm">Facilities </a>
+        </li>
+        <li>
+            <a href="Internal_Links.htm">Internal_Links </a>
         </li>
         <li>
             <a href="Joinus.htm">Join us </a>
@@ -293,12 +299,15 @@
 <script>
     $(function () {
         var isZh = location.href.includes("zh");
-        const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-        if (isMobile) {
-            document.body.classList.add('mobile-class');
-        } else {
-            document.body.classList.add('pc-class');
+        const mobileBreakpoint = 700;
+        const isMobileDevice = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+        function updateResponsiveClass() {
+            const isMobile = isMobileDevice || window.innerWidth <= mobileBreakpoint;
+            document.body.classList.toggle('mobile-class', isMobile);
+            document.body.classList.toggle('pc-class', !isMobile);
         }
+        updateResponsiveClass();
+        window.addEventListener('resize', updateResponsiveClass);
 
         var langBtn = document.getElementById("languageBtn");
         langBtn.getElementsByTagName('span')[0].innerHTML = isZh ? "EN" : "CN";
